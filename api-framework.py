@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+# ArubaOS 8 API call framework
+# (c) 2021 Ian Beyer, Aruba Networks <canerdian@hpe.com>
+# This code is provided as-is with no warranties. Use at your own risk. 
+
 import requests
 import json
 import warnings
