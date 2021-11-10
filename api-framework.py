@@ -13,7 +13,6 @@ password = "password"
 httpsVerify = False
 
 
-
 #Set things up
 
 if httpsVerify == False :
@@ -57,7 +56,7 @@ def showCmd(command, datatype):
 		returnData=response.json()
 	elif datatype == 'XML' :
 		# Returns XML as a dict
-		print(response.content)
+		#print(response.content)
 		returnData = xmltodict.parse(response.content)['my_xml_tag3xxx']
 	elif datatype == 'Text' :
 		# Returns an array
@@ -65,13 +64,26 @@ def showCmd(command, datatype):
 	return returnData
 
 
+def getSwitches():
+	switches=showCmd('switches', 'JSON')
+	conductors=[]
+	controllers=[]
+	for device in switches['All Switches']:
+		if device['Type'] == 'master' or device['Type'] == 'conductor':
+			conductors.append(device)
+			#print('Found Mobility Conductor '+device['Model']+ ' with IP address '+device['IP Address'])
+		else:
+			controllers.append(device)
+			#print('Found Mobility Controller '+device['Model']+ ' with IP address '+device['IP Address'])
+	return(conductors, controllers)
 
 
-print(showCmd('clock', 'Text')[0])
+# Get list of Mobility Conductors and Mobility Controllers in the environment. 
+
+mcrList, mdList = getSwitches()
 
 
-print(json.dumps(showCmd('dds debug peers', 'JSON'),indent=2, sort_keys=False))
-
+# This is where you do stuff. 
 
 
 ## Log out and remove session
