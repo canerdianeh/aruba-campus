@@ -13,13 +13,14 @@ import yaml
 from yaml.loader import FullLoader
 
 # Set defaults
+credsfile="credentials.yaml"
 
 aosDevice = "1.2.3.4"
 username = "admin"
 password = "password"
 httpsVerify = False
 
-with open('credentials.yaml', 'r') as creds:
+with open(credsfile, 'r') as creds:
 	target=yaml.load(creds, Loader=FullLoader)
 creds.close()
 

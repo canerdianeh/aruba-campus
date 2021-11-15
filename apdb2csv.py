@@ -12,14 +12,30 @@ import warnings
 import sys
 import xmltodict
 import datetime
+import yaml
+from yaml.loader import FullLoader
 
+# Set output file name
+
+outfile="APDB.csv"
+credsfile="credentials.yaml"
+
+# Set defaults
 
 aosDevice = "1.2.3.4"
 username = "admin"
 password = "password"
 httpsVerify = False
 
-outfile="APDB.csv"
+with open(credsfile, 'r') as creds:
+    target=yaml.load(creds, Loader=FullLoader)
+creds.close()
+
+aosDevice=target['aosDevice']
+username=target['username']
+password=target['password']
+httpsVerify=target['httpsVerify']
+
 
 
 #Set things up
