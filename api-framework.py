@@ -9,13 +9,29 @@ import json
 import warnings
 import sys
 import xmltodict
+import yaml
+from yaml.loader import FullLoader
 
+# Set defaults
 
 aosDevice = "1.2.3.4"
 username = "admin"
 password = "password"
 httpsVerify = False
 
+with open('credentials.yaml', 'r') as creds:
+	target=yaml.load(creds, Loader=FullLoader)
+creds.close()
+
+aosDevice=target['aosDevice']
+username=target['username']
+password=target['password']
+httpsVerify=target['httpsVerify']
+
+print("username: "+username)
+print("password: "+password)
+print("target: "+aosDevice)
+print("verify: "+str(httpsVerify))
 
 #Set things up
 
