@@ -28,11 +28,6 @@ username=target['username']
 password=target['password']
 httpsVerify=target['httpsVerify']
 
-print("username: "+username)
-print("password: "+password)
-print("target: "+aosDevice)
-print("verify: "+str(httpsVerify))
-
 #Set things up
 
 if httpsVerify == False :
