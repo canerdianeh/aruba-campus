@@ -7,6 +7,12 @@ Opens an API connection to an AOS8 Mobility Conductor or Mobility Controller, an
 ## apbsstable.py
 Opens an API connection to an AOS8 Mobility Conductor and retrieves a list of connected controllers, and then queries each controller with **show ap bss-table detail** and outputs to a CSV. The CSV data is also available as a dict. 
 
+## applldpnei.py
+Opens an API connection to an AOS8 Mobility Conductor and retrieves a list of connected controllers, and then queries each controller with **show ap lldp neighbors** and outputs to a CSV. The CSV data is also available as a dict. 
+
+## usertable.py
+Opens an API connection to an AOS8 Mobility Conductor and retrieves a list of connected controllers, and then queries each controller with **show user-table** and outputs to a CSV. The CSV data is also available as a dict. 
+
 ## api-framework.py
 The basic framework for opening an API connection to an Aruba AOS8 controller. Also retrieves a list of connected controllers. 
 
