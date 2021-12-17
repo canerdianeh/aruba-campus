@@ -20,10 +20,10 @@ from pathlib import Path
 
 # Set output file name
 
-aosDevice = "1.2.3.4"
-username = "admin"
-password = "password"
-
+aosDevice = None
+username = None
+password = None
+defaultfile="ap-bss-table.csv"
 # Parse Command Line Arguments
 # 
 # Credentials file is YAML - See sample file.
@@ -36,7 +36,7 @@ cli.add_argument("-c", "--credentials", required=False, help='Credentials File (
 cli.add_argument("-t", "--target", required=False, help='Target IP Address')
 cli.add_argument("-u", "--username", required=False, help='Target Username')
 cli.add_argument("-p", "--password", required=False, help='Target Password')
-cli.add_argument("-o", "--output", required=False, help='Output File', default="output.csv")
+cli.add_argument("-o", "--output", required=False, help='Output File', default=defaultfile)
 cli.add_argument("-v", "--verify", required=False, help='Verify HTTPS', default=False, action='store_true')
 cli.add_argument("-P", "--port", required=False, help="Target Port", default="4343")
 cli.add_argument("-a", "--api", required=False, help="API Version (default is v1)", default="v1")
@@ -61,7 +61,7 @@ else:
 	password=target['password']
 	httpsVerify=target['httpsVerify']
 
-# Check if username was specified on CLI. Override value in credentials file. 
+# Check if username was specified on CLI. Overrides values in credentials file. 
 if args['username'] != None :
 	username=args['username']
 
@@ -84,6 +84,13 @@ api=args['api']
 
 if httpsVerify == False :
 	warnings.filterwarnings('ignore', message='Unverified HTTPS request')
+
+if aosDevice == None:
+	exit()
+if username == None:
+	exit()
+if password == None:
+	exit()
 
 baseurl = "https://"+aosDevice+":"+port+"/"+api+"/"
 
@@ -136,23 +143,29 @@ def getSwitches():
 	conductors=[]
 	controllers=[]
 	for device in switches['All Switches']:
-		if device['Type'] == 'master' or device['Type'] == 'conductor':
-			conductors.append(device)
+		if device['Type'] == 'MD':
+			controllers.append(device)
 			#print('Found Mobility Conductor '+device['Model']+ ' with IP address '+device['IP Address'])
 		else:
-			controllers.append(device)
+			conductors.append(device)
 			#print('Found Mobility Controller '+device['Model']+ ' with IP address '+device['IP Address'])
 	return(conductors, controllers)
 
 
 # Get list of Mobility Conductors and Mobility Controllers in the environment. 
 
-print("Getting Switch List...")
+#print("Getting Switch List...")
 mcrList, mdList = getSwitches()
 
-print("Found the following Controllers")
-for md in mdList:
-	print(md['Model']+" at "+md['IP Address'])
+mcrHostname=aosDevice
+
+for mcr in mcrList:
+	if mcr['IP Address'] == aosDevice :
+		mcrHostname = mcr['Name']
+
+#print("Found the following Controllers on Mobility Conductor "+mcrHostname)
+#for md in mdList:
+#	print(md['Model']+" "+md['Name']+" at "+md['IP Address'])
 
 #Iterate through MDs and gather data
 bsslist=[]
@@ -170,152 +183,159 @@ bssflags={
 
 timestamp=datetime.datetime.now()
 
-with open(outfile, 'w') as csvfile:
+#If using default output filename, send to timestamped file in output folder, otherwise go with what the user specified. 
+
+if outfile == defaultfile :
+	filename="./output/"+mcrHostname+"_"+timestamp.strftime("%Y%m%d_%H%M")+"_"+outfile
+else:
+	filename = outfile
+
+#Reset entry counter
+
+totalEntries=0
+
+with open(filename, 'w') as csvfile:
 	write=csv.writer(csvfile)
 	loop=0
 
 	# Create Sheet Title
 
 	write.writerow(["AP BSS Table"])
-	write.writerow([timestamp.strftime("%m-%d-%Y %H:%M:%S")])
+	write.writerow(["Conductor:",mcrHostname])
+	write.writerow(["Date Retrieved:",timestamp.strftime("%m-%d-%Y %H:%M:%S")])
 	write.writerow([""])
 	
 	for md in mdList:
-		print("logging into controller at "+md['IP Address']+"...", end='')
-		mdsession = requests.Session()
-		mdbaseurl = "https://"+md['IP Address']+":"+port+"/"+api+"/"
-		mdloginparams = {'username': username, 'password' : password}
-		mdresponse = mdsession.get(mdbaseurl+"api/login", params = mdloginparams, headers=headers, data=payload, verify = httpsVerify)
-		mdjsonData = mdresponse.json()['_global_result']
+		if md['Status'] == 'up' :
+			#print("logging into controller at "+md['IP Address']+"...", end='')
+			mdsession = requests.Session()
+			mdbaseurl = "https://"+md['IP Address']+":"+port+"/"+api+"/"
+			mdloginparams = {'username': username, 'password' : password}
+			mdresponse = mdsession.get(mdbaseurl+"api/login", params = mdloginparams, headers=headers, data=payload, verify = httpsVerify)
+			mdjsonData = mdresponse.json()['_global_result']
 
-		if mdresponse.status_code == 200 :
+			if mdresponse.status_code == 200 :
 
-			mdSessionToken = mdjsonData['UIDARUBA']
-			print("Success")
-		else :
-			print("Failed!")
-			sys.exit("MD Login Failed on "+md['IP Address'])
- 		
-		mdReqParams = {
-			'UIDARUBA':mdSessionToken,
-			'command':'show ap bss-table details'
-			}
+				mdSessionToken = mdjsonData['UIDARUBA']
+				#print("Success")
+			else :
+				#print("Failed!")
+				sys.exit("MD Login Failed on "+md['IP Address'])
+	 		
+			mdReqParams = {
+				'UIDARUBA':mdSessionToken,
+				'command':'show ap bss-table details'
+				}
 
-		showresponse = mdsession.get(mdbaseurl+"configuration/showcommand", params = mdReqParams, headers=headers, data=payload, verify = httpsVerify)
-		bsstable=showresponse.json()
+			showresponse = mdsession.get(mdbaseurl+"configuration/showcommand", params = mdReqParams, headers=headers, data=payload, verify = httpsVerify)
+			bsstable=showresponse.json()
 
-		# Get list of data fields from the returned list
-		fields=bsstable['_meta']
-		 
-		# Add new fields for parsed Data
-		fields.insert(5,"PHY")
-		fields.insert(5,"Band")
-		fields.insert(7,"Max-EIRP")
-		fields.insert(7,"EIRP")
-		fields.insert(7,"Channel")
-		fields.insert(15,"Uptime_Seconds")
-		fields.append("Controller")
+			# Get list of data fields from the returned list
+			fields=bsstable['_meta']
+			 
+			# Add new fields for parsed Data
+			fields.insert(5,"PHY")
+			fields.insert(5,"Band")
+			fields.insert(7,"Max-EIRP")
+			fields.insert(7,"EIRP")
+			fields.insert(7,"Channel")
+			fields.insert(15,"Uptime_Seconds")
+			fields.append("Controller_IP")
+			fields.append("Controller_Name")
 
-		 # Add fields for expanding flags
-		for flag in bssflags.keys():
-			fields.append(bssflags[flag])
-
-		if loop == 0:
-			write.writerow(fields)
-		loop += 1
-		# Iterate through the list of BSS
-		records = 0
-		for bss in bsstable["Aruba AP BSS Table"]:
-			bss['Band']=None
-			bss['PHY']=None
-			bss['Channel']=None
-			bss['EIRP']=None
-			bss['Max-EIRP']=None
-			bss['Uptime_Seconds']=0
-			bss['Controller']=md['IP Address'] 
-
-			# Parse Status field into status, uptime, and uptime in seconds
-			  
-			#Split the Uptime field into each time field and strip off the training character, multiply by the requisite number of seconds an tally it up. 
-			timefields=bss['tot-t'].split(':')
-			    
-			if len(timefields)>3 :
-				days=int(timefields.pop(0)[0:-1])
-				bss['Uptime_Seconds']+=days*86400
-			if len(timefields)>2 :
-				hours=int(timefields.pop(0)[0:-1])
-				bss['Uptime_Seconds']+=hours*3600
-			if len(timefields)>1 :
-				minutes=int(timefields.pop(0)[0:-1])
-				bss['Uptime_Seconds']+=minutes*60
-			if len(timefields)>0 :
-				seconds=int(timefields.pop(0)[0:-1])
-				bss['Uptime_Seconds']+=seconds
-
-			if '-' in bss['phy']:
-				physplit=bss['phy'].split('-')
-				bss['Band']=physplit[0]
-				bss['PHY']=physplit[1]
-
-			if 'N/A' not in bss['ch/EIRP/max-EIRP']:
-				
-				chansplit=bss['ch/EIRP/max-EIRP'].split('/')
-				bss['Channel']=chansplit[0]
-				bss['EIRP']=chansplit[1]
-				bss['Max-EIRP']=chansplit[2]
-			# Bust apart the flags into their own fields 
+			 # Add fields for expanding flags
 			for flag in bssflags.keys():
+				fields.append(bssflags[flag])
 
-			# Set field to None so that it exists in the dict
-				bss[bssflags[flag]]=None
-			   
-			# Check to see if the flags field contains data
-				if bss['flags'] != None :
+			if loop == 0:
+				write.writerow(fields)
+			loop += 1
+			# Iterate through the list of BSS
+			records = 0
+			for bss in bsstable["Aruba AP BSS Table"]:
+				bss['Band']=None
+				bss['PHY']=None
+				bss['Channel']=None
+				bss['EIRP']=None
+				bss['Max-EIRP']=None
+				bss['Uptime_Seconds']=0
+				bss['Controller_IP']=md['IP Address']
+				bss['Controller_Name']=md['Name']
 
-					if flag in bss['flags'] :
-						bss[bssflags[flag]]="X"
-			   
-			datarow=[]
+				# Parse Status field into status, uptime, and uptime in seconds
+				  
+				#Split the Uptime field into each time field and strip off the training character, multiply by the requisite number of seconds an tally it up. 
+				timefields=bss['tot-t'].split(':')
+				    
+				if len(timefields)>3 :
+					days=int(timefields.pop(0)[0:-1])
+					bss['Uptime_Seconds']+=days*86400
+				if len(timefields)>2 :
+					hours=int(timefields.pop(0)[0:-1])
+					bss['Uptime_Seconds']+=hours*3600
+				if len(timefields)>1 :
+					minutes=int(timefields.pop(0)[0:-1])
+					bss['Uptime_Seconds']+=minutes*60
+				if len(timefields)>0 :
+					seconds=int(timefields.pop(0)[0:-1])
+					bss['Uptime_Seconds']+=seconds
 
-			# Iterate through the list of fields used to create the header row and append each one
-			for f in fields:
-				datarow.append(bss[f])
+				if '-' in bss['phy']:
+					physplit=bss['phy'].split('-')
+					bss['Band']=physplit[0]
+					bss['PHY']=physplit[1]
 
-			# Add it to grand master dict that can be used for other purposes
-			bsslist.append(datarow)
-			# Put it in the CSV 
-			write.writerow(datarow)
-			records+=1
-		#Move on to the next AP
-		print(str(records)+" Entries")
+				if 'N/A' not in bss['ch/EIRP/max-EIRP']:
+					
+					chansplit=bss['ch/EIRP/max-EIRP'].split('/')
+					bss['Channel']=chansplit[0]
+					bss['EIRP']=chansplit[1]
+					bss['Max-EIRP']=chansplit[2]
+				# Bust apart the flags into their own fields 
+				for flag in bssflags.keys():
+
+				# Set field to None so that it exists in the dict
+					bss[bssflags[flag]]=None
+				   
+				# Check to see if the flags field contains data
+					if bss['flags'] != None :
+
+						if flag in bss['flags'] :
+							bss[bssflags[flag]]="X"
+				   
+				datarow=[]
+
+				# Iterate through the list of fields used to create the header row and append each one
+				for f in fields:
+					datarow.append(bss[f])
+
+				# Add it to grand master dict that can be used for other purposes
+				bsslist.append(datarow)
+				# Put it in the CSV 
+				write.writerow(datarow)
+				records+=1
+				#Move on to the next AP
+
+			# Sum up and log out
+			totalEntries+=records
+			print("Processed "+str(records)+" Entries from "+md['Name'])
+			logoutresponse = mdsession.get(mdbaseurl+"api/logout", verify=False)
+			jsonData = logoutresponse.json()['_global_result']
+
+			if response.status_code == 200 :
+				token = jsonData['UIDARUBA']
+				del mdSessionToken
+				#print("MD Logout from "+md['Name']+" at "+md['IP Address']+" successful. Token deleted.")
+			else :
+				del mdSessionToken
+				sys.exit("Logout failed from "+md['IP Address']+":")	
+
+		else :
+			print("skipping down controller "+md['Name']+" at "+md['IP Address']+"...", end='')
+
 	# Close the file handle
 	csvfile.close()
-
-
-
-
-
-
-
-
-
-
-
-	#print("Logging out of controller "+md['IP Address'])
-	logoutresponse = mdsession.get(mdbaseurl+"api/logout", verify=False)
-	jsonData = logoutresponse.json()['_global_result']
-
-	if response.status_code == 200 :
-
-		#remove 
-		token = jsonData['UIDARUBA']
-		del mdSessionToken
-		#print("Logout successful. Token deleted.")
-	else :
-		del mdSessionToken
-		sys.exit("Logout failed from "+md['IP Address']+":")	
-
-
+	print("Wrote "+str(totalEntries)+" records from "+str(len(mdList))+" controllers to "+filename)
 
 ## Log out of MCR and remove session
 

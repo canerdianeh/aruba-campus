@@ -20,10 +20,10 @@ from pathlib import Path
 
 # Set output file name
 
-aosDevice = "10.177.194.21"
-username = "admin"
-password = "aruba123"
-
+aosDevice = None
+username = None
+password = None
+defaultfile="ap_database.csv"
 # Parse Command Line Arguments
 # 
 # Credentials file is YAML - See sample file.
@@ -36,7 +36,7 @@ cli.add_argument("-c", "--credentials", required=False, help='Credentials File (
 cli.add_argument("-t", "--target", required=False, help='Target IP Address')
 cli.add_argument("-u", "--username", required=False, help='Target Username')
 cli.add_argument("-p", "--password", required=False, help='Target Password')
-cli.add_argument("-o", "--output", required=False, help='Output File', default="apdb.csv")
+cli.add_argument("-o", "--output", required=False, help='Output File', default=defaultfile)
 cli.add_argument("-v", "--verify", required=False, help='Verify HTTPS', default=False, action='store_true')
 cli.add_argument("-P", "--port", required=False, help="Target Port (Default is 4343)", default="4343")
 cli.add_argument("-a", "--api", required=False, help="API Version (default is v1)", default="v1")
@@ -129,15 +129,51 @@ def showCmd(command, datatype):
         # Returns an array
         returnData =response.json()['_data']
     return returnData
+def getSwitches():
+    switches=showCmd('switches', 'JSON')
+    conductors=[]
+    controllers=[]
+    for device in switches['All Switches']:
+        if device['Type'] == 'MD':
+            controllers.append(device)
+            #print('Found Mobility Conductor '+device['Model']+ ' with IP address '+device['IP Address'])
+        else:
+            conductors.append(device)
+            #print('Found Mobility Controller '+device['Model']+ ' with IP address '+device['IP Address'])
+    return(conductors, controllers)
+
+
+# Get list of Mobility Conductors and Mobility Controllers in the environment. 
+
+#print("Getting Switch List...")
+mcrList, mdList = getSwitches()
+
+mcrHostname=aosDevice
+
+for mcr in mcrList:
+    if mcr['IP Address'] == aosDevice :
+        mcrHostname = mcr['Name']
 
 apdb=showCmd('ap database long', 'JSON')
 
 # This is the list of status flags in show ap database long
 
 apflags=['1','1+','1-','2','B','C','D','E','F','G','I','J','L','M','N','P','R','R-','S','U','X','Y','c','e','f','i','o','s','u','z','p','4']
+#If using default output filename, send to timestamped file, otherwise go with what the user specified. 
+
+timestamp=datetime.datetime.now()
+
+if outfile == defaultfile :
+    filename="./output/"+mcrHostname+"_"+timestamp.strftime("%Y%m%d_%H%M")+"_"+outfile
+else:
+    filename = outfile
+
+#Reset entry counter
+
+totalEntries=0
 
 # Create file handle and open for write. 
-with open(outfile, 'w') as csvfile:
+with open(filename, 'w') as csvfile:
  write=csv.writer(csvfile)
  
  # Get list of data fields from the returned list
@@ -204,7 +240,7 @@ with open(outfile, 'w') as csvfile:
    # Iterate through the list of fields used to create the header row and append each one
    for f in fields:
     datarow.append(ap[f])
-
+   totalEntries+=1
    # Put it in the CSV 
    write.writerow(datarow)
 
@@ -212,6 +248,7 @@ with open(outfile, 'w') as csvfile:
 
 # Close the file handle
 csvfile.close()
+print("Wrote "+str(totalEntries)+" records from "+mcrHostname+" to "+filename)
 
 ## Log out and remove session
 

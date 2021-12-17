@@ -23,7 +23,7 @@ from pathlib import Path
 aosDevice = None
 username = None
 password = None
-defaultfile="ap-lldp-neighbors.csv"
+defaultfile="user-table.csv"
 
 # Parse Command Line Arguments
 # 
@@ -159,24 +159,17 @@ for mcr in mcrList:
 	if mcr['IP Address'] == aosDevice :
 		mcrHostname = mcr['Name']
 
+
 #print("Found the following Controllers on Mobility Conductor "+mcrHostname)
 #for md in mdList:
 #	print(md['Model']+" "+md['Name']+" at "+md['IP Address'])
 
 #Iterate through MDs and gather data
-neighbors=[]
-
-capflags={
-'R':'Router',
-'B':'Bridge',
-'A':'Access Point',
-'P':'Phone',
-'O':'Other'
-}
+users=[]
 
 timestamp=datetime.datetime.now()
 
-#If using default output filename, send to timestamped file, otherwise go with what the user specified. 
+#If using default output filename, send to timestamped file in output folder, otherwise go with what the user specified. 
 
 if outfile == defaultfile :
 	filename="./output/"+mcrHostname+"_"+timestamp.strftime("%Y%m%d_%H%M")+"_"+outfile
@@ -193,15 +186,14 @@ with open(filename, 'w') as csvfile:
 
 	# Create Sheet Title
 
-	write.writerow(["AP Neighbor Table"])
+	write.writerow(["User Table"])
 	write.writerow(["Conductor:",mcrHostname])
 	write.writerow(["Date Retrieved:",timestamp.strftime("%m-%d-%Y %H:%M:%S")])
 	write.writerow([""])
 	
 	for md in mdList:
 		if md['Status'] == 'up' :
-
-			# print("logging into controller at "+md['IP Address']+"...", end='')
+			#print("logging into controller at "+md['IP Address']+"...", end='')
 			mdsession = requests.Session()
 			mdbaseurl = "https://"+md['IP Address']+":"+port+"/"+api+"/"
 			mdloginparams = {'username': username, 'password' : password}
@@ -218,53 +210,60 @@ with open(filename, 'w') as csvfile:
 	 		
 			mdReqParams = {
 				'UIDARUBA':mdSessionToken,
-				'command':'show ap lldp neighbors'
+				'command':'show user-table'
 				}
 
 			showresponse = mdsession.get(mdbaseurl+"configuration/showcommand", params = mdReqParams, headers=headers, data=payload, verify = httpsVerify)
-			neighborlist=showresponse.json()
+			userlist=showresponse.json()
 
 			# Get list of data fields from the returned list
-			fields=neighborlist['_meta']
+			fields=userlist['_meta']
 			 
 			# Add new fields for parsed Data
-			#fields.insert(5,"PHY")
+			fields.insert(5,"Age_minutes")
+			fields.insert(9,"PHY")
+			fields.insert(9,"Band")
+			fields.insert(9,"BSSID")
+			fields.insert(9,"ESSID")
 			fields.append("Controller_IP")
 			fields.append("Controller_Name")
-
-			 # Add fields for expanding flags
-			for flag in capflags.keys():
-				fields.append(capflags[flag])
 
 			if loop == 0:
 				write.writerow(fields)
 			loop += 1
-			# Iterate through the list of BSS
+			# Iterate through the list of Users
 			records = 0
-			for neigh in neighborlist["AP LLDP Neighbors (Updated every 60 seconds)"]:
-				neigh['Controller_IP']=md['IP Address']
-				neigh['Controller_Name']=md['Name']
+			for user in userlist["Users"]:
+				user['Controller_IP']=md['IP Address']
+				user['Controller_Name']=md['Name']
+			
+				age=user['Age(d:h:m)'].split(':')
 
-				# Bust apart the flags into their own fields 
-				for flag in capflags.keys():
+				user['Age_minutes']=0
+				user['Age_minutes']+=int(age[2])
+				user['Age_minutes']+=(int(age[1])*60)		
+				user['Age_minutes']+=(int(age[0])*1440)
 
-				# Set field to None so that it exists in the dict
-					neigh[capflags[flag]]=None
-				   
-				# Check to see if the flags field contains data
-					if neigh['Capabilities'] != None :
 
-						if flag in neigh['Capabilities'] :
-							neigh[capflags[flag]]="X"
-				   
+
+				ebp=user['Essid/Bssid/Phy'].split('/')
+				user['ESSID']=ebp[0]
+				user['BSSID']=ebp[1]
+				bandphy=ebp[2].split('-')
+				user['Band']=bandphy[0]
+				if len(bandphy)>1 :
+					user['PHY']=bandphy[1]
+				else: 
+					user['PHY']=None
+
 				datarow=[]
 
 				# Iterate through the list of fields used to create the header row and append each one
 				for f in fields:
-					datarow.append(neigh[f])
+					datarow.append(user[f])
 
 				# Add it to grand master dict that can be used for other purposes
-				neighbors.append(datarow)
+				users.append(datarow)
 				# Put it in the CSV 
 				write.writerow(datarow)
 				records+=1
@@ -292,6 +291,7 @@ with open(filename, 'w') as csvfile:
 	print("Wrote "+str(totalEntries)+" records from "+str(len(mdList))+" controllers to "+filename)
 
 ## Log out of MCR and remove session
+
 
 response = session.get(baseurl+"api/logout", verify=False)
 jsonData = response.json()['_global_result']
