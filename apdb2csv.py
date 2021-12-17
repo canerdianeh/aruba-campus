@@ -20,9 +20,9 @@ from pathlib import Path
 
 # Set output file name
 
-aosDevice = "1.2.3.4"
+aosDevice = "10.177.194.21"
 username = "admin"
-password = "password"
+password = "aruba123"
 
 # Parse Command Line Arguments
 # 
