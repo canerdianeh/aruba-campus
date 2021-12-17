@@ -36,7 +36,7 @@ cli.add_argument("-c", "--credentials", required=False, help='Credentials File (
 cli.add_argument("-t", "--target", required=False, help='Target IP Address')
 cli.add_argument("-u", "--username", required=False, help='Target Username')
 cli.add_argument("-p", "--password", required=False, help='Target Password')
-cli.add_argument("-o", "--output", required=False, help='Output File', default="ap-lldp-nei-output.csv")
+cli.add_argument("-o", "--output", required=False, help='Output File', default="ap-lldp-neighbors.csv")
 cli.add_argument("-v", "--verify", required=False, help='Verify HTTPS', default=False, action='store_true')
 cli.add_argument("-P", "--port", required=False, help="Target Port", default="4343")
 cli.add_argument("-a", "--api", required=False, help="API Version (default is v1)", default="v1")
@@ -61,7 +61,8 @@ else:
 	password=target['password']
 	httpsVerify=target['httpsVerify']
 
-# Check if username was specified on CLI. Override value in credentials file. 
+# Check if username was specified on CLI. Overrides values in credentials file. 
+
 if args['username'] != None :
 	username=args['username']
 
@@ -85,12 +86,6 @@ api=args['api']
 if httpsVerify == False :
 	warnings.filterwarnings('ignore', message='Unverified HTTPS request')
 
-if aosDevice == None:
-	exit()
-if username == None:
-	exit()
-if password == None:
-	exit()
 
 baseurl = "https://"+aosDevice+":"+port+"/"+api+"/"
 
