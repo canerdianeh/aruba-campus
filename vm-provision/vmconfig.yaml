@@ -1,0 +1,47 @@
+vm:
+  host: 172.31.234.56
+  user: root
+  pass: password
+  port: 443
+  timeout: 10
+controllers:
+  - name: LAB87-MM1
+    type: mm
+    mgmt:
+      id: GE 0/0/0
+      vlan: 254
+      mode: access
+    ip:
+      v4:
+        addr: 172.31.212.121/24
+        gw: 172.31.254.254
+        dns: 172.31.212.254
+      v6: 
+        addr: 
+        prefix: 64
+        gw: 
+        dns: 
+    cc: US
+    tz: America/Chicago
+    pw: aruba123
+  - name: LAB87-MM2
+    type: mm
+    mgmt:
+      id: GE 0/0/0
+      vlan: 254
+      mode: access
+    ip:
+      v4:
+        addr: 172.31.212.122/24
+        gw: 172.31.254.254
+        dns: 172.31.212.254
+      v6: 
+        addr: 
+        prefix: 64
+        gw: 
+        dns: 
+    cc: US
+    tz: America/Chicago
+    pw: aruba123
+
+
