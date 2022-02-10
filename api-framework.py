@@ -101,7 +101,7 @@ if response.status_code == 200 :
 
 #	print(sessionToken)
 else :
-	sys.exit("Login Failed")
+	sys.exit("Conductor Login Failed, could not get token.")
 
 reqParams = {'UIDARUBA':sessionToken}
 
@@ -151,31 +151,38 @@ mcrList, mdList = getSwitches()
 
 
 for md in mdList:
-    print("logging into controller at "+md['IP Address']+"...", end='')
+    print("logging into controller "+md['Name']+" at "+md['IP Address']+"...", end='')
     mdsession = requests.Session()
     mdbaseurl = "https://"+md['IP Address']+":"+port+"/"+api+"/"
     mdloginparams = {'username': username, 'password' : password}
     mdresponse = mdsession.get(mdbaseurl+"api/login", params = mdloginparams, headers=headers, data=payload, verify = httpsVerify)
     mdjsonData = mdresponse.json()['_global_result']
 
+    valid=False
+    ## Only set to true if we get a valid token.
+
     if mdresponse.status_code == 200 :
 
         mdSessionToken = mdjsonData['UIDARUBA']
         print("Success")
+        success=True
     else :
-        print("Failed!")
-        sys.exit("MD Login Failed on "+md['IP Address'])
-     
-    mdReqParams = {
-        'UIDARUBA':mdSessionToken,
-        'command':'<insert command here>'
-        }
+        print("Connection to MD %s Failed. Unable to get token. Skipping to the next one." % md['Name'])
+        # sys.exit("MD Login Failed on "+md['IP Address'])
+    
+    if success :
+    	mdReqParams = {
+	        'UIDARUBA':mdSessionToken,
+	        'command':'<insert command here>'
+	        }
 
-    showresponse = mdsession.get(mdbaseurl+"configuration/showcommand", params = mdReqParams, headers=headers, data=payload, verify = httpsVerify)
-    bsstable=showresponse.json()
+	    showresponse = mdsession.get(mdbaseurl+"configuration/showcommand", params = mdReqParams, headers=headers, data=payload, verify = httpsVerify)
 
 
-## Log out and remove session
+	else:
+		print("No valid session token - skipping")
+
+## Log out and remove MCR session
 
 
 response = session.get(baseurl+"api/logout", verify=False)
