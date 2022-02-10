@@ -23,7 +23,7 @@ from pathlib import Path
 aosDevice = None
 username = None
 password = None
-defaultfile="ap-bss-table.csv"
+defaultfile="ap-bss-table"
 # Parse Command Line Arguments
 # 
 # Credentials file is YAML - See sample file.
@@ -37,6 +37,7 @@ cli.add_argument("-t", "--target", required=False, help='Target IP Address')
 cli.add_argument("-u", "--username", required=False, help='Target Username')
 cli.add_argument("-p", "--password", required=False, help='Target Password')
 cli.add_argument("-o", "--output", required=False, help='Output File', default=defaultfile)
+cli.add_argument("-j", "--json", required=False, help='Output to JSON', default=False, action="store_true")
 cli.add_argument("-v", "--verify", required=False, help='Verify HTTPS', default=False, action='store_true')
 cli.add_argument("-P", "--port", required=False, help="Target Port", default="4343")
 cli.add_argument("-a", "--api", required=False, help="API Version (default is v1)", default="v1")
@@ -75,6 +76,10 @@ if args['target'] != None :
 
 # Default Values are set in the argopts. 
 httpsVerify=args['verify']
+
+outjson=False 
+if args['json']: outjson=True
+
 outfile=args['output']
 port=args['port']
 api=args['api']
@@ -100,7 +105,8 @@ payload = ""
 cookies = ""
 
 session=requests.Session()
-## Log in and get session token
+
+## Log in to Mobility Condusctor and get session token
 
 loginparams = {'username': username, 'password' : password}
 response = session.get(baseurl+"api/login", params = loginparams, headers=headers, data=payload, verify = httpsVerify)
@@ -113,9 +119,12 @@ if response.status_code == 200 :
 
 #	print(sessionToken)
 else :
-	sys.exit("Login Failed")
+	sys.exit("Conductor Login Failed - Could not get session token")
 
 reqParams = {'UIDARUBA':sessionToken}
+
+
+## Define Functions
 
 def showCmd(command, datatype):
 	showParams = {
@@ -163,9 +172,9 @@ for mcr in mcrList:
 	if mcr['IP Address'] == aosDevice :
 		mcrHostname = mcr['Name']
 
-#print("Found the following Controllers on Mobility Conductor "+mcrHostname)
-#for md in mdList:
-#	print(md['Model']+" "+md['Name']+" at "+md['IP Address'])
+print("Found the following Controllers on Mobility Conductor "+mcrHostname)
+for md in mdList:
+	print(md['Model']+" "+md['Name']+" at "+md['IP Address'])
 
 #Iterate through MDs and gather data
 bsslist=[]
@@ -186,15 +195,17 @@ timestamp=datetime.datetime.now()
 #If using default output filename, send to timestamped file in output folder, otherwise go with what the user specified. 
 
 if outfile == defaultfile :
-	filename="./output/"+mcrHostname+"_"+timestamp.strftime("%Y%m%d_%H%M")+"_"+outfile
+	csvfilename="./output/"+mcrHostname+"_"+timestamp.strftime("%Y%m%d_%H%M")+"_"+outfile+'.csv'
+	#jsonfilename="./output/"+mcrHostname+"_"+timestamp.strftime("%Y%m%d_%H%M")+"_"+outfile+'.json'
 else:
-	filename = outfile
+	csvfilename = outfile+'.csv'
+	#jsonfilename = outfile+'.json'
 
 #Reset entry counter
 
 totalEntries=0
 
-with open(filename, 'w') as csvfile:
+with open(csvfilename, 'w') as csvfile:
 	write=csv.writer(csvfile)
 	loop=0
 
@@ -207,135 +218,151 @@ with open(filename, 'w') as csvfile:
 	
 	for md in mdList:
 		if md['Status'] == 'up' :
+			valid = False
+			## valid only set to True if we get a token. 
+
+			
+			## Add code here to skip from a denylist. 
+
+
 			#print("logging into controller at "+md['IP Address']+"...", end='')
+
 			mdsession = requests.Session()
 			mdbaseurl = "https://"+md['IP Address']+":"+port+"/"+api+"/"
 			mdloginparams = {'username': username, 'password' : password}
 			mdresponse = mdsession.get(mdbaseurl+"api/login", params = mdloginparams, headers=headers, data=payload, verify = httpsVerify)
 			mdjsonData = mdresponse.json()['_global_result']
 
+			
 			if mdresponse.status_code == 200 :
 
 				mdSessionToken = mdjsonData['UIDARUBA']
+				valid=True
 				#print("Success")
 			else :
-				#print("Failed!")
-				sys.exit("MD Login Failed on "+md['IP Address'])
+				print("Login to "+md['Name']+" Failed. Unable to get session token.")
+				#sys.exit("MD Login Failed on "+md['IP Address'])
 	 		
-			mdReqParams = {
-				'UIDARUBA':mdSessionToken,
-				'command':'show ap bss-table details'
-				}
 
-			showresponse = mdsession.get(mdbaseurl+"configuration/showcommand", params = mdReqParams, headers=headers, data=payload, verify = httpsVerify)
-			bsstable=showresponse.json()
 
-			# Get list of data fields from the returned list
-			fields=bsstable['_meta']
-			 
-			# Add new fields for parsed Data
-			fields.insert(5,"PHY")
-			fields.insert(5,"Band")
-			fields.insert(7,"Max-EIRP")
-			fields.insert(7,"EIRP")
-			fields.insert(7,"Channel")
-			fields.insert(15,"Uptime_Seconds")
-			fields.append("Controller_IP")
-			fields.append("Controller_Name")
+			if valid: 
+				mdReqParams = {
+					'UIDARUBA':mdSessionToken,
+					'command':'show ap bss-table details'
+					}
 
-			 # Add fields for expanding flags
-			for flag in bssflags.keys():
-				fields.append(bssflags[flag])
+				showresponse = mdsession.get(mdbaseurl+"configuration/showcommand", params = mdReqParams, headers=headers, data=payload, verify = httpsVerify)
+				bsstable=showresponse.json()
 
-			if loop == 0:
-				write.writerow(fields)
-			loop += 1
-			# Iterate through the list of BSS
-			records = 0
-			for bss in bsstable["Aruba AP BSS Table"]:
-				bss['Band']=None
-				bss['PHY']=None
-				bss['Channel']=None
-				bss['EIRP']=None
-				bss['Max-EIRP']=None
-				bss['Uptime_Seconds']=0
-				bss['Controller_IP']=md['IP Address']
-				bss['Controller_Name']=md['Name']
+				# Get list of data fields from the returned list
+				fields=bsstable['_meta']
+				 
+				# Add new fields for parsed Data
+				fields.insert(5,"PHY")
+				fields.insert(5,"Band")
+				fields.insert(7,"Max-EIRP")
+				fields.insert(7,"EIRP")
+				fields.insert(7,"Channel")
+				fields.insert(15,"Uptime_Seconds")
+				fields.append("Controller_IP")
+				fields.append("Controller_Name")
 
-				# Parse Status field into status, uptime, and uptime in seconds
-				  
-				#Split the Uptime field into each time field and strip off the training character, multiply by the requisite number of seconds an tally it up. 
-				timefields=bss['tot-t'].split(':')
-				    
-				if len(timefields)>3 :
-					days=int(timefields.pop(0)[0:-1])
-					bss['Uptime_Seconds']+=days*86400
-				if len(timefields)>2 :
-					hours=int(timefields.pop(0)[0:-1])
-					bss['Uptime_Seconds']+=hours*3600
-				if len(timefields)>1 :
-					minutes=int(timefields.pop(0)[0:-1])
-					bss['Uptime_Seconds']+=minutes*60
-				if len(timefields)>0 :
-					seconds=int(timefields.pop(0)[0:-1])
-					bss['Uptime_Seconds']+=seconds
-
-				if '-' in bss['phy']:
-					physplit=bss['phy'].split('-')
-					bss['Band']=physplit[0]
-					bss['PHY']=physplit[1]
-
-				if 'N/A' not in bss['ch/EIRP/max-EIRP']:
-					
-					chansplit=bss['ch/EIRP/max-EIRP'].split('/')
-					bss['Channel']=chansplit[0]
-					bss['EIRP']=chansplit[1]
-					bss['Max-EIRP']=chansplit[2]
-				# Bust apart the flags into their own fields 
+				 # Add fields for expanding flags
 				for flag in bssflags.keys():
+					fields.append(bssflags[flag])
 
-				# Set field to None so that it exists in the dict
-					bss[bssflags[flag]]=None
-				   
-				# Check to see if the flags field contains data
-					if bss['flags'] != None :
+				if loop == 0:
+					write.writerow(fields)
+				loop += 1
+				# Iterate through the list of BSS
+				records = 0
+				for bss in bsstable["Aruba AP BSS Table"]:
+					bss['Band']=None
+					bss['PHY']=None
+					bss['Channel']=None
+					bss['EIRP']=None
+					bss['Max-EIRP']=None
+					bss['Uptime_Seconds']=0
+					bss['Controller_IP']=md['IP Address']
+					bss['Controller_Name']=md['Name']
 
-						if flag in bss['flags'] :
-							bss[bssflags[flag]]="X"
-				   
-				datarow=[]
+					# Parse Status field into status, uptime, and uptime in seconds
+					  
+					#Split the Uptime field into each time field and strip off the training character, multiply by the requisite number of seconds an tally it up. 
+					timefields=bss['tot-t'].split(':')
+					    
+					if len(timefields)>3 :
+						days=int(timefields.pop(0)[0:-1])
+						bss['Uptime_Seconds']+=days*86400
+					if len(timefields)>2 :
+						hours=int(timefields.pop(0)[0:-1])
+						bss['Uptime_Seconds']+=hours*3600
+					if len(timefields)>1 :
+						minutes=int(timefields.pop(0)[0:-1])
+						bss['Uptime_Seconds']+=minutes*60
+					if len(timefields)>0 :
+						seconds=int(timefields.pop(0)[0:-1])
+						bss['Uptime_Seconds']+=seconds
 
-				# Iterate through the list of fields used to create the header row and append each one
-				for f in fields:
-					datarow.append(bss[f])
+					if '-' in bss['phy']:
+						physplit=bss['phy'].split('-')
+						bss['Band']=physplit[0]
+						bss['PHY']=physplit[1]
 
-				# Add it to grand master dict that can be used for other purposes
-				bsslist.append(datarow)
-				# Put it in the CSV 
-				write.writerow(datarow)
-				records+=1
-				#Move on to the next AP
+					if 'N/A' not in bss['ch/EIRP/max-EIRP']:
+						
+						chansplit=bss['ch/EIRP/max-EIRP'].split('/')
+						bss['Channel']=chansplit[0]
+						bss['EIRP']=chansplit[1]
+						bss['Max-EIRP']=chansplit[2]
+					# Bust apart the flags into their own fields 
+					for flag in bssflags.keys():
 
-			# Sum up and log out
-			totalEntries+=records
-			print("Processed "+str(records)+" Entries from "+md['Name'])
-			logoutresponse = mdsession.get(mdbaseurl+"api/logout", verify=False)
-			jsonData = logoutresponse.json()['_global_result']
+					# Set field to None so that it exists in the dict
+						bss[bssflags[flag]]=None
+					   
+					# Check to see if the flags field contains data
+						if bss['flags'] != None :
 
-			if response.status_code == 200 :
-				token = jsonData['UIDARUBA']
-				del mdSessionToken
-				#print("MD Logout from "+md['Name']+" at "+md['IP Address']+" successful. Token deleted.")
-			else :
-				del mdSessionToken
-				sys.exit("Logout failed from "+md['IP Address']+":")	
+							if flag in bss['flags'] :
+								bss[bssflags[flag]]="X"
+					   
+					datarow=[]
 
+					# Iterate through the list of fields used to create the header row and append each one
+					for f in fields:
+						datarow.append(bss[f])
+
+					# Add it to grand master dict that can be used for other purposes
+					bsslist.append(datarow)
+					# Put it in the CSV 
+					write.writerow(datarow)
+					records+=1
+					#Move on to the next AP
+
+				# Sum up and log out
+				totalEntries+=records
+				print("Processed "+str(records)+" Entries from "+md['Name'])
+				logoutresponse = mdsession.get(mdbaseurl+"api/logout", verify=False)
+				jsonData = logoutresponse.json()['_global_result']
+
+				if response.status_code == 200 :
+					token = jsonData['UIDARUBA']
+					del mdSessionToken
+					#print("MD Logout from "+md['Name']+" at "+md['IP Address']+" successful. Token deleted.")
+				else :
+					del mdSessionToken
+					print("Logout failed from "+md['IP Address']+". Session token may remain in memory.")	
+			else:
+				print("Controller has no valid token. Skipping. ")
 		else :
-			print("skipping down controller "+md['Name']+" at "+md['IP Address']+"...", end='')
+			print("Controller is down. Skipping "+md['Name']+" at "+md['IP Address'])
 
 	# Close the file handle
 	csvfile.close()
-	print("Wrote "+str(totalEntries)+" records from "+str(len(mdList))+" controllers to "+filename)
+	print("Wrote "+str(totalEntries)+" records from "+str(len(mdList))+" controllers to "+csvfilename)
+
+
 
 ## Log out of MCR and remove session
 
