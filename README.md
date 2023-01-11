@@ -21,6 +21,7 @@ Takes a terminal session dump containing one or more of:
 - show ap database [long]
 - show ap lldp neighbors
 - show ap ble-database [long]
+
 and places it in an Excel named table for further processing. Uses Pandas dataframes. 
 
 ## apflags.json
