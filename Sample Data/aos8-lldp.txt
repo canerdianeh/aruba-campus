@@ -1,0 +1,986 @@
+
+
+(MO-MD-01) [MDC] *#no paging
+
+(MO-MD-01) [MDC] *#show ap lldp neighbors 
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                ---------  --------  ---------------  -------  ---------  -------------  ------------
+D03Z3F105SB       eth0       0         moswdk5fz3a      43       1/43       10.110.240.8   B
+D03Z3F100PS       eth0       0         moswdk5fz3a      37       1/37       10.110.240.8   B
+D03Z3F148PS       eth0       0         moswdk5fz3a      14       1/14       10.110.240.8   B
+D06Z4F049PS       eth0       0         moswdk8fz4       5        1/5        10.110.240.12  B
+D03Z4F043PS       eth0       0         moswdk3fz4       4        1/4        10.110.240.5   B
+D10Z3F147SB       eth0       0         moswdk9fz3       27       1/27       10.110.240.13  B
+D03Z3F106PS       eth0       0         moswdk5fz3a      45       1/45       10.110.240.8   B
+D03Z5F-006M       eth0       0         moswdk3fz4       31       1/31       10.110.240.5   B
+D03Z5F006PS       eth0       0         moswdk3fz4       37       1/37       10.110.240.5   B
+D02Z3F136SB-C257  eth0       0         moswdk5fz3b      140      2/44       10.110.240.9   B
+D02Z3F124SB-C267  eth0       0         moswdk5fz3b      227      3/35       10.110.240.9   B
+D07Z3F099SB-S763  eth0       0         moswdk9fz3       312      4/24       10.110.240.13  B
+D03Z3F128M-C376   eth0       0         moswdk5fz3b      324      4/36       10.110.240.9   B
+D06Z3F092PS-S662  eth0       0         moswdk9fz3       492      6/12       10.110.240.13  B
+D04Z2F193M-C483   eth0       0         moswdk4fz2       583      7/7        10.110.240.7   B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                ---------  --------  ---------------  -------  ---------  -------------  ------------
+D07Z2F192PS-S720  eth0       0         moswdk8fz2       512      6/32       10.110.240.11  B
+D06Z3F108PS-S654  eth0       0         moswdk9fz3       523      6/43       10.110.240.13  B
+D07Z3F124SB-S751  eth0       0         moswdk9fz3       335      4/47       10.110.240.13  B
+D06Z2F192PS-S616  eth0       0         moswdk8fz2       517      6/37       10.110.240.11  B
+D07Z1F203PS-S714  eth0       0         moswdk10fz1      303      4/15       10.110.240.14  B
+D08Z2F179SB-S825  eth0       0         moswdk8fz2       328      4/40       10.110.240.11  B
+D04Z2F184M-C494   eth0       0         moswdk4fz2       611      7/35       10.110.240.7   B
+D03Z2F176SB-C345  eth0       0         moswdk4fz2       408      5/24       10.110.240.7   B
+D05Z2F172SB-S523  eth0       0         moswdk4fz2       675      8/3        10.110.240.7   B
+D05Z1F200SB-S507  eth0       0         moswdk4fz1       415      5/31       10.110.240.6   B
+D08Z1F220PS-S804  eth0       0         moswdk10fz1      292      4/4        10.110.240.14  B
+D06Z3F099SB-S659  eth0       0         moswdk9fz3       299      4/11       10.110.240.13  B
+D07Z1F200SB-S717  eth0       0         moswdk10fz1      315      4/27       10.110.240.14  B
+D04Z1F208PS-C464  eth0       0         moswdk4fz1       331      4/43       10.110.240.6   B
+D06Z3F124PS-S646  eth0       0         moswdk9fz3       507      6/27       10.110.240.13  B
+D04Z1F226M-C451   eth0       0         moswdk4fz1       232      3/40       10.110.240.6   B
+D04Z2F161SB-S417  eth0       0         moswdk4fz2       508      6/28       10.110.240.7   B
+D03Z2F174PS-C346  eth0       0         moswdk4fz2       412      5/28       10.110.240.7   B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                 Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                 ---------  --------  ---------------  -------  ---------  -------------  ------------
+D04Z2F167PS-C4106  eth0       0         moswdk4fz2       684      8/12       10.110.240.7   B
+D04Z1F211PS-C460   eth0       0         moswdk4fz1       315      4/27       10.110.240.6   B
+D06Z2F162SB-S631   eth0       0         moswdk8fz2       311      4/23       10.110.240.11  B
+D09Z2F171PS-S926   eth0       0         moswdk8fz2       612      7/36       10.110.240.11  B
+D08Z2F168PS-S830   eth0       0         moswdk8fz2       623      7/47       10.110.240.11  B
+D06Z3F107SB-S655   eth0       0         moswdk9fz3       291      4/3        10.110.240.13  B
+D06Z1F211SB-S605   eth0       0         moswdk4fz1       503      6/23       10.110.240.6   B
+D08Z2F160SB-S835   eth0       0         moswdk8fz2       395      5/11       10.110.240.11  B
+D08Z3F148SB-S837   eth0       0         moswdk9fz3       324      4/36       10.110.240.13  B
+D07Z3F132SB-S747   eth0       0         moswdk9fz3       327      4/39       10.110.240.13  B
+D02Z3F130PS-C272   eth0       0         moswdk5fz3b      200      3/8        10.110.240.9   B
+D06Z3F095PS-S660   eth0       0         moswdk9fz3       488      6/8        10.110.240.13  B
+D06Z2F162PS-S630   eth0       0         moswdk8fz2       500      6/20       10.110.240.11  B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                ---------  --------  ---------------  -------  ---------  -------------  ------------
+D07Z2F179PS-S726  eth0       0         moswdk8fz2       524      6/44       10.110.240.11  B
+D08Z2F171SB-S829  eth0       0         moswdk8fz2       336      4/48       10.110.240.11  B
+D09Z2F194PS-S914  eth0       0         moswdk8fz2       588      7/12       10.110.240.11  B
+D07Z1F208PS-S712  eth0       0         moswdk10fz1      299      4/11       10.110.240.14  B
+D03Z2F161M-C362   eth0       0         moswdk4fz2       519      6/39       10.110.240.7   B
+D09Z2F184SB-S921  eth0       0         moswdk8fz2       411      5/27       10.110.240.11  B
+D07Z1F203SB-S715  eth0       0         moswdk10fz1      307      4/19       10.110.240.14  B
+D02Z3F123SB-C273  eth0       0         moswdk5fz3b      204      3/12       10.110.240.9   B
+D06Z3F099PS-S658  eth0       0         moswdk9fz3       484      6/4        10.110.240.13  B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                ---------  --------  ---------------  -------  ---------  -------------  ------------
+D05Z1F216M-C561   eth0       0         moswdk4fz1       416      5/32       10.110.240.6   B
+D08Z3F143PS-S838  eth0       0         moswdk9fz3       607      7/31       10.110.240.13  B
+D04Z1F207M-C466   eth0       0         moswdk4fz1       292      4/4        10.110.240.6   B
+D04Z1F215M-C457   eth0       0         moswdk4fz1       303      4/15       10.110.240.6   B
+D07Z1F200PS-S716  eth0       0         moswdk10fz1      311      4/23       10.110.240.14  B
+D08Z1F210PS-S808  eth0       0         moswdk10fz1      308      4/20       10.110.240.14  B
+D03Z1F203M-C309   eth0       0         moswdk4fz1       196      3/4        10.110.240.6   B
+D04Z2F195PS-C480  eth0       0         moswdk4fz2       522      6/42       10.110.240.7   B
+D08Z2F187PS-S820  eth0       0         moswdk8fz2       603      7/27       10.110.240.11  B
+D05Z2F194PS-S510  eth0       0         moswdk4fz2       580      7/4        10.110.240.7   B
+D07Z2F168PS-S732  eth0       0         moswdk8fz2       583      7/7        10.110.240.11  B
+D05Z2F187SB-S515  eth0       0         moswdk4fz2       596      7/20       10.110.240.7   B
+D03Z2F188M-C334   eth0       0         moswdk4fz2       411      5/27       10.110.240.7   B
+D08Z3F123SB-S849  eth0       0         moswdk9fz3       395      5/11       10.110.240.13  B
+D03Z3F147SB-C361  eth0       0         moswdk5fz3b      319      4/31       10.110.240.9   B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                 Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                 ---------  --------  ---------------  -------  ---------  -------------  ------------
+D05Z2F168PS-S524   eth0       0         moswdk4fz2       679      8/7        10.110.240.7   B
+D03Z3F141SB-C369   eth0       0         moswdk5fz3b      296      4/8        10.110.240.9   B
+D02Z1F203M-C208    eth0       0         moswdk4fz1       203      3/11       10.110.240.6   B
+D02Z2F191M-C218    eth0       0         moswdk4fz2       204      3/12       10.110.240.7   B
+D06Z3F095SB-S661   eth0       0         moswdk9fz3       303      4/15       10.110.240.13  B
+D03Z3F111SB-C3111  eth0       0         moswdk5fz3b      483      6/3        10.110.240.9   B
+D08Z3F103PS-S858   eth0       0         moswdk9fz3       600      7/24       10.110.240.13  B
+D08Z2F183PS-S822   eth0       0         moswdk8fz2       607      7/31       10.110.240.11  B
+D05Z1F221SB-C555   eth0       0         moswdk4fz1       392      5/8        10.110.240.6   B
+D06Z3F091SB-S663   eth0       0         moswdk9fz3       307      4/19       10.110.240.13  B
+D08Z1F211SB-S807   eth0       0         moswdk10fz1      304      4/16       10.110.240.14  B
+D10Z1F207SB-C1053  eth0       0         moswdk10fz1      485      6/5        10.110.240.14  B
+D02Z1F199SB-C207   eth0       0         moswdk4fz1       199      3/7        10.110.240.6   B
+D09Z3F091SB-S947   eth0       0         moswdk9fz3       430      5/46       10.110.240.13  B
+20:4c:03:a7:ec:e6  eth0       0         moswdk8fz4       105      2/9        10.110.240.12  B
+D02Z2F190SB-C217   eth0       0         moswdk4fz2       200      3/8        10.110.240.7   B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                ---------  --------  ---------------  -------  ---------  -------------  ------------
+D05Z2F184SB-S517  eth0       0         moswdk4fz2       604      7/28       10.110.240.7   B
+D04Z2F195M-C482   eth0       0         moswdk4fz2       579      7/3        10.110.240.7   B
+D03Z1F210SB-C303  eth0       0         moswdk4fz1       219      3/27       10.110.240.6   B
+D07Z2F160SB-S737  eth0       0         moswdk8fz2       308      4/20       10.110.240.11  B
+D09Z1F210PS-S906  eth0       0         moswdk10fz1      415      5/31       10.110.240.14  B
+D02Z3F144M-C252   eth0       0         moswdk5fz3b      120      2/24       10.110.240.9   B
+D03Z2F170M-C354   eth0       0         moswdk4fz2       491      6/11       10.110.240.7   B
+D02Z3F128SB-C263  eth0       0         moswdk5fz3b      211      3/19       10.110.240.9   B
+D03Z1F200M-C314   eth0       0         moswdk4fz1       216      3/24       10.110.240.6   B
+D03Z3F124M-C393   eth0       0         moswdk5fz3b      392      5/8        10.110.240.9   B
+D08Z3F119SB-S851  eth0       0         moswdk9fz3       399      5/15       10.110.240.13  B
+D06Z2F184PS-S620  eth0       0         moswdk8fz2       525      6/45       10.110.240.11  B
+D05Z2F160SB-S529  eth0       0         moswdk4fz2       699      8/27       10.110.240.7   B
+D07Z3F118PS-S752  eth0       0         moswdk9fz3       524      6/44       10.110.240.13  B
+D08Z3F110SB-S855  eth0       0         moswdk9fz3       407      5/23       10.110.240.13  B
+D10Z1F210M-C1055  eth0       0         moswdk10fz1      501      6/21       10.110.240.14  B
+D08Z3F094PS-S862  eth0       0         moswdk9fz3       608      7/32       10.110.240.13  B
+D03Z2F171SB-C353  eth0       0         moswdk4fz2       487      6/7        10.110.240.7   B
+D06Z3F110PS-S652  eth0       0         moswdk9fz3       519      6/39       10.110.240.13  B
+D06Z1F219SB-S601  eth0       0         moswdk4fz1       487      6/7        10.110.240.6   B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                 Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                 ---------  --------  ---------------  -------  ---------  -------------  ------------
+D05Z1F216M-C564    eth0       0         moswdk4fz1       428      5/44       10.110.240.6   B
+D03Z2F195SB-C319   eth0       0         moswdk4fz2       304      4/16       10.110.240.7   B
+D02Z3F118SB-C277   eth0       0         moswdk5fz3b      220      3/28       10.110.240.9   B
+D05Z1F215PS-C566   eth0       0         moswdk4fz1       483      6/3        10.110.240.6   B
+D05Z2F179SB-S519   eth0       0         moswdk4fz2       612      7/36       10.110.240.7   B
+D09Z1F208PS-S908   eth0       0         moswdk10fz1      423      5/39       10.110.240.14  B
+D10Z1F209PS-C1054  eth0       0         moswdk10fz1      489      6/9        10.110.240.14  B
+D05Z2F160PS-S528   eth0       0         moswdk4fz2       695      8/23       10.110.240.7   B
+D08Z2F163PS-S832   eth0       0         moswdk8fz2       580      7/4        10.110.240.11  B
+D06Z3F119SB-S649   eth0       0         moswdk9fz3       232      3/40       10.110.240.13  B
+D03Z2F180SB-C341   eth0       0         moswdk4fz2       392      5/8        10.110.240.7   B
+D03Z3F139SB-C377   eth0       0         moswdk5fz3b      328      4/40       10.110.240.9   B
+D06Z2F171SB-S627   eth0       0         moswdk8fz2       303      4/15       10.110.240.11  B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                ---------  --------  ---------------  -------  ---------  -------------  ------------
+D03Z3F128PS-C372  eth0       0         moswdk5fz3b      308      4/20       10.110.240.9   B
+D08Z3F126PS-S846  eth0       0         moswdk9fz3       623      7/47       10.110.240.13  B
+D07Z3F148SB-S739  eth0       0         moswdk9fz3       311      4/23       10.110.240.13  B
+D09Z1F200SB-S911  eth0       0         moswdk10fz1      388      5/4        10.110.240.14  B
+D05Z2F163PS-S526  eth0       0         moswdk4fz2       687      8/15       10.110.240.7   B
+D05Z2F192SB-S511  eth0       0         moswdk4fz2       584      7/8        10.110.240.7   B
+D07Z2F171PS-S730  eth0       0         moswdk8fz2       579      7/3        10.110.240.11  B
+D07Z3F124PS-S750  eth0       0         moswdk9fz3       520      6/40       10.110.240.13  B
+D08Z3F103SB-S859  eth0       0         moswdk9fz3       415      5/31       10.110.240.13  B
+D08Z3F091PS-S864  eth0       0         moswdk9fz3       612      7/36       10.110.240.13  B
+D07Z2F163SB-S735  eth0       0         moswdk8fz2       304      4/16       10.110.240.11  B
+D02Z3F147SB-C237  eth0       0         moswdk5fz3b      127      2/31       10.110.240.9   B
+D06Z1F200SB-S611  eth0       0         moswdk4fz1       527      6/47       10.110.240.6   B
+D07Z2F171SB-S731  eth0       0         moswdk8fz2       296      4/8        10.110.240.11  B
+D08Z2F187SB-S821  eth0       0         moswdk8fz2       320      4/32       10.110.240.11  B
+D06Z2F171PS-S626  eth0       0         moswdk8fz2       492      6/12       10.110.240.11  B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                ---------  --------  ---------------  -------  ---------  -------------  ------------
+D02Z3F139M-C255   eth0       0         moswdk5fz3b      132      2/36       10.110.240.9   B
+D07Z3F107SB-S759  eth0       0         moswdk9fz3       308      4/20       10.110.240.13  B
+D06Z3F134PS-S640  eth0       0         moswdk9fz3       495      6/15       10.110.240.13  B
+D06Z3F123SB-S647  eth0       0         moswdk9fz3       228      3/36       10.110.240.13  B
+D04Z1F199PS-C476  eth0       0         moswdk4fz1       332      4/44       10.110.240.6   B
+D09Z1F200PS-S912  eth0       0         moswdk10fz1      392      5/8        10.110.240.14  B
+D06Z3F140PS-S638  eth0       0         moswdk9fz3       491      6/11       10.110.240.13  B
+D09Z1F216SB-S903  eth0       0         moswdk10fz1      403      5/19       10.110.240.14  B
+D07Z3F134PS-S744  eth0       0         moswdk9fz3       508      6/28       10.110.240.13  B
+D07Z2F176SB-S729  eth0       0         moswdk8fz2       292      4/4        10.110.240.11  B
+D08Z1F199SB-S815  eth0       0         moswdk10fz1      332      4/44       10.110.240.14  B
+D09Z2F176SB-S925  eth0       0         moswdk8fz2       419      5/35       10.110.240.11  B
+D09Z2F188SB-S919  eth0       0         moswdk8fz2       407      5/23       10.110.240.11  B
+D03Z2F195PS-C318  eth0       0         moswdk4fz2       300      4/12       10.110.240.7   B
+D03Z2F176PS-C342  eth0       0         moswdk4fz2       396      5/12       10.110.240.7   B
+D06Z3F135SB-S641  eth0       0         moswdk9fz3       216      3/24       10.110.240.13  B
+D07Z3F091SB-S767  eth0       0         moswdk9fz3       320      4/32       10.110.240.13  B
+D03Z3F098SB       eth0       0         moswdk5fz3a      35       1/35       10.110.240.8   B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                ---------  --------  ---------------  -------  ---------  -------------  ------------
+D02Z3F141SB-C247  eth0       0         moswdk5fz3b      100      2/4        10.110.240.9   B
+D02Z2F183SB-C225  eth0       0         moswdk4fz2       232      3/40       10.110.240.7   B
+D02Z3F146SB-C239  eth0       0         moswdk5fz3b      131      2/35       10.110.240.9   B
+D09Z3F118PS-S940  eth0       0         moswdk9fz3       691      8/19       10.110.240.13  B
+D09Z2F184PS-S920  eth0       0         moswdk8fz2       600      7/24       10.110.240.11  B
+D05Z2F187PS-S514  eth0       0         moswdk4fz2       592      7/16       10.110.240.7   B
+D02Z3F147PS-C248  eth0       0         moswdk5fz3b      104      2/8        10.110.240.9   B
+D06Z1F202PS-S610  eth0       0         moswdk4fz1       523      6/43       10.110.240.6   B
+D08Z3F148PS-S836  eth0       0         moswdk9fz3       603      7/27       10.110.240.13  B
+D02Z3F124M-C271   eth0       0         moswdk5fz3b      196      3/4        10.110.240.9   B
+D03Z3F145M-C365   eth0       0         moswdk5fz3b      327      4/39       10.110.240.9   B
+D02Z3F114M-C283   eth0       0         moswdk5fz3b      291      4/3        10.110.240.9   B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                 Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                 ---------  --------  ---------------  -------  ---------  -------------  ------------
+D07Z1F218PS-S706   eth0       0         moswdk10fz1      226      3/34       10.110.240.14  B
+D04Z2F187SB-S405   eth0       0         moswdk4fz2       527      6/47       10.110.240.7   B
+D08Z2F176SB-S827   eth0       0         moswdk8fz2       332      4/44       10.110.240.11  B
+D02Z3F139SB-C251   eth0       0         moswdk5fz3b      116      2/20       10.110.240.9   B
+D04Z2F187PS-C490   eth0       0         moswdk4fz2       603      7/27       10.110.240.7   B
+D04Z2F183PS-C496   eth0       0         moswdk4fz2       615      7/39       10.110.240.7   B
+D02Z3F146PS-C250   eth0       0         moswdk5fz3b      112      2/16       10.110.240.9   B
+D07Z3F108PS-S758   eth0       0         moswdk9fz3       583      7/7        10.110.240.13  B
+D05Z2F163SB-S527   eth0       0         moswdk4fz2       691      8/19       10.110.240.7   B
+D07Z1F216PS-S708   eth0       0         moswdk10fz1      234      3/42       10.110.240.14  B
+D02Z1F202PS-C206   eth0       0         moswdk4fz1       195      3/3        10.110.240.6   B
+D07Z3F140PS-S742   eth0       0         moswdk9fz3       504      6/24       10.110.240.13  B
+D02Z2F191M-C215    eth0       0         moswdk4fz2       239      3/47       10.110.240.7   B
+D03Z3F116SB-C3101  eth0       0         moswdk5fz3b      416      5/32       10.110.240.9   B
+D09Z2F192SB-S917   eth0       0         moswdk8fz2       403      5/19       10.110.240.11  B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                ---------  --------  ---------------  -------  ---------  -------------  ------------
+D09Z3F091PS-S946  eth0       0         moswdk9fz3       711      8/39       10.110.240.13  B
+D06Z3F148PS-S634  eth0       0         moswdk9fz3       483      6/3        10.110.240.13  B
+D06Z1F207SB-S607  eth0       0         moswdk4fz1       511      6/31       10.110.240.6   B
+D05Z2F184PS-S516  eth0       0         moswdk4fz2       600      7/24       10.110.240.7   B
+D06Z2F168SB-S629  eth0       0         moswdk8fz2       307      4/19       10.110.240.11  B
+D06Z1F203SB-S609  eth0       0         moswdk4fz1       519      6/39       10.110.240.6   B
+D08Z4F017M        eth0       0         moswdk8fz4       32       1/32       10.110.240.12  B
+D04Z3F120SB       eth0       0         moswdk5fz3a      22       1/22       10.110.240.8   B
+D08Z4F022PS       eth0       0         moswdk8fz4       30       1/30       10.110.240.12  B
+D08Z4F057SB       eth0       0         moswdk8fz4       14       1/14       10.110.240.12  B
+D10Z3F079M        eth0       0         moswdk9fz3       37       1/37       10.110.240.13  B
+D08Z3F079M        eth0       0         moswdk9fz3       11       1/11       10.110.240.13  B
+D04Z2F150PS       eth0       0         moswdk4fz2       35       1/35       10.110.240.7   B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP           Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--           ---------  --------  ---------------  -------  ---------  -------------  ------------
+D04Z3F097PS  eth0       0         moswdk5fz3a      32       1/32       10.110.240.8   B
+D06Z4F028M   eth0       0         moswdk8fz4       11       1/11       10.110.240.12  B
+D05Z4F023PS  eth0       0         moswdk3fz4       99       2/3        10.110.240.5   B
+D07Z4F064M   eth0       0         moswdk8fz4       33       1/33       10.110.240.12  B
+D09Z3F079M   eth0       0         moswdk9fz3       23       1/23       10.110.240.13  B
+D06Z4F042SB  eth1       0         moswdk8fz4       9        1/9        10.110.240.12  B
+D04Z3F139PS  eth0       0         moswdk5fz3a      20       1/20       10.110.240.8   B
+D06Z4F043M   eth0       0         moswdk8fz4       7        1/7        10.110.240.12  B
+D05Z4F054M   eth0       0         moswdk3fz4       40       1/40       10.110.240.5   B
+D04Z3F093M   eth0       0         moswdk5fz3a      34       1/34       10.110.240.8   B
+D04Z2F155SB  eth0       0         moswdk4fz2       33       1/33       10.110.240.7   B
+D07Z4F068SB  eth0       0         moswdk8fz4       29       1/29       10.110.240.12  B
+D06Z4F026PS  eth0       0         moswdk8fz4       13       1/13       10.110.240.12  B
+D04Z3F097SB  eth1       0         moswdk5fz3a      30       1/30       10.110.240.8   B
+D06Z4F066M   eth0       0         moswdk8fz4       1        1/1        10.110.240.12  B
+D03Z2F150M   eth1       0         moswdk4fz2       13       1/13       10.110.240.7   B
+D08Z4F065M   eth0       0         moswdk8fz4       12       1/12       10.110.240.12  B
+D04Z4F069M   eth0       0         moswdk3fz4       20       1/20       10.110.240.5   B
+D11Z1F226SB  eth0       0         moswdk10fz1      29       1/29       10.110.240.14  B
+D05Z4F039M   eth0       0         moswdk3fz4       46       1/46       10.110.240.5   B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                 Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                 ---------  --------  ---------------  -------  ---------  -------------  ------------
+D06Z5F010PS        eth0       0         moswdk8fz4       23       1/23       10.110.240.12  B
+D04Z3F113M         eth0       0         moswdk5fz3a      42       1/42       10.110.240.8   B
+D09Z4F057SB        eth0       0         moswdk8fz4       42       1/42       10.110.240.12  B
+D09Z4F044M         eth0       0         moswdk8fz4       48       1/48       10.110.240.12  B
+D06Z4F017M         eth0       0         moswdk8fz4       21       1/21       10.110.240.12  B
+D04Z3F106SB        eth0       0         moswdk5fz3a      28       1/28       10.110.240.8   B
+D08Z4F043PS        eth0       0         moswdk8fz4       20       1/20       10.110.240.12  B
+D04Z3F120PS        eth0       0         moswdk5fz3a      24       1/24       10.110.240.8   B
+D05Z2F150M         eth0       0         moswdk4fz2       39       1/39       10.110.240.7   B
+D10Z1F217PS-C1052  bond0      0         moswdk10fz1      426      5/42       10.110.240.14  B
+D11Z2F169PS-S1112  bond0      0         moswdk8fz2       684      8/12       10.110.240.11  B
+D11Z1F202PS-S1104  bond0      0         moswdk10fz1      486      6/6        10.110.240.14  B
+D11Z2F185PS-S1108  bond0      0         moswdk8fz2       713      8/41       10.110.240.11  B
+D11Z1F208PS-S1102  bond0      0         moswdk10fz1      521      6/41       10.110.240.14  B
+D11Z2F168SB-S1111  bond0      0         moswdk8fz2       503      6/23       10.110.240.11  B
+D10Z2F168PS-S1010  bond0      0         moswdk8fz2       695      8/23       10.110.240.11  B
+D11Z2F193PS-S1106  bond0      0         moswdk8fz2       705      8/33       10.110.240.11  B
+D10Z2F194PS-S1004  bond0      0         moswdk8fz2       675      8/3        10.110.240.11  B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                 Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                 ---------  --------  ---------------  -------  ---------  -------------  ------------
+D10Z2F178PS-S1008  bond0      0         moswdk8fz2       687      8/15       10.110.240.11  B
+D10Z1F216SB-C1051  bond0      0         moswdk10fz1      412      5/28       10.110.240.14  B
+D11Z2F163SB-S1115  bond0      0         moswdk8fz2       507      6/27       10.110.240.11  B
+D11Z1F207SB-S1101  bond0      0         moswdk10fz1      515      6/35       10.110.240.14  B
+D10Z2F162PS-S1012  bond0      0         moswdk8fz2       701      8/29       10.110.240.11  B
+D10Z2F163SB-S1011  bond0      0         moswdk8fz2       424      5/40       10.110.240.11  B
+D10Z2F184PS-S1006  bond0      0         moswdk8fz2       683      8/11       10.110.240.11  B
+D10Z2F194SB-S1003  bond0      0         moswdk8fz2       398      5/14       10.110.240.11  B
+D04Z4F036SB        bond0      0         moswdk3fz4       28       1/28       10.110.240.5   B
+D03Z2F164SB        bond0      0         moswdk4fz2       21       1/21       10.110.240.7   B
+D01Z3F085PS        bond0      0         moswdk5fz3a      9        1/9        10.110.240.8   B
+D03Z4F063PS        bond0      0         moswdk3fz4       12       1/12       10.110.240.5   B
+D12Z1F213SB        bond0      0         moswdk10fz1      35       1/35       10.110.240.14  B
+D02Z3F127M         bond0      0         moswdk5fz3a      15       1/15       10.110.240.8   B
+D03Z1F221M         bond0      0         moswdk4fz1       7        1/7        10.110.240.6   B
+D05Z3F147SB        bond0      0         moswdk5fz3a      44       1/44       10.110.240.8   B
+D03Z4F041PS        bond0      0         moswdk3fz4       2        1/2        10.110.240.5   B
+D05Z3F093PS        bond0      0         moswdk5fz3a      101      2/5        10.110.240.8   B
+D09Z2F149SB        bond0      0         moswdk8fz2       29       1/29       10.110.240.11  B
+D03Z1F197SB        bond0      0         moswdk4fz1       41       1/41       10.110.240.6   B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP           Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--           ---------  --------  ---------------  -------  ---------  -------------  ------------
+D03Z3F129M   bond0      0         moswdk5fz3a      2        1/2        10.110.240.8   B
+D02Z1F199PS  bond0      0         moswdk4fz1       5        1/5        10.110.240.6   B
+D02Z2F157M   bond0      0         moswdk4fz2       11       1/11       10.110.240.7   B
+D08Z2F149SB  bond0      0         moswdk8fz2       19       1/19       10.110.240.11  B
+D04Z4F020SB  bond0      0         moswdk3fz4       36       1/36       10.110.240.5   B
+D11Z2F149SB  bond0      0         moswdk8fz2       2        1/2        10.110.240.11  B
+D02Z4F025SB  bond0      0         moswdk3fz4       29       1/29       10.110.240.5   B
+D02Z4F067SB  bond0      0         moswdk3fz4       13       1/13       10.110.240.5   B
+D05Z4F049SB  bond0      0         moswdk3fz4       42       1/42       10.110.240.5   B
+D03Z2F180M   bond0      0         moswdk4fz2       25       1/25       10.110.240.7   B
+D02Z3F101M   bond0      0         moswdk5fz3a      21       1/21       10.110.240.8   B
+D04Z2F178PS  bond0      0         moswdk4fz2       29       1/29       10.110.240.7   B
+D02Z4F042SB  bond0      0         moswdk3fz4       23       1/23       10.110.240.5   B
+D04Z1F223SB  bond0      0         moswdk4fz1       11       1/11       10.110.240.6   B
+D02Z4F055PS  bond0      0         moswdk3fz4       15       1/15       10.110.240.5   B
+D05Z3F093SB  bond0      0         moswdk5fz3a      103      2/7        10.110.240.8   B
+D05Z5F008SB  bond0      0         moswdk5fz4       15       1/15       10.110.240.10  B
+D04Z3F121M   bond0      0         moswdk5fz3a      40       1/40       10.110.240.8   B
+D03Z3F147PS  bond0      0         moswdk5fz3a      12       1/12       10.110.240.8   B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP           Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--           ---------  --------  ---------------  -------  ---------  -------------  ------------
+D03Z4F053SB  bond0      0         moswdk3fz4       8        1/8        10.110.240.5   B
+D04Z5F012SB  bond0      0         moswdk5fz4       3        1/3        10.110.240.10  B
+D04Z1F218M   bond0      0         moswdk4fz1       15       1/15       10.110.240.6   B
+D03Z2F153SB  bond0      0         moswdk4fz2       17       1/17       10.110.240.7   B
+D04Z4F021PS  bond0      0         moswdk3fz4       34       1/34       10.110.240.5   B
+D03Z1F212PS  bond0      0         moswdk4fz1       43       1/43       10.110.240.6   B
+D02Z3F148M   bond0      0         moswdk5fz3a      13       1/13       10.110.240.8   B
+D07Z2F149SB  bond0      0         moswdk8fz2       11       1/11       10.110.240.11  B
+D05Z5F008PS  bond0      0         moswdk5fz4       17       1/17       10.110.240.10  B
+D02Z2F196M   bond0      0         moswdk4fz2       5        1/5        10.110.240.7   B
+D03Z5F006SB  bond0      0         moswdk3fz4       33       1/33       10.110.240.5   B
+D09Z4F048PS  bond0      0         moswdk8fz4       46       1/46       10.110.240.12  B
+D01Z3F125M   bond0      0         moswdk5fz3a      3        1/3        10.110.240.8   B
+D02Z2F177SB  bond0      0         moswdk4fz2       7        1/7        10.110.240.7   B
+D01Z3F107M   bond0      0         moswdk5fz3a      5        1/5        10.110.240.8   B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP           Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--           ---------  --------  ---------------  -------  ---------  -------------  ------------
+D02Z1F217M   bond0      0         moswdk4fz1       1        1/1        10.110.240.6   B
+D09Z4F052PS  bond0      0         moswdk8fz4       44       1/44       10.110.240.12  B
+D03Z3F111M   bond0      0         moswdk5fz3a      47       1/47       10.110.240.8   B
+D04Z2F182M   bond0      0         moswdk4fz2       27       1/27       10.110.240.7   B
+D06Z1F232SB  bond0      0         moswdk4fz1       33       1/33       10.110.240.6   B
+D02Z4F055M   bond0      0         moswdk3fz4       17       1/17       10.110.240.5   B
+D09Z4F070PS  bond0      0         moswdk8fz4       38       1/38       10.110.240.12  B
+D10Z3F138SB  bond0      0         moswdk9fz3       31       1/31       10.110.240.13  B
+D09Z4F020M   bond0      0         moswdk8fz4       103      2/7        10.110.240.12  B
+D10Z3F138PS  bond0      0         moswdk9fz3       29       1/29       10.110.240.13  B
+D06Z1F249M   bond0      0         moswdk4fz1       31       1/31       10.110.240.6   B
+D12Z2F173PS  bond0      0         moswdk10fz1      37       1/37       10.110.240.14  B
+D07Z5F013PS  bond0      0         moswdk8fz4       8        1/8        10.110.240.12  B
+D12Z1F217M   bond0      0         moswdk8fz2       6        1/6        10.110.240.11  B
+D10Z3F100PS  bond0      0         moswdk9fz3       35       1/35       10.110.240.13  B
+D13Z2F197M   bond0      0         moswdk8fz2       10       1/10       10.110.240.11  B
+D04Z5F-002M  bond0      0         moswdk5fz4       9        1/9        10.110.240.10  B
+D07Z5F013SB  bond0      0         moswdk8fz4       6        1/6        10.110.240.12  B
+D05Z4F039SB  bond0      0         moswdk3fz4       97       2/1        10.110.240.5   B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address   Capabilities
+--                ---------  --------  ---------------  -------  ---------  -------------   ------------
+D08Z5F013M        bond0      0         moswdk8fz4       34       1/34       10.110.240.12   B
+D11Z3F143SB       bond0      0         moswdk9fz3       39       1/39       10.110.240.13   B
+D09Z4F035SB       bond0      0         moswdk8fz4       97       2/1        10.110.240.12   B
+D08Z4F037PS       bond0      0         moswdk8fz4       26       1/26       10.110.240.12   B
+D07Z1F227SB-S701  bond0      0         XX-0E1           3        3          10.110.249.219  B
+D09Z1F224PS-S902  bond0      0         moswdk10fz1      387      5/3        10.110.240.14   B
+D08Z1F226SB-S801  bond0      0         moswdk10fz1      319      4/31       10.110.240.14   B
+D10Z1F206SB       bond0      0         moswdk10fz1      27       1/27       10.110.240.14   B
+D06Z3F125M        bond0      0         moswdk9fz3       1        1/1        10.110.240.13   B
+D09Z3F129SB-S937  bond0      0         moswdk9fz3       402      5/18       10.110.240.13   B
+D10Z1F211SB       bond0      0         moswdk10fz1      25       1/25       10.110.240.14   B
+D09Z3F129PS-S936  bond0      0         moswdk9fz3       683      8/11       10.110.240.13   B
+D09Z1F224SB-S901  bond0      0         moswdk10fz1      395      5/11       10.110.240.14   B
+D10Z1F215PS       bond0      0         moswdk10fz1      23       1/23       10.110.240.14   B
+D09Z2F161SB-S931  bond0      0         moswdk8fz2       390      5/6        10.110.240.11   B
+D09Z3F140M        bond0      0         moswdk9fz3       15       1/15       10.110.240.13   B
+D03Z4F064M        bond0      0         moswdk3fz4       14       1/14       10.110.240.5    B
+D09Z3F137PS-S934  bond0      0         moswdk9fz3       675      8/3        10.110.240.13   B
+D07Z3F096M        bond0      0         moswdk9fz3       7        1/7        10.110.240.13   B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                 Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                 ---------  --------  ---------------  -------  ---------  -------------  ------------
+D09Z3F090M         bond0      0         moswdk9fz3       21       1/21       10.110.240.13  B
+D08Z3F125M         bond0      0         moswdk9fz3       9        1/9        10.110.240.13  B
+D07Z1F230SB-S701   bond0      0         moswdk10fz1      198      3/6        10.110.240.14  B
+D09Z3F097PS-S944   bond0      0         moswdk9fz3       703      8/31       10.110.240.13  B
+D11Z2F189M         bond0      0         moswdk8fz2       43       1/43       10.110.240.11  B
+D10Z2F173M         bond0      0         moswdk8fz2       35       1/35       10.110.240.11  B
+D07Z1F226M         bond0      0         moswdk10fz1      5        1/5        10.110.240.14  B
+D07Z3F121M         bond0      0         moswdk9fz3       5        1/5        10.110.240.13  B
+D09Z3F145PS-S932   bond0      0         moswdk9fz3       618      7/42       10.110.240.13  B
+D10Z1F202SB-S1001  bond0      0         moswdk10fz1      398      5/14       10.110.240.14  B
+D08Z2F149M         bond0      0         moswdk8fz2       21       1/21       10.110.240.11  B
+D10Z1F230PS        bond0      0         moswdk10fz1      13       1/13       10.110.240.14  B
+D10Z1F230SB        bond0      0         moswdk10fz1      15       1/15       10.110.240.14  B
+D03Z3F103SB        bond0      0         moswdk5fz3a      39       1/39       10.110.240.8   B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+(MO-MD-01) [MDC] *#exit
+
+
+Exiting Managed Device Shell
+
+(MO-MM-PRI) [00:1a:1e:06:35:40] #cd MO-MD-02
+(MO-MM-PRI) [00:1a:1e:06:34:98] #mdconnect
+
+
+
+
+ Redirecting to Managed Device Shell
+
+
+(MO-MD-02) [MDC] *#no paging
+(MO-MD-02) [MDC] *#show ap lldp neighbors 
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                ---------  --------  ---------------  -------  ---------  -------------  ------------
+D03Z4F054PS       eth0       0         moswdk3fz4       10       1/10       10.110.240.5   B
+D02Z3F136PS-C262  eth0       0         moswdk5fz3b      207      3/15       10.110.240.9   B
+D10Z3F147PS       eth0       0         moswdk9fz3       25       1/25       10.110.240.13  B
+D02Z3F130SB-C261  eth0       0         moswdk5fz3b      203      3/11       10.110.240.9   B
+D02Z3F131PS-C270  eth0       0         moswdk5fz3b      239      3/47       10.110.240.9   B
+D03Z3F135PS       eth0       0         moswdk5fz3a      4        1/4        10.110.240.8   B
+D07Z1F211PS-S710  eth0       0         moswdk10fz1      291      4/3        10.110.240.14  B
+D05Z2F171PS-S522  eth0       0         moswdk4fz2       624      7/48       10.110.240.7   B
+D04Z2F182SB-S407  eth0       0         moswdk4fz2       484      6/4        10.110.240.7   B
+D08Z1F215SB-S805  eth0       0         moswdk10fz1      296      4/8        10.110.240.14  B
+D08Z2F167SB-S831  eth0       0         moswdk8fz2       387      5/3        10.110.240.11  B
+D05Z1F208SB-S503  eth0       0         moswdk4fz1       399      5/15       10.110.240.6   B
+D04Z2F172SB-S411  eth0       0         moswdk4fz2       500      6/20       10.110.240.7   B
+D06Z3F103PS-S656  eth0       0         moswdk9fz3       527      6/47       10.110.240.13  B
+D08Z2F176PS-S826  eth0       0         moswdk8fz2       615      7/39       10.110.240.11  B
+D07Z3F132PS-S746  eth0       0         moswdk9fz3       512      6/32       10.110.240.13  B
+D02Z3F125PS-C278  eth0       0         moswdk5fz3b      224      3/32       10.110.240.9   B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                ---------  --------  ---------------  -------  ---------  -------------  ------------
+D05Z1F221PS-C558  eth0       0         moswdk4fz1       404      5/20       10.110.240.6   B
+D02Z2F175M-C236   eth0       0         moswdk4fz2       323      4/35       10.110.240.7   B
+D04Z1F199SB-C475  eth0       0         moswdk4fz1       328      4/40       10.110.240.6   B
+D06Z3F116SB-S651  eth0       0         moswdk9fz3       236      3/44       10.110.240.13  B
+D02Z2F184PS-C228  eth0       0         moswdk4fz2       291      4/3        10.110.240.7   B
+D04Z1F226M-C452   eth0       0         moswdk4fz1       236      3/44       10.110.240.6   B
+D03Z3F122SB-C395  eth0       0         moswdk5fz3b      400      5/16       10.110.240.9   B
+D07Z3F103SB-S761  eth0       0         moswdk9fz3       304      4/16       10.110.240.13  B
+D06Z3F103SB-S657  eth0       0         moswdk9fz3       295      4/7        10.110.240.13  B
+D07Z3F143SB-S741  eth0       0         moswdk9fz3       315      4/27       10.110.240.13  B
+D09Z3F123SB-S939  eth0       0         moswdk9fz3       406      5/22       10.110.240.13  B
+D04Z2F176SB-S409  eth0       0         moswdk4fz2       492      6/12       10.110.240.7   B
+D08Z1F215PS-S806  eth0       0         moswdk10fz1      300      4/12       10.110.240.14  B
+D08Z2F195PS-S816  eth0       0         moswdk8fz2       595      7/19       10.110.240.11  B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                ---------  --------  ---------------  -------  ---------  -------------  ------------
+D06Z1F216PS-S604  eth0       0         moswdk4fz1       499      6/19       10.110.240.6   B
+D02Z3F119SB-C275  eth0       0         moswdk5fz3b      212      3/20       10.110.240.9   B
+D06Z2F178PS-S622  eth0       0         moswdk8fz2       484      6/4        10.110.240.11  B
+D04Z1F208M-C465   eth0       0         moswdk4fz1       335      4/47       10.110.240.6   B
+D08Z2F163SB-S833  eth0       0         moswdk8fz2       391      5/7        10.110.240.11  B
+D02Z1F210M-C202   eth0       0         moswdk4fz1       132      2/36       10.110.240.6   B
+D02Z3F114SB-C281  eth0       0         moswdk5fz3b      236      3/44       10.110.240.9   B
+D02Z3F112SB-C279  eth0       0         moswdk5fz3b      228      3/36       10.110.240.9   B
+D02Z1F210M-C201   eth0       0         moswdk4fz1       128      2/32       10.110.240.6   B
+D04Z1F199M-C478   eth0       0         moswdk4fz1       387      5/3        10.110.240.6   B
+D08Z3F132PS-S844  eth0       0         moswdk9fz3       619      7/43       10.110.240.13  B
+D08Z3F135SB-S843  eth0       0         moswdk9fz3       336      4/48       10.110.240.13  B
+D03Z3F123PS-C382  eth0       0         moswdk5fz3b      395      5/11       10.110.240.9   B
+D03Z2F175M-C347   eth0       0         moswdk4fz2       416      5/32       10.110.240.7   B
+D07Z2F176PS-S728  eth0       0         moswdk8fz2       528      6/48       10.110.240.11  B
+D03Z2F168PS-C356  eth0       0         moswdk4fz2       499      6/19       10.110.240.7   B
+D07Z3F135SB-S745  eth0       0         moswdk9fz3       323      4/35       10.110.240.13  B
+D07Z3F110SB-S757  eth0       0         moswdk9fz3       300      4/12       10.110.240.13  B
+D07Z1F211SB-S709  eth0       0         moswdk10fz1      238      3/46       10.110.240.14  B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                ---------  --------  ---------------  -------  ---------  -------------  ------------
+D05Z2F195SB-S509  eth0       0         moswdk4fz2       623      7/47       10.110.240.7   B
+D08Z3F143SB-S839  eth0       0         moswdk9fz3       328      4/40       10.110.240.13  B
+D08Z3F135PS-S842  eth0       0         moswdk9fz3       615      7/39       10.110.240.13  B
+D06Z2F179SB-S623  eth0       0         moswdk8fz2       295      4/7        10.110.240.11  B
+D05Z1F222M-C556   eth0       0         moswdk4fz1       396      5/12       10.110.240.6   B
+D07Z3F119SB-S753  eth0       0         moswdk9fz3       292      4/4        10.110.240.13  B
+D07Z3F094PS-S764  eth0       0         moswdk9fz3       595      7/19       10.110.240.13  B
+D07Z3F116PS-S754  eth0       0         moswdk9fz3       528      6/48       10.110.240.13  B
+D07Z3F110PS-S756  eth0       0         moswdk9fz3       579      7/3        10.110.240.13  B
+D05Z1F200PS-S508  eth0       0         moswdk4fz1       419      5/35       10.110.240.6   B
+D02Z2F170M-C246   eth0       0         moswdk4fz2       296      4/8        10.110.240.7   B
+D02Z2F185M-C226   eth0       0         moswdk4fz2       236      3/44       10.110.240.7   B
+D06Z3F131SB-S643  eth0       0         moswdk9fz3       220      3/28       10.110.240.13  B
+D06Z3F147SB-S635  eth0       0         moswdk9fz3       204      3/12       10.110.240.13  B
+D03Z2F169PS-C352  eth0       0         moswdk4fz2       483      6/3        10.110.240.7   B
+D07Z2F188SB-S723  eth0       0         moswdk8fz2       327      4/39       10.110.240.11  B
+D07Z2F184SB-S725  eth0       0         moswdk8fz2       331      4/43       10.110.240.11  B
+D06Z1F215SB-S603  eth0       0         moswdk4fz1       495      6/15       10.110.240.6   B
+D09Z2F195SB-S915  eth0       0         moswdk8fz2       399      5/15       10.110.240.11  B
+D02Z2F195SB-C211  eth0       0         moswdk4fz2       223      3/31       10.110.240.7   B
+D05Z1F215SB-C565  eth0       0         moswdk4fz1       432      5/48       10.110.240.6   B
+D03Z3F128SB-C383  eth0       0         moswdk5fz3b      399      5/15       10.110.240.9   B
+D03Z1F207M-C308   eth0       0         moswdk4fz1       239      3/47       10.110.240.6   B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                 Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                 ---------  --------  ---------------  -------  ---------  -------------  ------------
+D02Z2F185M-C223    eth0       0         moswdk4fz2       224      3/32       10.110.240.7   B
+D09Z2F168PS-S928   eth0       0         moswdk8fz2       616      7/40       10.110.240.11  B
+D09Z2F168SB-S929   eth0       0         moswdk8fz2       427      5/43       10.110.240.11  B
+D04Z4F043PS        eth0       0         moswdk3fz4       26       1/26       10.110.240.5   B
+D07Z2F186PS-S722   eth0       0         moswdk8fz2       516      6/36       10.110.240.11  B
+D03Z2F194SB-C321   eth0       0         moswdk4fz2       312      4/24       10.110.240.7   B
+D02Z2F175M-C234    eth0       0         moswdk4fz2       315      4/27       10.110.240.7   B
+D02Z3F112PS-C292   eth0       0         moswdk5fz3b      311      4/23       10.110.240.9   B
+D08Z3F108PS-S856   eth0       0         moswdk9fz3       596      7/20       10.110.240.13  B
+D04Z1F215M-C458    eth0       0         moswdk4fz1       307      4/19       10.110.240.6   B
+D09Z2F192PS-S916   eth0       0         moswdk8fz2       592      7/16       10.110.240.11  B
+D08Z3F099PS-S860   eth0       0         moswdk9fz3       604      7/28       10.110.240.13  B
+D08Z3F140PS-S840   eth0       0         moswdk9fz3       611      7/35       10.110.240.13  B
+D08Z2F195SB-S817   eth0       0         moswdk8fz2       312      4/24       10.110.240.11  B
+D06Z3F126PS-S644   eth0       0         moswdk9fz3       503      6/23       10.110.240.13  B
+D08Z3F108SB-S857   eth0       0         moswdk9fz3       411      5/27       10.110.240.13  B
+D03Z3F112SB-C3109  eth0       0         moswdk5fz3b      432      5/48       10.110.240.9   B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                 Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                 ---------  --------  ---------------  -------  ---------  -------------  ------------
+D06Z2F187SB-S619   eth0       0         moswdk8fz2       240      3/48       10.110.240.11  B
+D07Z2F168SB-S733   eth0       0         moswdk8fz2       300      4/12       10.110.240.11  B
+D05Z1F210PS-S502   eth0       0         moswdk4fz1       395      5/11       10.110.240.6   B
+D03Z3F128M-C387    eth0       0         moswdk5fz3b      415      5/31       10.110.240.9   B
+D07Z2F179SB-S727   eth0       0         moswdk8fz2       335      4/47       10.110.240.11  B
+D03Z2F189SB-C329   eth0       0         moswdk4fz2       391      5/7        10.110.240.7   B
+D05Z2F167SB-S525   eth0       0         moswdk4fz2       683      8/11       10.110.240.7   B
+D03Z3F131PS-C370   eth0       0         moswdk5fz3b      300      4/12       10.110.240.9   B
+D08Z1F219SB-S803   eth0       0         moswdk10fz1      335      4/47       10.110.240.14  B
+D05Z1F203SB-S505   eth0       0         moswdk4fz1       407      5/23       10.110.240.6   B
+D06Z3F142PS-S636   eth0       0         moswdk9fz3       487      6/7        10.110.240.13  B
+D04Z2F172PS-C4104  eth0       0         moswdk4fz2       676      8/4        10.110.240.7   B
+D09Z3F118SB-S941   eth0       0         moswdk9fz3       410      5/26       10.110.240.13  B
+D03Z3F137PS-C366   eth0       0         moswdk5fz3b      331      4/43       10.110.240.9   B
+D08Z3F131SB-S845   eth0       0         moswdk9fz3       387      5/3        10.110.240.13  B
+D04Z2F167SB-S415   eth0       0         moswdk4fz2       504      6/24       10.110.240.7   B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                 Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                 ---------  --------  ---------------  -------  ---------  -------------  ------------
+D03Z2F183PS-C336   eth0       0         moswdk4fz2       419      5/35       10.110.240.7   B
+D05Z1F226M-C551    eth0       0         moswdk4fz1       423      5/39       10.110.240.6   B
+D03Z2F170M-C359    eth0       0         moswdk4fz2       511      6/31       10.110.240.7   B
+D09Z1F202PS-S910   eth0       0         moswdk10fz1      431      5/47       10.110.240.14  B
+D03Z3F117SB-C3105  eth0       0         moswdk5fz3b      424      5/40       10.110.240.9   B
+D07Z3F092PS-S766   eth0       0         moswdk9fz3       599      7/23       10.110.240.13  B
+D02Z2F176SB-C227   eth0       0         moswdk4fz2       240      3/48       10.110.240.7   B
+D03Z3F116PS-C386   eth0       0         moswdk5fz3b      411      5/27       10.110.240.9   B
+D04Z2F175PS-C4102  eth0       0         moswdk4fz2       709      8/37       10.110.240.7   B
+D02Z3F118PS-C288   eth0       0         moswdk5fz3b      303      4/15       10.110.240.9   B
+D04Z2F190M-C488    eth0       0         moswdk4fz2       599      7/23       10.110.240.7   B
+D07Z1F224PS-S704   eth0       0         moswdk10fz1      218      3/26       10.110.240.14  B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                ---------  --------  ---------------  -------  ---------  -------------  ------------
+D05Z1F202PS-S506  eth0       0         moswdk4fz1       411      5/27       10.110.240.6   B
+D07Z3F126PS-S748  eth0       0         moswdk9fz3       516      6/36       10.110.240.13  B
+D06Z3F110SB-S653  eth0       0         moswdk9fz3       240      3/48       10.110.240.13  B
+D07Z1F223SB-S703  eth0       0         moswdk10fz1      214      3/22       10.110.240.14  B
+D03Z2F177SB-C343  eth0       0         moswdk4fz2       400      5/16       10.110.240.7   B
+D07Z3F115SB-S755  eth0       0         moswdk9fz3       296      4/8        10.110.240.13  B
+D07Z1F219SB-S705  eth0       0         moswdk10fz1      222      3/30       10.110.240.14  B
+D04Z2F192SB-C485  eth0       0         moswdk4fz2       591      7/15       10.110.240.7   B
+D03Z2F188M-C339   eth0       0         moswdk4fz2       431      5/47       10.110.240.7   B
+D07Z3F127SB-S749  eth0       0         moswdk9fz3       331      4/43       10.110.240.13  B
+D06Z2F168PS-S628  eth0       0         moswdk8fz2       496      6/16       10.110.240.11  B
+D03Z3F111PS-C396  eth0       0         moswdk5fz3b      404      5/20       10.110.240.9   B
+D08Z2F192PS-S818  eth0       0         moswdk8fz2       599      7/23       10.110.240.11  B
+D07Z3F102PS-S760  eth0       0         moswdk9fz3       587      7/11       10.110.240.13  B
+D08Z3F092SB-S865  eth0       0         moswdk9fz3       427      5/43       10.110.240.13  B
+D03Z1F210M-C301   eth0       0         moswdk4fz1       211      3/19       10.110.240.6   B
+D06Z2F160SB-S633  eth0       0         moswdk8fz2       315      4/27       10.110.240.11  B
+D09Z1F211SB-S905  eth0       0         moswdk10fz1      411      5/27       10.110.240.14  B
+D08Z1F203SB-S811  eth0       0         moswdk10fz1      320      4/32       10.110.240.14  B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                ---------  --------  ---------------  -------  ---------  -------------  ------------
+D03Z2F184SB-C337  eth0       0         moswdk4fz2       423      5/39       10.110.240.7   B
+D09Z2F179SB-S923  eth0       0         moswdk8fz2       415      5/31       10.110.240.11  B
+D05Z1F208PS-S504  eth0       0         moswdk4fz1       403      5/19       10.110.240.6   B
+D05Z2F179PS-S518  eth0       0         moswdk4fz2       608      7/32       10.110.240.7   B
+D08Z2F171PS-S828  eth0       0         moswdk8fz2       619      7/43       10.110.240.11  B
+D08Z3F139SB-S841  eth0       0         moswdk9fz3       332      4/44       10.110.240.13  B
+D06Z2F195SB-S615  eth0       0         moswdk8fz2       232      3/40       10.110.240.11  B
+D07Z3F099PS-S762  eth0       0         moswdk9fz3       591      7/15       10.110.240.13  B
+D07Z1F207SB-S711  eth0       0         moswdk10fz1      295      4/7        10.110.240.14  B
+D04Z1F210M-C461   eth0       0         moswdk4fz1       319      4/31       10.110.240.6   B
+D04Z1F211M-C462   eth0       0         moswdk4fz1       323      4/35       10.110.240.6   B
+D06Z1F208PS-S608  eth0       0         moswdk4fz1       515      6/35       10.110.240.6   B
+D02Z2F187PS-C224  eth0       0         moswdk4fz2       228      3/36       10.110.240.7   B
+D06Z1F218PS-S602  eth0       0         moswdk4fz1       491      6/11       10.110.240.6   B
+D06Z2F191SB-S617  eth0       0         moswdk8fz2       236      3/44       10.110.240.11  B
+D06Z2F176PS-S624  eth0       0         moswdk8fz2       488      6/8        10.110.240.11  B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                ---------  --------  ---------------  -------  ---------  -------------  ------------
+D03Z3F119PS-C384  eth0       0         moswdk5fz3b      403      5/19       10.110.240.9   B
+D03Z1F202SB-C311  eth0       0         moswdk4fz1       204      3/12       10.110.240.6   B
+D08Z1F200PS-S814  eth0       0         moswdk10fz1      328      4/40       10.110.240.14  B
+D08Z3F099SB-S861  eth0       0         moswdk9fz3       419      5/35       10.110.240.13  B
+D03Z3F146SB-C363  eth0       0         moswdk5fz3b      323      4/35       10.110.240.9   B
+D07Z2F162PS-S734  eth0       0         moswdk8fz2       587      7/11       10.110.240.11  B
+D08Z2F184SB-S823  eth0       0         moswdk8fz2       324      4/36       10.110.240.11  B
+D04Z1F199M-C477   eth0       0         moswdk4fz1       336      4/48       10.110.240.6   B
+D03Z3F117M-C390   eth0       0         moswdk5fz3b      427      5/43       10.110.240.9   B
+D02Z3F115PS-C290  eth0       0         moswdk5fz3b      307      4/19       10.110.240.9   B
+D06Z3F143SB-S637  eth0       0         moswdk9fz3       208      3/16       10.110.240.13  B
+D09Z3F124PS-S938  eth0       0         moswdk9fz3       687      8/15       10.110.240.13  B
+D09Z2F178PS-S922  eth0       0         moswdk8fz2       604      7/28       10.110.240.11  B
+D08Z3F115SB-S853  eth0       0         moswdk9fz3       403      5/19       10.110.240.13  B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                ---------  --------  ---------------  -------  ---------  -------------  ------------
+D02Z2F193PS-C216  eth0       0         moswdk4fz2       196      3/4        10.110.240.7   B
+D06Z3F127SB-S645  eth0       0         moswdk9fz3       224      3/32       10.110.240.13  B
+D09Z1F207SB-S907  eth0       0         moswdk10fz1      419      5/35       10.110.240.14  B
+D03Z2F193M-C323   eth0       0         moswdk4fz2       320      4/32       10.110.240.7   B
+D05Z2F192PS-S512  eth0       0         moswdk4fz2       588      7/12       10.110.240.7   B
+D08Z1F202PS-S812  eth0       0         moswdk10fz1      324      4/36       10.110.240.14  B
+D06Z3F132PS-S642  eth0       0         moswdk9fz3       499      6/19       10.110.240.13  B
+D07Z3F095SB-S765  eth0       0         moswdk9fz3       316      4/28       10.110.240.13  B
+D03Z3F131SB-C381  eth0       0         moswdk5fz3b      391      5/7        10.110.240.9   B
+D05Z1F211SB-S501  eth0       0         moswdk4fz1       391      5/7        10.110.240.6   B
+D09Z2F176PS-S924  eth0       0         moswdk8fz2       608      7/32       10.110.240.11  B
+D08Z2F191SB-S819  eth0       0         moswdk8fz2       316      4/28       10.110.240.11  B
+D06Z1F210PS-S606  eth0       0         moswdk4fz1       507      6/27       10.110.240.6   B
+D06Z3F116PS-S650  eth0       0         moswdk9fz3       515      6/35       10.110.240.13  B
+D06Z2F194PS-S614  eth0       0         moswdk8fz2       513      6/33       10.110.240.11  B
+D08Z3F119PS-S850  eth0       0         moswdk9fz3       584      7/8        10.110.240.13  B
+D03Z2F183SB-C335  eth0       0         moswdk4fz2       415      5/31       10.110.240.7   B
+D05Z2F175SB-S521  eth0       0         moswdk4fz2       620      7/44       10.110.240.7   B
+D08Z3F110PS-S854  eth0       0         moswdk9fz3       592      7/16       10.110.240.13  B
+D03Z3F135SB-C375  eth0       0         moswdk5fz3b      320      4/32       10.110.240.9   B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                ---------  --------  ---------------  -------  ---------  -------------  ------------
+D08Z3F124PS-S848  eth0       0         moswdk9fz3       580      7/4        10.110.240.13  B
+D07Z2F194PS-S718  eth0       0         moswdk8fz2       508      6/28       10.110.240.11  B
+D10Z1F211M-C1056  eth0       0         moswdk10fz1      505      6/25       10.110.240.14  B
+D09Z2F187PS-S918  eth0       0         moswdk8fz2       596      7/20       10.110.240.11  B
+D07Z3F142PS-S740  eth0       0         moswdk9fz3       500      6/20       10.110.240.13  B
+D08Z1F207SB-S809  eth0       0         moswdk10fz1      312      4/24       10.110.240.14  B
+D08Z3F116PS-S852  eth0       0         moswdk9fz3       588      7/12       10.110.240.13  B
+D07Z2F195SB-S719  eth0       0         moswdk8fz2       319      4/31       10.110.240.11  B
+D06Z3F140SB-S639  eth0       0         moswdk9fz3       212      3/20       10.110.240.13  B
+D03Z1F199PS-C316  eth0       0         moswdk4fz1       224      3/32       10.110.240.6   B
+D08Z3F127SB-S847  eth0       0         moswdk9fz3       391      5/7        10.110.240.13  B
+D07Z3F140SB-S743  eth0       0         moswdk9fz3       319      4/31       10.110.240.13  B
+D06Z1F200PS-S612  eth0       0         moswdk4fz1       484      6/4        10.110.240.6   B
+D02Z2F175PS-C238  eth0       0         moswdk4fz2       327      4/39       10.110.240.7   B
+D02Z3F127PS-C280  eth0       0         moswdk5fz3b      232      3/40       10.110.240.9   B
+D07Z2F184PS-S724  eth0       0         moswdk8fz2       520      6/40       10.110.240.11  B
+D07Z2F191SB-S721  eth0       0         moswdk8fz2       323      4/35       10.110.240.11  B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                ---------  --------  ---------------  -------  ---------  -------------  ------------
+D08Z3F095SB-S863  eth0       0         moswdk9fz3       423      5/39       10.110.240.13  B
+D08Z2F179PS-S824  eth0       0         moswdk8fz2       611      7/35       10.110.240.11  B
+D09Z1F203SB-S909  eth0       0         moswdk10fz1      427      5/43       10.110.240.14  B
+D08Z1F207PS-S810  eth0       0         moswdk10fz1      316      4/28       10.110.240.14  B
+D09Z2F171SB-S927  eth0       0         moswdk8fz2       423      5/39       10.110.240.11  B
+D06Z2F176SB-S625  eth0       0         moswdk8fz2       299      4/11       10.110.240.11  B
+D02Z2F179PS-C230  eth0       0         moswdk4fz2       299      4/11       10.110.240.7   B
+D06Z2F186PS-S618  eth0       0         moswdk8fz2       521      6/41       10.110.240.11  B
+D06Z2F160PS-S632  eth0       0         moswdk8fz2       504      6/24       10.110.240.11  B
+D09Z1F216PS-S904  eth0       0         moswdk10fz1      407      5/23       10.110.240.14  B
+D02Z3F141PS-C256  eth0       0         moswdk5fz3b      136      2/40       10.110.240.9   B
+D08Z4F037M        eth0       0         moswdk8fz4       22       1/22       10.110.240.12  B
+D04Z3F139SB       eth0       0         moswdk5fz3a      18       1/18       10.110.240.8   B
+D04Z3F079PS       eth0       0         moswdk5fz3a      36       1/36       10.110.240.8   B
+D05Z3F132M        eth0       0         moswdk5fz3a      46       1/46       10.110.240.8   B
+D11Z1F226PS       eth0       0         moswdk10fz1      31       1/31       10.110.240.14  B
+D07Z4F044SB       eth0       0         moswdk8fz4       43       1/43       10.110.240.12  B
+D10Z2F149M        eth0       0         moswdk8fz2       41       1/41       10.110.240.11  B
+D04Z3F079SB       eth0       0         moswdk5fz3a      38       1/38       10.110.240.8   B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP           Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--           ---------  --------  ---------------  -------  ---------  -------------  ------------
+D06Z3F079M   eth0       0         moswdk9fz3       3        1/3        10.110.240.13  B
+D09Z4F062M   eth0       0         moswdk8fz4       40       1/40       10.110.240.12  B
+D07Z4F034PS  eth0       0         moswdk8fz4       47       1/47       10.110.240.12  B
+D06Z4F055SB  eth0       0         moswdk8fz4       3        1/3        10.110.240.12  B
+D04Z3F147M   eth0       0         moswdk5fz3a      16       1/16       10.110.240.8   B
+D07Z4F036M   eth0       0         moswdk8fz4       45       1/45       10.110.240.12  B
+D04Z3F120M   eth0       0         moswdk5fz3a      26       1/26       10.110.240.8   B
+D11Z2F149M   eth0       0         moswdk8fz2       4        1/4        10.110.240.11  B
+D05Z3F101M   eth0       0         moswdk5fz3a      99       2/3        10.110.240.8   B
+D05Z3F079M   eth0       0         moswdk5fz3a      109      2/13       10.110.240.8   B
+D08Z4F029M   eth0       0         moswdk8fz4       28       1/28       10.110.240.12  B
+D05Z4F067M   eth0       0         moswdk3fz4       38       1/38       10.110.240.5   B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                 Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                 ---------  --------  ---------------  -------  ---------  -------------  ------------
+D06Z4F025SB        eth0       0         moswdk8fz4       15       1/15       10.110.240.12  B
+D07Z4F050M         eth0       0         moswdk8fz4       39       1/39       10.110.240.12  B
+D06Z5F010SB        eth0       0         moswdk8fz4       25       1/25       10.110.240.12  B
+D07Z2F149PS        eth0       0         moswdk8fz2       15       1/15       10.110.240.11  B
+D05Z4F023SB        eth0       0         moswdk3fz4       101      2/5        10.110.240.5   B
+D07Z4F016PS        eth0       0         moswdk8fz4       4        1/4        10.110.240.12  B
+D09Z4F027M         eth0       0         moswdk8fz4       99       2/3        10.110.240.12  B
+D10Z2F168SB-S1009  bond0      0         moswdk8fz2       418      5/34       10.110.240.11  B
+D11Z2F185SB-S1107  bond0      0         moswdk8fz2       491      6/11       10.110.240.11  B
+D10Z2F184SB-S1005  bond0      0         moswdk8fz2       406      5/22       10.110.240.11  B
+D11Z1F203SB-S1103  bond0      0         moswdk10fz1      527      6/47       10.110.240.14  B
+D10Z2F178SB-S1007  bond0      0         moswdk8fz2       410      5/26       10.110.240.11  B
+D11Z2F195SB-S1105  bond0      0         moswdk8fz2       483      6/3        10.110.240.11  B
+D11Z2F178PS-S1110  bond0      0         moswdk8fz2       676      8/4        10.110.240.11  B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                 Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--                 ---------  --------  ---------------  -------  ---------  -------------  ------------
+D11Z2F178SB-S1109  bond0      0         moswdk8fz2       495      6/15       10.110.240.11  B
+D01Z4F066PS        bond0      0         moswdk3fz4       3        1/3        10.110.240.5   B
+D03Z2F156SB        bond0      0         moswdk4fz2       19       1/19       10.110.240.7   B
+D10Z4F049SB        bond0      0         moswdk8fz4       107      2/11       10.110.240.12  B
+D02Z4F043PS        bond0      0         moswdk3fz4       21       1/21       10.110.240.5   B
+D01Z3F083SB        bond0      0         moswdk5fz3a      11       1/11       10.110.240.8   B
+D06Z1F229PS        bond0      0         moswdk4fz1       35       1/35       10.110.240.6   B
+D10Z1F219SB        bond0      0         moswdk10fz1      21       1/21       10.110.240.14  B
+D01Z3F134M         bond0      0         moswdk5fz3a      1        1/1        10.110.240.8   B
+D03Z4F039SB        bond0      0         moswdk3fz4       47       1/47       10.110.240.5   B
+D03Z4F021SB        bond0      0         moswdk3fz4       41       1/41       10.110.240.5   B
+D03Z3F089PS        bond0      0         moswdk5fz3a      31       1/31       10.110.240.8   B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP           Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--           ---------  --------  ---------------  -------  ---------  -------------  ------------
+D05Z1F245PS  bond0      0         moswdk4fz1       17       1/17       10.110.240.6   B
+D02Z4F055SB  bond0      0         moswdk3fz4       19       1/19       10.110.240.5   B
+D04Z2F164PS  bond0      0         moswdk4fz2       31       1/31       10.110.240.7   B
+D03Z2F179M   bond0      0         moswdk4fz2       23       1/23       10.110.240.7   B
+D05Z1F214SB  bond0      0         moswdk4fz1       27       1/27       10.110.240.6   B
+D08Z4F043PS  bond0      0         moswdk8fz4       16       1/16       10.110.240.12  B
+D04Z1F225PS  bond0      0         moswdk4fz1       45       1/45       10.110.240.6   B
+D03Z4F051PS  bond0      0         moswdk3fz4       6        1/6        10.110.240.5   B
+D03Z3F089SB  bond0      0         moswdk5fz3a      29       1/29       10.110.240.8   B
+D02Z3F087M   bond0      0         moswdk5fz3a      27       1/27       10.110.240.8   B
+D05Z4F047PS  bond0      0         moswdk3fz4       44       1/44       10.110.240.5   B
+D03Z4F072SB  bond0      0         moswdk3fz4       18       1/18       10.110.240.5   B
+D03Z4F066PS  bond0      0         moswdk3fz4       16       1/16       10.110.240.5   B
+D01Z4F066SB  bond0      0         moswdk3fz4       5        1/5        10.110.240.5   B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP           Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--           ---------  --------  ---------------  -------  ---------  -------------  ------------
+D10Z2F149SB  bond0      0         moswdk8fz2       37       1/37       10.110.240.11  B
+D04Z4F055SB  bond0      0         moswdk3fz4       24       1/24       10.110.240.5   B
+D07Z4F052PS  bond0      0         moswdk8fz4       37       1/37       10.110.240.12  B
+D02Z3F097PS  bond0      0         moswdk5fz3a      25       1/25       10.110.240.8   B
+D04Z4F060PS  bond0      0         moswdk3fz4       22       1/22       10.110.240.5   B
+D02Z4F035PS  bond0      0         moswdk3fz4       25       1/25       10.110.240.5   B
+D04Z5F004PS  bond0      0         moswdk5fz4       5        1/5        10.110.240.10  B
+D02Z4F027PS  bond0      0         moswdk3fz4       27       1/27       10.110.240.5   B
+D04Z4F029M   bond0      0         moswdk3fz4       32       1/32       10.110.240.5   B
+D06Z1F225SB  bond0      0         moswdk4fz1       37       1/37       10.110.240.6   B
+D07Z4F047PS  bond0      0         moswdk8fz4       41       1/41       10.110.240.12  B
+D02Z3F105SB  bond0      0         moswdk5fz3a      19       1/19       10.110.240.8   B
+D03Z5F008M   bond0      0         moswdk3fz4       39       1/39       10.110.240.5   B
+D03Z5F004PS  bond0      0         moswdk3fz4       35       1/35       10.110.240.5   B
+D02Z1F206SB  bond0      0         moswdk4fz1       3        1/3        10.110.240.6   B
+D02Z3F098SB  bond0      0         moswdk5fz3a      23       1/23       10.110.240.8   B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP           Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address  Capabilities
+--           ---------  --------  ---------------  -------  ---------  -------------  ------------
+D03Z4F021PS  bond0      0         moswdk3fz4       43       1/43       10.110.240.5   B
+D07Z4F055SB  bond0      0         moswdk8fz4       35       1/35       10.110.240.12  B
+D03Z4F028M   bond0      0         moswdk3fz4       45       1/45       10.110.240.5   B
+D10Z5F031SB  bond0      0         moswdk8fz4       111      2/15       10.110.240.12  B
+D05Z3F089PS  bond0      0         moswdk5fz3a      105      2/9        10.110.240.8   B
+D09Z4F074SB  bond0      0         moswdk8fz4       36       1/36       10.110.240.12  B
+D11Z4F074PS  bond0      0         moswdk8fz4       117      2/21       10.110.240.12  B
+D08Z4F037SB  bond0      0         moswdk8fz4       24       1/24       10.110.240.12  B
+D11Z4F074SB  bond0      0         moswdk8fz4       115      2/19       10.110.240.12  B
+D10Z3F100SB  bond0      0         moswdk9fz3       33       1/33       10.110.240.13  B
+D12Z2F173SB  bond0      0         moswdk8fz2       8        1/8        10.110.240.11  B
+D11Z4F046M   bond0      0         moswdk8fz4       119      2/23       10.110.240.12  B
+D05Z5F000M   bond0      0         moswdk5fz4       19       1/19       10.110.240.10  B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address   Capabilities
+--                ---------  --------  ---------------  -------  ---------  -------------   ------------
+D06Z5F000PS       bond0      0         moswdk8fz4       27       1/27       10.110.240.12   B
+D05Z4F039PS       bond0      0         moswdk3fz4       48       1/48       10.110.240.5    B
+D11Z3F143PS       bond0      0         moswdk9fz3       41       1/41       10.110.240.13   B
+D08Z1F226PS-S802  bond0      0         moswdk10fz1      327      4/39       10.110.240.14   B
+D09Z1F221SB-S901  bond0      0         XX-0E5           5        5          10.110.249.223  B
+D07Z1F201M        bond0      0         moswdk10fz1      7        1/7        10.110.240.14   B
+D04Z2F173SB       bond0      0         moswdk4fz2       41       1/41       10.110.240.7    B
+D09Z3F097SB-S945  bond0      0         moswdk9fz3       422      5/38       10.110.240.13   B
+D09Z3F124SB       bond0      0         moswdk9fz3       17       1/17       10.110.240.13   B
+D11Z2F169M        bond0      0         moswdk8fz2       45       1/45       10.110.240.11   B
+D03Z3F103PS       bond0      0         moswdk5fz3a      41       1/41       10.110.240.8    B
+D09Z3F101PS       bond0      0         moswdk9fz3       19       1/19       10.110.240.13   B
+D09Z2F161PS-S930  bond0      0         moswdk8fz2       622      7/46       10.110.240.11   B
+D09Z1F221PS-S902  bond0      0         XX-0E4           5        5          10.110.249.222  B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+
+AP LLDP Neighbors (Updated every 60 seconds)
+--------------------------------------------
+AP                 Interface  Neighbor  Chassis Name/ID  Port ID  Port Desc  Mgmt. Address   Capabilities
+--                 ---------  --------  ---------------  -------  ---------  -------------   ------------
+D09Z3F114SB-S943   bond0      0         moswdk9fz3       414      5/30       10.110.240.13   B
+D07Z1F231PS-S702   bond0      0         moswdk10fz1      206      3/14       10.110.240.14   B
+D03Z3F089M         bond0      0         moswdk5fz3a      33       1/33       10.110.240.8    B
+D05Z1F206M         bond0      0         moswdk4fz1       29       1/29       10.110.240.6    B
+D08Z1F223PS-S802   bond0      0         XX-0E2           3        3          10.110.249.220  B
+D06Z1F213M         bond0      0         moswdk4fz1       39       1/39       10.110.240.6    B
+D09Z2F150M         bond0      0         moswdk8fz2       27       1/27       10.110.240.11   B
+D10Z1F202PS-S1002  bond0      0         moswdk10fz1      404      5/20       10.110.240.14   B
+D09Z3F115PS-S942   bond0      0         moswdk9fz3       695      8/23       10.110.240.13   B
+D08Z1F223SB-S801   bond0      0         XX-0E3           3        3          10.110.249.221  B
+D10Z2F194M         bond0      0         moswdk8fz2       33       1/33       10.110.240.11   B
+D09Z3F146SB-S933   bond0      0         moswdk9fz3       390      5/6        10.110.240.13   B
+D07Z1F227PS-S702   bond0      0         XX-0E0           3        3          10.110.249.218  B
+D09Z3F137SB-S935   bond0      0         moswdk9fz3       394      5/10       10.110.240.13   B
+D05Z2F185M         bond0      0         moswdk4fz2       37       1/37       10.110.240.7    B
+
+Capability codes: (R)Router, (B)Bridge, (A)Access Point, (P)Phone, (O)Other
+(MO-MD-02) [MDC] *#

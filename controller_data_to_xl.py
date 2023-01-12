@@ -116,17 +116,15 @@ with open(fileName) as input_raw:
 
 		# Is the number of returned fields over 5 (This means it's actual meaningful data, even without an IP)		
 		elif len(fields)>5:
-			if fields[0]=="Name": # First field of "Name" indicates it's an AP/BLE database header
+			if fields[0]=="Name": # First field of "Name" indicates it's an AP database header
 				linetype="header"
+				fields.insert(5,'Uptime') # Create a new column
+				datatype="apdb"
+				apheaders=fields # Capture the headers
 
-				if fields[2]=="AP Type": # Check third column to see if it's AP database header
-					fields.insert(5,'Uptime') # Create a new column
-					datatype="apdb"
-					apheaders=fields # Capture the headers
-
-				elif fields[2]=="BLE MAC": # Check third column to see if it's BLE database header
-					datatype="ble"
-					bleheaders=fields # Capture the headers
+			elif fields[2]=="BLE MAC": # Check third column to see if it's BLE database header
+				datatype="ble"
+				bleheaders=fields # Capture the headers
 		
 			elif fields[0]=="AP": # First field of "AP" indicates it's an LLDP database header		
 				linetype="header"
@@ -232,7 +230,7 @@ with open(fileName) as input_raw:
 				
 				# turn it into a JSON dict
 				index = 0
-				for f in headers:
+				for f in bleheaders:
 					datarow[f] = fields[index]
 					index +=1
 
@@ -253,6 +251,15 @@ wb=xl.book
 # Are there entries in the AP Database? 
 if len(apdb)>0 : 
 	apdf = pd.DataFrame.from_dict(apdb) 		# Create pandas dataframe from the JSON list of dicts
+	apmacs=apdf['Wired MAC Address']
+	apserials=apdf['Serial #']
+	apuptimesec=apdf['Uptime Seconds']
+	apdf=apdf.drop(columns=['Wired MAC Address','Serial #','Uptime Seconds'])
+	apdf.insert(loc=0,column='Wired MAC', value=apmacs)
+	apdf.insert(loc=1,column='AP Serial', value=apserials)
+	apdf.insert(loc=9,column='Uptime Seconds', value=apuptimesec)
+
+
 	apdf.to_excel(xl, sheet_name='AP Database', startrow=1, header=False, index=False)  # Create an Excel sheet with the data
 
 	ws=xl.sheets['AP Database']
@@ -282,6 +289,9 @@ if len(lldp)>0 :
 # Are there entries in the BLE Database? 
 if len(ble)>0 : 
 	bledf = pd.DataFrame.from_dict(ble) 		# Create pandas dataframe from the JSON list of dicts
+	blemacs=bledf['BLE MAC']
+	bledf=bledf.drop(columns=['BLE MAC'])
+	bledf.insert(loc=0,column='BLE MAC', value=blemacs)
 	bledf.to_excel(xl, sheet_name='BLE Database', header=False, index=False) # Create an Excel sheet with the data
 	ws=xl.sheets['BLE Database']
 

@@ -1,0 +1,1047 @@
+show ap database long
+
+AP Database
+-----------
+Name               Group       AP Type  IP Address      Status      Flags  Switch IP    Standby IP   Wired MAC Address  Serial #    Port  FQLN  Outer IP  User
+----               -----       -------  ----------      ------      -----  ---------    ----------   -----------------  --------    ----  ----  --------  ----
+7c:57:3c:c9:e5:14  default     315      10.160.166.155  Down               10.110.1.24  0.0.0.0      7c:57:3c:c9:e5:14  CNJHJ0T05Z        N/A   N/A       
+bc:9f:e4:c1:ec:8c  default     365      10.110.5.138    Down               10.110.1.24  0.0.0.0      bc:9f:e4:c1:ec:8c  CNJ8JSW4Z2        N/A   N/A       
+D01Z3F083SB        MO-Staging  315      10.160.164.50   Up 49m:50s         10.110.1.25  10.110.1.24  7c:57:3c:c9:e0:5e  CNJHJ0T0G0        N/A   N/A       
+D01Z3F085PS        MO-Staging  315      10.160.164.242  Up 49m:50s         10.110.1.25  10.110.1.24  7c:57:3c:c9:df:d4  CNJHJ0T0DT        N/A   N/A       
+D01Z3F107M         MO-Staging  315      10.160.164.33   Up 49m:49s         10.110.1.24  10.110.1.25  7c:57:3c:ca:0a:6a  CNJHJ0T09W        N/A   N/A       
+D01Z3F125M         MO-Staging  315      10.160.164.37   Up 49m:53s         10.110.1.25  10.110.1.24  7c:57:3c:ca:09:84  CNJHJ0T07W        N/A   N/A       
+D01Z3F134M         MO-Staging  315      10.160.164.31   Up 49m:51s         10.110.1.24  10.110.1.25  7c:57:3c:c9:e2:ce  CNJHJ0T0DM        N/A   N/A       
+D01Z4F066PS        MO-Staging  315      10.160.164.30   Up 49m:15s         10.110.1.24  10.110.1.25  7c:57:3c:c9:dc:2e  CNJHJ0T0G4        N/A   N/A       
+D01Z4F066SB        MO-Staging  315      10.160.164.104  Up 49m:31s         10.110.1.24  10.110.1.25  7c:57:3c:c9:f8:1e  CNJHJ0T098        N/A   N/A       
+D02Z1F199PS        MO-Staging  315      10.160.164.70   Up 49m:24s         10.110.1.25  10.110.1.24  7c:57:3c:c9:ea:3a  CNJHJ0T0BV        N/A   N/A       
+D02Z1F199SB-C207   MO-Staging  303H     10.160.164.248  Up 49m:36s         10.110.1.24  10.110.1.25  20:4c:03:a7:ec:42  CNJJK2R7HW        N/A   N/A       
+D02Z1F202PS-C206   MO-Staging  303H     10.160.166.29   Up 49m:38s         10.110.1.25  10.110.1.24  20:4c:03:a8:07:c6  CNJJK2R7JC        N/A   N/A       
+D02Z1F203M-C208    MO-Staging  303H     10.160.162.63   Up 49m:41s         10.110.1.24  10.110.1.25  20:4c:03:a7:e9:f2  CNJJK2R773        N/A   N/A       
+D02Z1F206SB        MO-Staging  315      10.160.164.67   Up 49m:28s         10.110.1.25  10.110.1.24  7c:57:3c:ca:09:62  CNJHJ0T0DZ        N/A   N/A       
+D02Z1F210M-C201    MO-Staging  303H     10.160.166.35   Up 49m:42s         10.110.1.24  10.110.1.25  20:4c:03:a7:e1:8a  CNJJK2R754        N/A   N/A       
+D02Z1F210M-C202    MO-Staging  303H     10.160.166.45   Up 49m:43s         10.110.1.24  10.110.1.25  20:4c:03:a7:e1:46  CNJJK2R7PJ        N/A   N/A       
+D02Z1F217M         MO-Staging  315      10.160.164.75   Up 49m:13s         10.110.1.24  10.110.1.25  7c:57:3c:ca:0b:9a  CNJHJ0T0DK        N/A   N/A       
+D02Z2F157M         MO-Staging  315      10.160.164.117  Up 49m:5s          10.110.1.24  10.110.1.25  7c:57:3c:c9:ea:88  CNJHJ0T058        N/A   N/A       
+D02Z2F170M-C233    MO-Staging  303H     10.160.165.100  Up 49m:25s         10.110.1.25  10.110.1.24  20:4c:03:a8:09:8a  CNJJK2R6ZQ        N/A   N/A       
+D02Z2F170M-C246    MO-Staging  303H     10.160.166.46   Up 49m:23s         10.110.1.24  10.110.1.25  20:4c:03:a7:e4:ca  CNJJK2R7ND        N/A   N/A       
+D02Z2F175M-C234    MO-Staging  303H     10.160.164.207  Up 49m:27s         10.110.1.24  10.110.1.25  20:4c:03:a7:e7:f6  CNJJK2R6VJ        N/A   N/A       
+D02Z2F175M-C236    MO-Staging  303H     10.160.161.92   Up 49m:25s         10.110.1.25  10.110.1.24  20:4c:03:a7:db:ba  CNJJK2R7KV        N/A   N/A       
+D02Z2F175PS-C238   MO-Staging  303H     10.160.165.2    Up 49m:25s         10.110.1.25  10.110.1.24  20:4c:03:a8:0a:32  CNJJK2R7G7        N/A   N/A       
+D02Z2F176SB-C227   MO-Staging  303H     10.160.162.138  Up 49m:27s         10.110.1.25  10.110.1.24  20:4c:03:a7:f1:06  CNJJK2R7S5        N/A   N/A       
+D02Z2F177SB        MO-Staging  315      10.160.164.85   Up 49m:12s         10.110.1.25  10.110.1.24  7c:57:3c:ca:0a:54  CNJHJ0T05F        N/A   N/A       
+D02Z2F179PS-C230   MO-Staging  303H     10.160.161.111  Up 49m:28s         10.110.1.24  10.110.1.25  20:4c:03:a8:0b:d2  CNJJK2R7S8        N/A   N/A       
+D02Z2F183SB-C225   MO-Staging  303H     10.160.162.88   Up 49m:29s         10.110.1.24  10.110.1.25  20:4c:03:a8:01:16  CNJJK2R7L1        N/A   N/A       
+D02Z2F184PS-C228   MO-Staging  303H     10.160.165.85   Up 49m:31s         10.110.1.25  10.110.1.24  20:4c:03:a7:dc:9a  CNJJK2R7C3        N/A   N/A       
+D02Z2F185M-C223    MO-Staging  303H     10.160.166.25   Up 49m:32s         10.110.1.25  10.110.1.24  20:4c:03:a7:e6:ba  CNJJK2R6Z8        N/A   N/A       
+D02Z2F185M-C226    MO-Staging  303H     10.160.165.233  Up 49m:29s         10.110.1.24  10.110.1.25  20:4c:03:a7:e4:d6  CNJJK2R7JB        N/A   N/A       
+D02Z2F187PS-C224   MO-Staging  303H     10.160.162.140  Up 49m:33s         10.110.1.24  10.110.1.25  20:4c:03:a7:fb:b6  CNJJK2R7T1        N/A   N/A       
+D02Z2F190SB-C217   MO-Staging  303H     10.160.161.179  Up 49m:34s         10.110.1.25  10.110.1.24  20:4c:03:a7:ed:7e  CNJJK2R75N        N/A   N/A       
+
+Flags: 1 = 802.1x authenticated AP use EAP-PEAP; 1+ = 802.1x use EST; 1- = 802.1x use factory cert; 2 = Using IKE version 2
+       B = Built-in AP; C = Cellular RAP; D = Dirty or no config
+       E = Regulatory Domain Mismatch; F = AP failed 802.1x authentication
+       G = No such group; I = Inactive; J = USB cert at AP; L = Unlicensed
+       M = Mesh node
+       N = Duplicate name; P = PPPoe AP; R = Remote AP; R- = Remote AP requires Auth;
+       S = Standby-mode AP; U = Unprovisioned; X = Maintenance Mode
+       Y = Mesh Recovery
+       c = CERT-based RAP; e = Custom EST cert; f = No Spectrum FFT support
+       i = Indoor; o = Outdoor; s = LACP striping; u = Custom-Cert RAP; z = Datazone AP
+       p = In deep-sleep status
+       4 = WiFi Uplink
+
+AP Database
+-----------
+Name              Group       AP Type  IP Address      Status      Flags  Switch IP    Standby IP   Wired MAC Address  Serial #    Port  FQLN  Outer IP  User
+----              -----       -------  ----------      ------      -----  ---------    ----------   -----------------  --------    ----  ----  --------  ----
+D02Z2F191M-C215   MO-Staging  303H     10.160.162.127  Up 49m:34s         10.110.1.24  10.110.1.25  20:4c:03:a8:08:a6  CNJJK2R7LS        N/A   N/A       
+D02Z2F191M-C218   MO-Staging  303H     10.160.162.62   Up 49m:33s         10.110.1.24  10.110.1.25  20:4c:03:a7:ea:32  CNJJK2R73R        N/A   N/A       
+D02Z2F193PS-C216  MO-Staging  303H     10.160.164.198  Up 49m:35s         10.110.1.24  10.110.1.25  20:4c:03:a8:01:22  CNJJK2R75P        N/A   N/A       
+D02Z2F195SB-C211  MO-Staging  303H     10.160.164.224  Up 49m:35s         10.110.1.25  10.110.1.24  20:4c:03:a7:e6:46  CNJJK2R76V        N/A   N/A       
+D02Z2F196M        MO-Staging  315      10.160.164.116  Up 49m:23s         10.110.1.24  10.110.1.25  7c:57:3c:ca:03:68  CNJHJ0T048        N/A   N/A       
+D02Z3F087M        MO-Staging  315      10.160.164.43   Up 48m:39s         10.110.1.24  10.110.1.25  7c:57:3c:c9:f4:fe  CNJHJ0T043        N/A   N/A       
+D02Z3F097PS       MO-Staging  315      10.160.164.80   Up 48m:40s         10.110.1.25  10.110.1.24  7c:57:3c:c9:fa:ce  CNJHJ0T04B        N/A   N/A       
+D02Z3F098SB       MO-Staging  315      10.160.164.10   Up 48m:40s         10.110.1.24  10.110.1.25  7c:57:3c:ca:0a:32  CNJHJ0T05D        N/A   N/A       
+D02Z3F101M        MO-Staging  315      10.160.164.29   Up 48m:42s         10.110.1.25  10.110.1.24  7c:57:3c:c9:f2:b6  CNJHJ0T054        N/A   N/A       
+D02Z3F105SB       MO-Staging  315      10.160.164.58   Up 48m:41s         10.110.1.24  10.110.1.25  7c:57:3c:ca:08:1a  CNJHJ0T05H        N/A   N/A       
+D02Z3F112PS-C292  MO-Staging  303H     10.160.162.30   Up 48m:57s         10.110.1.25  10.110.1.24  20:4c:03:a7:e8:06  CNJJK2R6TP        N/A   N/A       
+D02Z3F112SB-C279  MO-Staging  303H     10.160.165.175  Up 48m:58s         10.110.1.24  10.110.1.25  20:4c:03:a7:e1:66  CNJJK2R755        N/A   N/A       
+D02Z3F114M-C283   MO-Staging  303H     10.160.165.220  Up 48m:59s         10.110.1.24  10.110.1.25  20:4c:03:a8:05:aa  CNJJK2R751        N/A   N/A       
+D02Z3F114SB-C281  MO-Staging  303H     10.160.164.245  Up 48m:59s         10.110.1.24  10.110.1.25  20:4c:03:a7:e1:5a  CNJJK2R77X        N/A   N/A       
+D02Z3F115PS-C290  MO-Staging  303H     10.160.161.140  Up 48m:59s         10.110.1.24  10.110.1.25  20:4c:03:a7:ff:d6  CNJJK2R702        N/A   N/A       
+D02Z3F118PS-C288  MO-Staging  303H     10.160.162.121  Up 49m:1s          10.110.1.24  10.110.1.25  20:4c:03:a7:f2:16  CNJJK2R74K        N/A   N/A       
+D02Z3F118SB-C277  MO-Staging  303H     10.160.165.93   Up 49m:3s          10.110.1.24  10.110.1.25  20:4c:03:a7:f5:2e  CNJJK2R77F        N/A   N/A       
+D02Z3F119SB-C275  MO-Staging  303H     10.160.161.89   Up 49m:3s          10.110.1.24  10.110.1.25  20:4c:03:a7:e0:96  CNJJK2R7JK        N/A   N/A       
+D02Z3F123SB-C273  MO-Staging  303H     10.160.165.106  Up 49m:4s          10.110.1.24  10.110.1.25  20:4c:03:a7:e6:92  CNJJK2R7LQ        N/A   N/A       
+D02Z3F124M-C271   MO-Staging  303H     10.160.165.4    Up 49m:5s          10.110.1.24  10.110.1.25  20:4c:03:a8:03:d6  CNJJK2R7TK        N/A   N/A       
+D02Z3F124SB-C267  MO-Staging  303H     10.160.164.215  Up 49m:6s          10.110.1.25  10.110.1.24  20:4c:03:8b:5f:d2  CNHYK2R33S        N/A   N/A       
+D02Z3F125PS-C278  MO-Staging  303H     10.160.164.251  Up 49m:6s          10.110.1.25  10.110.1.24  20:4c:03:a7:db:36  CNJJK2R75W        N/A   N/A       
+D02Z3F127M        MO-Staging  315      10.160.164.38   Up 48m:53s         10.110.1.25  10.110.1.24  7c:57:3c:c9:e0:d0  CNJHJ0T03D        N/A   N/A       
+D02Z3F127PS-C280  MO-Staging  303H     10.160.161.251  Up 49m:7s          10.110.1.24  10.110.1.25  20:4c:03:a8:0a:ae  CNJJK2R77G        N/A   N/A       
+D02Z3F128SB-C263  MO-Staging  303H     10.160.166.119  Up 49m:10s         10.110.1.25  10.110.1.24  20:4c:03:a7:f0:82  CNJJK2R7L3        N/A   N/A       
+D02Z3F130SB-C261  MO-Staging  303H     10.160.165.238  Up 49m:11s         10.110.1.25  10.110.1.24  20:4c:03:3a:fd:2c  CNGKK2R31Z        N/A   N/A       
+D02Z3F131PS-C270  MO-Staging  303H     10.160.164.240  Up 49m:11s         10.110.1.24  10.110.1.25  20:4c:03:3b:08:cc  CNGKK2R2Z5        N/A   N/A       
+D02Z3F136PS-C262  MO-Staging  303H     10.160.164.234  Up 49m:13s         10.110.1.24  10.110.1.25  20:4c:03:3a:d1:a0  CNGKK2R2ZP        N/A   N/A       
+D02Z3F136SB-C257  MO-Staging  303H     10.160.165.163  Up 49m:13s         10.110.1.24  10.110.1.25  20:4c:03:8b:5b:16  CNHYK2R340        N/A   N/A       
+D02Z3F139M-C255   MO-Staging  303H     10.160.165.222  Up 49m:14s         10.110.1.24  10.110.1.25  20:4c:03:a7:fd:02  CNJJK2R7GC        N/A   N/A       
+D02Z3F139SB-C251  MO-Staging  303H     10.160.164.210  Up 49m:12s         10.110.1.24  10.110.1.25  20:4c:03:a8:06:6a  CNJJK2R7KS        N/A   N/A       
+D02Z3F141PS-C256  MO-Staging  303H     10.160.166.131  Up 49m:15s         10.110.1.25  10.110.1.24  20:4c:03:a8:0c:4e  CNJJK2R7TH        N/A   N/A       
+
+Flags: 1 = 802.1x authenticated AP use EAP-PEAP; 1+ = 802.1x use EST; 1- = 802.1x use factory cert; 2 = Using IKE version 2
+       B = Built-in AP; C = Cellular RAP; D = Dirty or no config
+       E = Regulatory Domain Mismatch; F = AP failed 802.1x authentication
+       G = No such group; I = Inactive; J = USB cert at AP; L = Unlicensed
+       M = Mesh node
+       N = Duplicate name; P = PPPoe AP; R = Remote AP; R- = Remote AP requires Auth;
+       S = Standby-mode AP; U = Unprovisioned; X = Maintenance Mode
+       Y = Mesh Recovery
+       c = CERT-based RAP; e = Custom EST cert; f = No Spectrum FFT support
+       i = Indoor; o = Outdoor; s = LACP striping; u = Custom-Cert RAP; z = Datazone AP
+       p = In deep-sleep status
+       4 = WiFi Uplink
+
+AP Database
+-----------
+Name              Group       AP Type  IP Address      Status      Flags  Switch IP    Standby IP   Wired MAC Address  Serial #    Port  FQLN  Outer IP  User
+----              -----       -------  ----------      ------      -----  ---------    ----------   -----------------  --------    ----  ----  --------  ----
+D02Z3F141SB-C247  MO-Staging  303H     10.160.165.178  Up 49m:16s         10.110.1.24  10.110.1.25  20:4c:03:a8:01:06  CNJJK2R7GY        N/A   N/A       
+D02Z3F144M-C252   MO-Staging  303H     10.160.166.81   Up 49m:16s         10.110.1.24  10.110.1.25  20:4c:03:a7:ef:ce  CNJJK2R7MS        N/A   N/A       
+D02Z3F146PS-C250  MO-Staging  303H     10.160.164.190  Up 49m:17s         10.110.1.24  10.110.1.25  20:4c:03:a8:07:0a  CNJJK2R7LP        N/A   N/A       
+D02Z3F146SB-C239  MO-Staging  303H     10.160.161.237  Up 49m:19s         10.110.1.24  10.110.1.25  20:4c:03:a8:01:8a  CNJJK2R785        N/A   N/A       
+D02Z3F147PS-C248  MO-Staging  303H     10.160.162.78   Up 49m:19s         10.110.1.24  10.110.1.25  20:4c:03:a8:02:5a  CNJJK2R7RR        N/A   N/A       
+D02Z3F147SB-C237  MO-Staging  303H     10.160.161.86   Up 49m:21s         10.110.1.24  10.110.1.25  20:4c:03:a7:fb:7e  CNJJK2R701        N/A   N/A       
+D02Z3F148M        MO-Staging  315      10.160.164.66   Up 49m:7s          10.110.1.25  10.110.1.24  7c:57:3c:ca:01:34  CNJHJ0T05G        N/A   N/A       
+D02Z4F025SB       MO-Staging  315      10.160.164.2    Up 48m:32s         10.110.1.24  10.110.1.25  7c:57:3c:c9:ee:70  CNJHJ0T049        N/A   N/A       
+D02Z4F027PS       MO-Staging  315      10.160.164.139  Up 48m:33s         10.110.1.24  10.110.1.25  7c:57:3c:ca:06:50  CNJHJ0T04W        N/A   N/A       
+D02Z4F035PS       MO-Staging  315      10.160.164.171  Up 48m:33s         10.110.1.25  10.110.1.24  7c:57:3c:ca:02:80  CNJHJ0T04Z        N/A   N/A       
+D02Z4F042SB       MO-Staging  315      10.160.164.144  Up 48m:34s         10.110.1.25  10.110.1.24  7c:57:3c:c9:f3:84  CNJHJ0T051        N/A   N/A       
+D02Z4F043PS       MO-Staging  315      10.160.164.137  Up 48m:35s         10.110.1.24  10.110.1.25  7c:57:3c:c9:de:7c  CNJHJ0T01M        N/A   N/A       
+D02Z4F055M        MO-Staging  315      10.160.164.8    Up 48m:36s         10.110.1.25  10.110.1.24  7c:57:3c:ca:0f:96  CNJHJ0T04F        N/A   N/A       
+D02Z4F055PS       MO-Staging  315      10.160.164.74   Up 48m:37s         10.110.1.25  10.110.1.24  7c:57:3c:c9:f5:e4  CNJHJ0T02W        N/A   N/A       
+D02Z4F055SB       MO-Staging  315      10.160.164.162  Up 48m:36s         10.110.1.24  10.110.1.25  7c:57:3c:c9:e9:8c  CNJHJ0T04J        N/A   N/A       
+D02Z4F067SB       MO-Staging  315      10.160.164.179  Up 48m:38s         10.110.1.25  10.110.1.24  7c:57:3c:c9:ee:84  CNJHJ0T04L        N/A   N/A       
+D03Z1F197SB       MO-Staging  315      10.160.164.83   Up 48m:22s         10.110.1.25  10.110.1.24  7c:57:3c:c9:e6:06  CNJHJ0T04V        N/A   N/A       
+D03Z1F199PS-C316  MO-Staging  303H     10.160.166.85   Up 48m:39s         10.110.1.25  10.110.1.24  20:4c:03:a8:08:52  CNJJK2R7JJ        N/A   N/A       
+D03Z1F202SB-C311  MO-Staging  303H     10.160.161.159  Up 48m:40s         10.110.1.24  10.110.1.25  20:4c:03:a7:fd:86  CNJJK2R6YP        N/A   N/A       
+D03Z1F203M-C309   MO-Staging  303H     10.160.161.239  Up 48m:41s         10.110.1.25  10.110.1.24  20:4c:03:a7:e7:2e  CNJJK2R7TJ        N/A   N/A       
+D03Z1F206PS-C306  MO-Staging  303H     10.160.164.193  Up 48m:41s         10.110.1.25  10.110.1.24  20:4c:03:a8:07:ca  CNJJK2R7TC        N/A   N/A       
+D03Z1F207M-C308   MO-Staging  303H     10.160.162.60   Up 48m:43s         10.110.1.25  10.110.1.24  20:4c:03:a7:e6:b6  CNJJK2R7CK        N/A   N/A       
+D03Z1F210M-C301   MO-Staging  303H     10.160.165.84   Up 48m:43s         10.110.1.24  10.110.1.25  20:4c:03:a7:f8:06  CNJJK2R7FN        N/A   N/A       
+D03Z1F210SB-C303  MO-Staging  303H     10.160.162.139  Up 48m:43s         10.110.1.25  10.110.1.24  20:4c:03:a7:ee:92  CNJJK2R7KK        N/A   N/A       
+D03Z1F212PS       MO-Staging  315      10.160.164.59   Up 48m:30s         10.110.1.25  10.110.1.24  7c:57:3c:ca:00:ae  CNJHJ0T09Q        N/A   N/A       
+D03Z1F221M        MO-Staging  315      10.160.164.72   Up 48m:30s         10.110.1.24  10.110.1.25  7c:57:3c:c9:e3:06  CNJHJ0T08X        N/A   N/A       
+D03Z2F150M        MO-Staging  344      10.160.165.209  Up 29m:19s         10.110.1.24  10.110.1.25  7c:57:3c:c1:4f:12  CNJHK500CB        N/A   N/A       
+D03Z2F153SB       MO-Staging  315      10.160.164.15   Up 47m:56s         10.110.1.24  10.110.1.25  7c:57:3c:c9:fe:58  CNJHJ0T01T        N/A   N/A       
+D03Z2F156SB       MO-Staging  315      10.160.164.166  Up 47m:59s         10.110.1.25  10.110.1.24  7c:57:3c:c9:dd:02  CNJHJ0T08D        N/A   N/A       
+D03Z2F160PS-C364  MO-Staging  303H     10.160.161.230  Up 48m:13s         10.110.1.24  10.110.1.25  20:4c:03:a8:07:8a  CNJJK2R7RG        N/A   N/A       
+D03Z2F161M-C362   MO-Staging  303H     10.160.164.227  Up 48m:16s         10.110.1.24  10.110.1.25  20:4c:03:a7:e4:c2  CNJJK2R7LV        N/A   N/A       
+D03Z2F164SB       MO-Staging  315      10.160.164.69   Up 48m:18s         10.110.1.25  10.110.1.24  7c:57:3c:c9:de:f4  CNJHJ0T067        N/A   N/A       
+
+Flags: 1 = 802.1x authenticated AP use EAP-PEAP; 1+ = 802.1x use EST; 1- = 802.1x use factory cert; 2 = Using IKE version 2
+       B = Built-in AP; C = Cellular RAP; D = Dirty or no config
+       E = Regulatory Domain Mismatch; F = AP failed 802.1x authentication
+       G = No such group; I = Inactive; J = USB cert at AP; L = Unlicensed
+       M = Mesh node
+       N = Duplicate name; P = PPPoe AP; R = Remote AP; R- = Remote AP requires Auth;
+       S = Standby-mode AP; U = Unprovisioned; X = Maintenance Mode
+       Y = Mesh Recovery
+       c = CERT-based RAP; e = Custom EST cert; f = No Spectrum FFT support
+       i = Indoor; o = Outdoor; s = LACP striping; u = Custom-Cert RAP; z = Datazone AP
+       p = In deep-sleep status
+       4 = WiFi Uplink
+
+AP Database
+-----------
+Name              Group       AP Type  IP Address      Status      Flags  Switch IP    Standby IP   Wired MAC Address  Serial #    Port  FQLN  Outer IP  User
+----              -----       -------  ----------      ------      -----  ---------    ----------   -----------------  --------    ----  ----  --------  ----
+D03Z2F168PS-C356  MO-Staging  303H     10.160.162.89   Up 48m:17s         10.110.1.25  10.110.1.24  20:4c:03:a7:e3:16  CNJJK2R7KL        N/A   N/A       
+D03Z2F169PS-C352  MO-Staging  303H     10.160.162.65   Up 48m:19s         10.110.1.24  10.110.1.25  20:4c:03:a7:e5:3a  CNJJK2R7KP        N/A   N/A       
+D03Z2F170M-C354   MO-Staging  303H     10.160.162.100  Up 48m:20s         10.110.1.24  10.110.1.25  20:4c:03:a7:ef:de  CNJJK2R7J6        N/A   N/A       
+D03Z2F170M-C359   MO-Staging  303H     10.160.164.209  Up 48m:20s         10.110.1.25  10.110.1.24  20:4c:03:a7:ee:22  CNJJK2R7J4        N/A   N/A       
+D03Z2F171SB-C353  MO-Staging  303H     10.160.161.8    Up 48m:21s         10.110.1.25  10.110.1.24  20:4c:03:a7:f3:02  CNJJK2R7J7        N/A   N/A       
+D03Z2F174PS-C346  MO-Staging  303H     10.160.161.75   Up 48m:22s         10.110.1.24  10.110.1.25  20:4c:03:a7:df:de  CNJJK2R7MH        N/A   N/A       
+D03Z2F175M-C347   MO-Staging  303H     10.160.164.249  Up 48m:22s         10.110.1.25  10.110.1.24  20:4c:03:a7:e2:ca  CNJJK2R7G6        N/A   N/A       
+D03Z2F176PS-C342  MO-Staging  303H     10.160.166.124  Up 48m:25s         10.110.1.25  10.110.1.24  20:4c:03:a8:00:4a  CNJJK2R7FC        N/A   N/A       
+D03Z2F176SB-C345  MO-Staging  303H     10.160.165.101  Up 48m:22s         10.110.1.25  10.110.1.24  20:4c:03:a7:dc:52  CNJJK2R7CM        N/A   N/A       
+D03Z2F177SB-C343  MO-Staging  303H     10.160.166.68   Up 48m:25s         10.110.1.25  10.110.1.24  20:4c:03:a7:f4:c6  CNJJK2R7CB        N/A   N/A       
+D03Z2F179M        MO-Staging  315      10.160.164.136  Up 48m:12s         10.110.1.25  10.110.1.24  7c:57:3c:c9:ed:5c  CNJHJ0T07Q        N/A   N/A       
+D03Z2F180M        MO-Staging  315      10.160.164.170  Up 48m:12s         10.110.1.24  10.110.1.25  7c:57:3c:c9:f0:b4  CNJHJ0T08G        N/A   N/A       
+D03Z2F180SB-C341  MO-Staging  303H     10.160.161.99   Up 48m:26s         10.110.1.24  10.110.1.25  20:4c:03:a7:f8:6e  CNJJK2R7GG        N/A   N/A       
+D03Z2F183PS-C336  MO-Staging  303H     10.160.165.83   Up 48m:28s         10.110.1.25  10.110.1.24  20:4c:03:a7:ed:a6  CNJJK2R7FX        N/A   N/A       
+D03Z2F183SB-C335  MO-Staging  303H     10.160.164.223  Up 48m:29s         10.110.1.25  10.110.1.24  20:4c:03:a8:04:fe  CNJJK2R7KF        N/A   N/A       
+D03Z2F184SB-C337  MO-Staging  303H     10.160.165.74   Up 48m:29s         10.110.1.25  10.110.1.24  20:4c:03:a7:f9:26  CNJJK2R7J9        N/A   N/A       
+D03Z2F188M-C334   MO-Staging  303H     10.160.166.135  Up 48m:29s         10.110.1.24  10.110.1.25  20:4c:03:a7:e9:3e  CNJJK2R6W3        N/A   N/A       
+D03Z2F188M-C339   MO-Staging  303H     10.160.165.154  Up 48m:31s         10.110.1.25  10.110.1.24  20:4c:03:a7:f6:0a  CNJJK2R6Y7        N/A   N/A       
+D03Z2F189SB-C329  MO-Staging  303H     10.160.165.116  Up 48m:32s         10.110.1.24  10.110.1.25  20:4c:03:a7:ea:c6  CNJJK2R6VX        N/A   N/A       
+D03Z2F193M-C322   MO-Staging  303H     10.160.165.139  Up 48m:33s         10.110.1.25  10.110.1.24  20:4c:03:a8:0b:9a  CNJJK2R7H3        N/A   N/A       
+D03Z2F193M-C323   MO-Staging  303H     10.160.162.132  Up 48m:34s         10.110.1.25  10.110.1.24  20:4c:03:a8:02:2a  CNJJK2R7G5        N/A   N/A       
+D03Z2F194SB-C321  MO-Staging  303H     10.160.164.235  Up 48m:34s         10.110.1.24  10.110.1.25  20:4c:03:a7:e7:7a  CNJJK2R7FJ        N/A   N/A       
+D03Z2F195PS-C318  MO-Staging  303H     10.160.164.216  Up 48m:36s         10.110.1.24  10.110.1.25  20:4c:03:a8:00:36  CNJJK2R7PH        N/A   N/A       
+D03Z2F195SB-C319  MO-Staging  303H     10.160.165.126  Up 48m:35s         10.110.1.25  10.110.1.24  20:4c:03:a7:f4:ce  CNJJK2R70B        N/A   N/A       
+D03Z3F089M        MO-Staging  314      10.160.164.21   Up 47m:26s         10.110.1.24  10.110.1.25  e8:26:89:c1:19:70  CNJPJ0R1LR        N/A   N/A       
+D03Z3F089PS       MO-Staging  315      10.160.164.87   Up 47m:25s         10.110.1.24  10.110.1.25  7c:57:3c:c9:e6:72  CNJHJ0T09H        N/A   N/A       
+D03Z3F089SB       MO-Staging  315      10.160.164.68   Up 47m:28s         10.110.1.25  10.110.1.24  7c:57:3c:c9:f4:bc  CNJHJ0T07D        N/A   N/A       
+D03Z3F098SB       MO-Staging  303H     10.160.161.77   Up 47m:44s         10.110.1.24  10.110.1.25  20:4c:03:a8:00:76  CNJJK2R7LX        N/A   N/A       
+D03Z3F100PS       MO-Staging  303H     10.160.165.141  Up 47m:45s         10.110.1.24  10.110.1.25  20:4c:03:3a:e6:54  CNGKK2R26P        N/A   N/A       
+D03Z3F103PS       MO-Staging  314      10.160.164.49   Up 47m:28s         10.110.1.25  10.110.1.24  e8:26:89:c1:18:4e  CNJPJ0R1HP        N/A   N/A       
+D03Z3F103SB       MO-Staging  314      10.160.164.32   Up 47m:31s         10.110.1.25  10.110.1.24  e8:26:89:c1:1a:a8  CNJPJ0R1FW        N/A   N/A       
+D03Z3F105SB       MO-Staging  303H     10.160.165.173  Up 47m:47s         10.110.1.25  10.110.1.24  20:4c:03:3a:cb:64  CNGKK2R260        N/A   N/A       
+
+Flags: 1 = 802.1x authenticated AP use EAP-PEAP; 1+ = 802.1x use EST; 1- = 802.1x use factory cert; 2 = Using IKE version 2
+       B = Built-in AP; C = Cellular RAP; D = Dirty or no config
+       E = Regulatory Domain Mismatch; F = AP failed 802.1x authentication
+       G = No such group; I = Inactive; J = USB cert at AP; L = Unlicensed
+       M = Mesh node
+       N = Duplicate name; P = PPPoe AP; R = Remote AP; R- = Remote AP requires Auth;
+       S = Standby-mode AP; U = Unprovisioned; X = Maintenance Mode
+       Y = Mesh Recovery
+       c = CERT-based RAP; e = Custom EST cert; f = No Spectrum FFT support
+       i = Indoor; o = Outdoor; s = LACP striping; u = Custom-Cert RAP; z = Datazone AP
+       p = In deep-sleep status
+       4 = WiFi Uplink
+
+AP Database
+-----------
+Name               Group       AP Type  IP Address      Status      Flags  Switch IP    Standby IP   Wired MAC Address  Serial #    Port  FQLN  Outer IP  User
+----               -----       -------  ----------      ------      -----  ---------    ----------   -----------------  --------    ----  ----  --------  ----
+D03Z3F106PS        MO-Staging  303H     10.160.164.186  Up 47m:48s         10.110.1.25  10.110.1.24  20:4c:03:3b:2f:84  CNGKK2R31N        N/A   N/A       
+D03Z3F111M         MO-Staging  315      10.160.164.24   Up 47m:37s         10.110.1.24  10.110.1.25  7c:57:3c:ca:0c:ae  CNJHJ0T070        N/A   N/A       
+D03Z3F111PS-C396   MO-Staging  303H     10.160.165.132  Up 47m:49s         10.110.1.25  10.110.1.24  20:4c:03:a7:f6:a6  CNJJK2R77D        N/A   N/A       
+D03Z3F111SB-C3111  MO-Staging  303H     10.160.161.134  Up 47m:47s         10.110.1.25  10.110.1.24  20:4c:03:a7:ea:72  CNJJK2R7L7        N/A   N/A       
+D03Z3F112SB-C3109  MO-Staging  303H     10.160.161.203  Up 47m:51s         10.110.1.25  10.110.1.24  20:4c:03:a7:e8:f6  CNJJK2R7KR        N/A   N/A       
+D03Z3F116PS-C386   MO-Staging  303H     10.160.165.3    Up 47m:51s         10.110.1.24  10.110.1.25  20:4c:03:a7:f1:7a  CNJJK2R75V        N/A   N/A       
+D03Z3F116SB-C3101  MO-Staging  303H     10.160.165.158  Up 47m:51s         10.110.1.25  10.110.1.24  20:4c:03:a8:08:b6  CNJJK2R70J        N/A   N/A       
+D03Z3F117M-C390    MO-Staging  303H     10.160.165.160  Up 47m:53s         10.110.1.25  10.110.1.24  20:4c:03:a7:ff:8a  CNJJK2R704        N/A   N/A       
+D03Z3F117SB-C3105  MO-Staging  303H     10.160.162.34   Up 47m:52s         10.110.1.24  10.110.1.25  20:4c:03:a7:ef:2a  CNJJK2R7HZ        N/A   N/A       
+D03Z3F119PS-C384   MO-Staging  303H     10.160.162.0    Up 47m:56s         10.110.1.24  10.110.1.25  20:4c:03:a7:fd:5a  CNJJK2R77M        N/A   N/A       
+D03Z3F122SB-C395   MO-Staging  303H     10.160.165.14   Up 47m:56s         10.110.1.24  10.110.1.25  20:4c:03:a7:dd:da  CNJJK2R76R        N/A   N/A       
+D03Z3F123PS-C382   MO-Staging  303H     10.160.165.98   Up 47m:56s         10.110.1.24  10.110.1.25  20:4c:03:a7:e2:96  CNJJK2R76T        N/A   N/A       
+D03Z3F124M-C393    MO-Staging  303H     10.160.165.226  Up 47m:58s         10.110.1.24  10.110.1.25  20:4c:03:a7:f1:22  CNJJK2R70S        N/A   N/A       
+D03Z3F128M-C376    MO-Staging  303H     10.160.161.206  Up 48m:0s          10.110.1.25  10.110.1.24  20:4c:03:a7:d9:f2  CNJJK2R76G        N/A   N/A       
+D03Z3F128M-C387    MO-Staging  303H     10.160.162.20   Up 47m:58s         10.110.1.25  10.110.1.24  20:4c:03:a7:ea:6a  CNJJK2R75J        N/A   N/A       
+D03Z3F128PS-C372   MO-Staging  303H     10.160.161.171  Up 48m:1s          10.110.1.24  10.110.1.25  20:4c:03:a7:f9:12  CNJJK2R7SW        N/A   N/A       
+D03Z3F128SB-C383   MO-Staging  303H     10.160.162.92   Up 47m:59s         10.110.1.24  10.110.1.25  20:4c:03:a7:e6:66  CNJJK2R73Q        N/A   N/A       
+D03Z3F129M         MO-Staging  315      10.160.164.35   Up 47m:48s         10.110.1.25  10.110.1.24  7c:57:3c:c9:e9:5a  CNJHJ0T04Q        N/A   N/A       
+D03Z3F131PS-C370   MO-Staging  303H     10.160.166.71   Up 48m:4s          10.110.1.25  10.110.1.24  20:4c:03:a7:eb:4a  CNJJK2R7K4        N/A   N/A       
+D03Z3F131SB-C381   MO-Staging  303H     10.160.162.125  Up 48m:3s          10.110.1.25  10.110.1.24  20:4c:03:a8:02:b2  CNJJK2R75F        N/A   N/A       
+D03Z3F135PS        MO-Staging  303H     10.160.164.253  Up 48m:5s          10.110.1.24  10.110.1.25  20:4c:03:3b:13:dc  CNGKK2R313        N/A   N/A       
+D03Z3F135SB-C375   MO-Staging  303H     10.160.161.87   Up 48m:4s          10.110.1.25  10.110.1.24  20:4c:03:a8:06:02  CNJJK2R7TN        N/A   N/A       
+D03Z3F137PS-C366   MO-Staging  303H     10.160.164.250  Up 48m:6s          10.110.1.25  10.110.1.24  20:4c:03:a7:ed:46  CNJJK2R7SV        N/A   N/A       
+D03Z3F139SB-C377   MO-Staging  303H     10.160.161.155  Up 48m:7s          10.110.1.25  10.110.1.24  20:4c:03:a7:f8:a2  CNJJK2R7JZ        N/A   N/A       
+D03Z3F141SB-C369   MO-Staging  303H     10.160.161.10   Up 48m:7s          10.110.1.25  10.110.1.24  20:4c:03:a7:e9:ce  CNJJK2R7S4        N/A   N/A       
+D03Z3F145M-C365    MO-Staging  303H     10.160.165.90   Up 48m:8s          10.110.1.25  10.110.1.24  20:4c:03:a8:04:2a  CNJJK2R7P5        N/A   N/A       
+D03Z3F146SB-C363   MO-Staging  303H     10.160.164.214  Up 48m:10s         10.110.1.25  10.110.1.24  20:4c:03:a7:fe:66  CNJJK2R7R6        N/A   N/A       
+D03Z3F147PS        MO-Staging  315      10.160.164.61   Up 47m:56s         10.110.1.24  10.110.1.25  7c:57:3c:c9:f8:48  CNJHJ0T05L        N/A   N/A       
+D03Z3F147SB-C361   MO-Staging  303H     10.160.161.79   Up 48m:10s         10.110.1.25  10.110.1.24  20:4c:03:a7:e9:5e  CNJJK2R7KB        N/A   N/A       
+D03Z3F148PS        MO-Staging  303H     10.160.161.213  Up 48m:11s         10.110.1.24  10.110.1.25  20:4c:03:3a:f5:44  CNGKK2R325        N/A   N/A       
+D03Z4F028M         MO-Staging  315      10.160.164.142  Up 47m:15s         10.110.1.24  10.110.1.25  7c:57:3c:ca:0f:1c  CNJHJ0T04H        N/A   N/A       
+D03Z4F039SB        MO-Staging  315      10.160.164.102  Up 47m:19s         10.110.1.25  10.110.1.24  7c:57:3c:c9:e2:f2  CNJHJ0T03B        N/A   N/A       
+
+Flags: 1 = 802.1x authenticated AP use EAP-PEAP; 1+ = 802.1x use EST; 1- = 802.1x use factory cert; 2 = Using IKE version 2
+       B = Built-in AP; C = Cellular RAP; D = Dirty or no config
+       E = Regulatory Domain Mismatch; F = AP failed 802.1x authentication
+       G = No such group; I = Inactive; J = USB cert at AP; L = Unlicensed
+       M = Mesh node
+       N = Duplicate name; P = PPPoe AP; R = Remote AP; R- = Remote AP requires Auth;
+       S = Standby-mode AP; U = Unprovisioned; X = Maintenance Mode
+       Y = Mesh Recovery
+       c = CERT-based RAP; e = Custom EST cert; f = No Spectrum FFT support
+       i = Indoor; o = Outdoor; s = LACP striping; u = Custom-Cert RAP; z = Datazone AP
+       p = In deep-sleep status
+       4 = WiFi Uplink
+
+AP Database
+-----------
+Name              Group       AP Type  IP Address      Status      Flags  Switch IP    Standby IP   Wired MAC Address  Serial #    Port  FQLN  Outer IP  User
+----              -----       -------  ----------      ------      -----  ---------    ----------   -----------------  --------    ----  ----  --------  ----
+D03Z4F041PS       MO-Staging  315      10.160.164.145  Up 47m:18s         10.110.1.25  10.110.1.24  7c:57:3c:c9:e3:96  CNJHJ0T05M        N/A   N/A       
+D03Z4F051PS       MO-Staging  315      10.160.164.147  Up 47m:21s         10.110.1.25  10.110.1.24  7c:57:3c:c9:f2:3a  CNJHJ0T038        N/A   N/A       
+D03Z4F053SB       MO-Staging  315      10.160.164.150  Up 47m:21s         10.110.1.25  10.110.1.24  7c:57:3c:c9:f8:56  CNJHJ0T037        N/A   N/A       
+D03Z4F054PS       MO-Staging  303H     10.160.166.55   Up 47m:37s         10.110.1.24  10.110.1.25  20:4c:03:3a:c0:30  CNGKK2R2Z2        N/A   N/A       
+D03Z4F063PS       MO-Staging  315      10.160.164.158  Up 47m:23s         10.110.1.25  10.110.1.24  7c:57:3c:c9:e0:80  CNJHJ0T05P        N/A   N/A       
+D03Z4F064M        MO-Staging  314      10.160.162.149  Up 47m:25s         10.110.1.24  10.110.1.25  e8:26:89:c1:19:04  CNJPJ0R1CX        N/A   N/A       
+D03Z4F066PS       MO-Staging  315      10.160.164.163  Up 47m:24s         10.110.1.24  10.110.1.25  7c:57:3c:c9:f6:9e  CNJHJ0T09J        N/A   N/A       
+D03Z4F072SB       MO-Staging  315      10.160.164.135  Up 47m:24s         10.110.1.24  10.110.1.25  7c:57:3c:c9:f5:5e  CNJHJ0T0CH        N/A   N/A       
+D03Z5F-006M       MO-Staging  303H     10.160.166.58   Up 47m:26s         10.110.1.24  10.110.1.25  20:4c:03:8b:4c:a6  CNHYK2R33F        N/A   N/A       
+D03Z5F004PS       MO-Staging  315      10.160.164.141  Up 47m:13s         10.110.1.25  10.110.1.24  7c:57:3c:ca:08:92  CNJHJ0T0C0        N/A   N/A       
+D03Z5F006PS       MO-Staging  303H     10.160.164.246  Up 47m:27s         10.110.1.24  10.110.1.25  20:4c:03:8b:4f:52  CNHYK2R33Z        N/A   N/A       
+D03Z5F006SB       MO-Staging  315      10.160.164.107  Up 47m:14s         10.110.1.25  10.110.1.24  7c:57:3c:ca:07:4a  CNJHJ0T0C7        N/A   N/A       
+D03Z5F008M        MO-Staging  315      10.160.164.13   Up 47m:15s         10.110.1.24  10.110.1.25  7c:57:3c:ca:08:6c  CNJHJ0T0BJ        N/A   N/A       
+D04Z1F199M-C477   MO-Staging  303H     10.160.161.176  Up 47m:11s         10.110.1.25  10.110.1.24  20:4c:03:a7:ff:3a  CNJJK2R7T4        N/A   N/A       
+D04Z1F199M-C478   MO-Staging  303H     10.160.161.123  Up 47m:10s         10.110.1.25  10.110.1.24  20:4c:03:a7:e1:b6  CNJJK2R7SB        N/A   N/A       
+D04Z1F199PS-C476  MO-Staging  303H     10.160.161.219  Up 47m:12s         10.110.1.25  10.110.1.24  20:4c:03:a7:fe:22  CNJJK2R7H1        N/A   N/A       
+D04Z1F199SB-C475  MO-Staging  303H     10.160.161.216  Up 47m:12s         10.110.1.24  10.110.1.25  20:4c:03:a7:db:c6  CNJJK2R7TW        N/A   N/A       
+D04Z1F207M-C466   MO-Staging  303H     10.160.162.97   Up 47m:13s         10.110.1.24  10.110.1.25  20:4c:03:a7:e6:d2  CNJJK2R7R2        N/A   N/A       
+D04Z1F208M-C465   MO-Staging  303H     10.160.161.240  Up 47m:14s         10.110.1.24  10.110.1.25  20:4c:03:a7:e1:1a  CNJJK2R79F        N/A   N/A       
+D04Z1F208PS-C464  MO-Staging  303H     10.160.166.123  Up 47m:14s         10.110.1.24  10.110.1.25  20:4c:03:a7:df:12  CNJJK2R7T9        N/A   N/A       
+D04Z1F210M-C461   MO-Staging  303H     10.160.164.191  Up 47m:17s         10.110.1.25  10.110.1.24  20:4c:03:a7:fb:1a  CNJJK2R7RV        N/A   N/A       
+D04Z1F211M-C462   MO-Staging  303H     10.160.161.153  Up 47m:18s         10.110.1.25  10.110.1.24  20:4c:03:a7:fb:46  CNJJK2R7T7        N/A   N/A       
+D04Z1F211PS-C460  MO-Staging  303H     10.160.164.254  Up 47m:18s         10.110.1.25  10.110.1.24  20:4c:03:a7:e1:2e  CNJJK2R7S3        N/A   N/A       
+D04Z1F215M-C457   MO-Staging  303H     10.160.161.248  Up 47m:21s         10.110.1.25  10.110.1.24  20:4c:03:a7:e6:de  CNJJK2R7K0        N/A   N/A       
+D04Z1F215M-C458   MO-Staging  303H     10.160.165.76   Up 47m:20s         10.110.1.24  10.110.1.25  20:4c:03:a7:e8:16  CNJJK2R7R9        N/A   N/A       
+D04Z1F218M        MO-Staging  315      10.160.164.113  Up 47m:7s          10.110.1.25  10.110.1.24  7c:57:3c:c9:fb:98  CNJHJ0T0C8        N/A   N/A       
+D04Z1F223SB       MO-Staging  315      10.160.164.76   Up 47m:8s          10.110.1.25  10.110.1.24  7c:57:3c:c9:f4:ea  CNJHJ0T0C3        N/A   N/A       
+D04Z1F225PS       MO-Staging  315      10.160.164.89   Up 47m:9s          10.110.1.24  10.110.1.25  7c:57:3c:c9:f1:62  CNJHJ0T0CD        N/A   N/A       
+D04Z1F226M-C451   MO-Staging  303H     10.160.162.2    Up 47m:25s         10.110.1.24  10.110.1.25  20:4c:03:a7:df:8e  CNJJK2R7RW        N/A   N/A       
+D04Z1F226M-C452   MO-Staging  303H     10.160.162.128  Up 47m:23s         10.110.1.25  10.110.1.24  20:4c:03:a7:dd:4a  CNJJK2R7DR        N/A   N/A       
+D04Z2F150PS       MO-Staging  344      10.160.162.106  Up 29m:17s         10.110.1.24  10.110.1.25  7c:57:3c:c1:4d:b0  CNJHK500B6        N/A   N/A       
+D04Z2F155SB       MO-Staging  344      10.160.165.17   Up 29m:8s          10.110.1.24  10.110.1.25  7c:57:3c:c1:4e:e2  CNJHK5008Z        N/A   N/A       
+
+Flags: 1 = 802.1x authenticated AP use EAP-PEAP; 1+ = 802.1x use EST; 1- = 802.1x use factory cert; 2 = Using IKE version 2
+       B = Built-in AP; C = Cellular RAP; D = Dirty or no config
+       E = Regulatory Domain Mismatch; F = AP failed 802.1x authentication
+       G = No such group; I = Inactive; J = USB cert at AP; L = Unlicensed
+       M = Mesh node
+       N = Duplicate name; P = PPPoe AP; R = Remote AP; R- = Remote AP requires Auth;
+       S = Standby-mode AP; U = Unprovisioned; X = Maintenance Mode
+       Y = Mesh Recovery
+       c = CERT-based RAP; e = Custom EST cert; f = No Spectrum FFT support
+       i = Indoor; o = Outdoor; s = LACP striping; u = Custom-Cert RAP; z = Datazone AP
+       p = In deep-sleep status
+       4 = WiFi Uplink
+
+AP Database
+-----------
+Name               Group       AP Type  IP Address      Status      Flags  Switch IP    Standby IP   Wired MAC Address  Serial #    Port  FQLN  Outer IP  User
+----               -----       -------  ----------      ------      -----  ---------    ----------   -----------------  --------    ----  ----  --------  ----
+D04Z2F161SB-S417   MO-Staging  303H     10.160.165.115  Up 46m:52s         10.110.1.25  10.110.1.24  20:4c:03:a7:df:ae  CNJJK2R7DM        N/A   N/A       
+D04Z2F164PS        MO-Staging  315      10.160.164.99   Up 46m:40s         10.110.1.24  10.110.1.25  7c:57:3c:c9:ec:dc  CNJHJ0T0B5        N/A   N/A       
+D04Z2F167PS-C4106  MO-Staging  303H     10.160.162.15   Up 46m:54s         10.110.1.24  10.110.1.25  20:4c:03:a7:e0:32  CNJJK2R7LC        N/A   N/A       
+D04Z2F167SB-S415   MO-Staging  303H     10.160.165.104  Up 46m:55s         10.110.1.25  10.110.1.24  20:4c:03:a7:ed:86  CNJJK2R7M8        N/A   N/A       
+D04Z2F172PS-C4104  MO-Staging  303H     10.160.162.71   Up 46m:55s         10.110.1.25  10.110.1.24  20:4c:03:a7:eb:fa  CNJJK2R6Z2        N/A   N/A       
+D04Z2F172SB-S411   MO-Staging  303H     10.160.166.121  Up 46m:58s         10.110.1.25  10.110.1.24  20:4c:03:a7:da:6a  CNJJK2R791        N/A   N/A       
+D04Z2F173SB        MO-Staging  314      10.160.164.168  Up 46m:25s         10.110.1.25  10.110.1.24  e8:26:89:c1:17:ec  CNJPJ0R1HZ        N/A   N/A       
+D04Z2F175PS-C4102  MO-Staging  303H     10.160.161.250  Up 46m:58s         10.110.1.25  10.110.1.24  20:4c:03:a7:f1:ba  CNJJK2R7LJ        N/A   N/A       
+D04Z2F176SB-S409   MO-Staging  303H     10.160.165.189  Up 47m:0s          10.110.1.25  10.110.1.24  20:4c:03:a7:de:d6  CNJJK2R71Y        N/A   N/A       
+D04Z2F178PS        MO-Staging  315      10.160.164.114  Up 46m:45s         10.110.1.25  10.110.1.24  7c:57:3c:c9:f2:c6  CNJHJ0T082        N/A   N/A       
+D04Z2F182M         MO-Staging  315      10.160.164.146  Up 46m:48s         10.110.1.25  10.110.1.24  7c:57:3c:ca:0d:94  CNJHJ0T031        N/A   N/A       
+D04Z2F182SB-S407   MO-Staging  303H     10.160.161.109  Up 47m:2s          10.110.1.24  10.110.1.25  20:4c:03:a7:d9:86  CNJJK2R79L        N/A   N/A       
+D04Z2F183PS-C496   MO-Staging  303H     10.160.164.244  Up 47m:3s          10.110.1.24  10.110.1.25  20:4c:03:a8:06:b6  CNJJK2R7JV        N/A   N/A       
+D04Z2F184M-C494    MO-Staging  303H     10.160.165.122  Up 47m:4s          10.110.1.25  10.110.1.24  20:4c:03:a7:dc:32  CNJJK2R7JH        N/A   N/A       
+D04Z2F187PS-C490   MO-Staging  303H     10.160.161.218  Up 47m:3s          10.110.1.24  10.110.1.25  20:4c:03:a8:06:9a  CNJJK2R7RX        N/A   N/A       
+D04Z2F187SB-S405   MO-Staging  303H     10.160.161.249  Up 47m:5s          10.110.1.24  10.110.1.25  20:4c:03:a8:06:1a  CNJJK2R76P        N/A   N/A       
+D04Z2F190M-C488    MO-Staging  303H     10.160.165.246  Up 47m:5s          10.110.1.25  10.110.1.24  20:4c:03:a7:f2:da  CNJJK2R7PB        N/A   N/A       
+D04Z2F192SB-C485   MO-Staging  303H     10.160.164.236  Up 47m:7s          10.110.1.25  10.110.1.24  20:4c:03:a7:f6:06  CNJJK2R7MZ        N/A   N/A       
+D04Z2F193M-C483    MO-Staging  303H     10.160.166.82   Up 47m:7s          10.110.1.24  10.110.1.25  20:4c:03:a7:da:d2  CNJJK2R7HM        N/A   N/A       
+D04Z2F195M-C482    MO-Staging  303H     10.160.161.102  Up 47m:8s          10.110.1.25  10.110.1.24  20:4c:03:a7:ee:5e  CNJJK2R7TF        N/A   N/A       
+D04Z2F195PS-C480   MO-Staging  303H     10.160.161.186  Up 47m:6s          10.110.1.24  10.110.1.25  20:4c:03:a7:e7:be  CNJJK2R7RZ        N/A   N/A       
+D04Z3F079PS        MO-Staging  344      10.160.164.132  Up 28m:58s         10.110.1.25  10.110.1.24  7c:57:3c:c1:4c:ea  CNJHK50070        N/A   N/A       
+D04Z3F079SB        MO-Staging  344      10.160.164.120  Up 29m:7s          10.110.1.25  10.110.1.24  7c:57:3c:c1:4d:68  CNJHK50073        N/A   N/A       
+D04Z3F093M         MO-Staging  344      10.160.161.32   Up 28m:57s         10.110.1.25  10.110.1.24  7c:57:3c:c1:4e:a2  CNJHK5006F        N/A   N/A       
+D04Z3F097PS        MO-Staging  344      10.160.166.37   Up 28m:59s         10.110.1.24  10.110.1.25  7c:57:3c:c1:4d:b2  CNJHK5005S        N/A   N/A       
+D04Z3F097SB        MO-Staging  344      10.160.161.50   Up 29m:10s         10.110.1.24  10.110.1.25  7c:57:3c:c1:4f:00  CNJHK5006H        N/A   N/A       
+D04Z3F106SB        MO-Staging  344      10.160.161.28   Up 29m:11s         10.110.1.24  10.110.1.25  7c:57:3c:c1:50:3c  CNJHK50079        N/A   N/A       
+D04Z3F113M         MO-Staging  344      10.160.166.113  Up 29m:11s         10.110.1.25  10.110.1.24  7c:57:3c:c1:4f:8e  CNJHK5006Y        N/A   N/A       
+D04Z3F120M         MO-Staging  344      10.160.166.43   Up 29m:12s         10.110.1.25  10.110.1.24  7c:57:3c:c1:4e:94  CNJHK5006X        N/A   N/A       
+D04Z3F120PS        MO-Staging  344      10.160.165.18   Up 29m:13s         10.110.1.25  10.110.1.24  7c:57:3c:c1:50:60  CNJHK5007B        N/A   N/A       
+D04Z3F120SB        MO-Staging  344      10.160.165.43   Up 29m:14s         10.110.1.24  10.110.1.25  7c:57:3c:c1:4c:e0  CNJHK500BQ        N/A   N/A       
+D04Z3F121M         MO-Staging  315      10.160.164.25   Up 46m:34s         10.110.1.24  10.110.1.25  7c:57:3c:c9:f8:30  CNJHJ0T036        N/A   N/A       
+
+Flags: 1 = 802.1x authenticated AP use EAP-PEAP; 1+ = 802.1x use EST; 1- = 802.1x use factory cert; 2 = Using IKE version 2
+       B = Built-in AP; C = Cellular RAP; D = Dirty or no config
+       E = Regulatory Domain Mismatch; F = AP failed 802.1x authentication
+       G = No such group; I = Inactive; J = USB cert at AP; L = Unlicensed
+       M = Mesh node
+       N = Duplicate name; P = PPPoe AP; R = Remote AP; R- = Remote AP requires Auth;
+       S = Standby-mode AP; U = Unprovisioned; X = Maintenance Mode
+       Y = Mesh Recovery
+       c = CERT-based RAP; e = Custom EST cert; f = No Spectrum FFT support
+       i = Indoor; o = Outdoor; s = LACP striping; u = Custom-Cert RAP; z = Datazone AP
+       p = In deep-sleep status
+       4 = WiFi Uplink
+
+AP Database
+-----------
+Name              Group       AP Type  IP Address      Status      Flags  Switch IP    Standby IP   Wired MAC Address  Serial #    Port  FQLN  Outer IP  User
+----              -----       -------  ----------      ------      -----  ---------    ----------   -----------------  --------    ----  ----  --------  ----
+D04Z3F139PS       MO-Staging  344      10.160.165.40   Up 29m:3s          10.110.1.24  10.110.1.25  7c:57:3c:c1:4e:26  CNJHK5006R        N/A   N/A       
+D04Z3F139SB       MO-Staging  344      10.160.161.27   Up 29m:4s          10.110.1.25  10.110.1.24  7c:57:3c:c1:4c:e6  CNJHK500B5        N/A   N/A       
+D04Z3F147M        MO-Staging  344      10.160.166.106  Up 29m:17s         10.110.1.24  10.110.1.25  7c:57:3c:c1:4e:64  CNJHK5005N        N/A   N/A       
+D04Z4F020SB       MO-Staging  315      10.160.164.65   Up 46m:19s         10.110.1.24  10.110.1.25  7c:57:3c:c9:ed:14  CNJHJ0T08H        N/A   N/A       
+D04Z4F021PS       MO-Staging  315      10.160.164.143  Up 46m:20s         10.110.1.25  10.110.1.24  7c:57:3c:c9:ff:f8  CNJHJ0T07R        N/A   N/A       
+D04Z4F029M        MO-Staging  315      10.160.164.154  Up 46m:21s         10.110.1.25  10.110.1.24  7c:57:3c:ca:06:92  CNJHJ0T05B        N/A   N/A       
+D04Z4F036SB       MO-Staging  315      10.160.164.182  Up 46m:21s         10.110.1.24  10.110.1.25  7c:57:3c:c9:dd:c6  CNJHJ0T07P        N/A   N/A       
+D04Z4F043PS       MO-Staging  303H     10.160.165.198  Up 46m:36s         10.110.1.24  10.110.1.25  20:4c:03:a7:e7:16  CNJJK2R7KQ        N/A   N/A       
+D04Z4F055SB       MO-Staging  315      10.160.164.47   Up 46m:22s         10.110.1.25  10.110.1.24  7c:57:3c:c9:f8:9e  CNJHJ0T080        N/A   N/A       
+D04Z4F060PS       MO-Staging  315      10.160.164.177  Up 46m:24s         10.110.1.25  10.110.1.24  7c:57:3c:ca:02:00  CNJHJ0T083        N/A   N/A       
+D04Z4F069M        MO-Staging  344      10.160.164.126  Up 28m:55s         10.110.1.24  10.110.1.25  7c:57:3c:c1:4f:26  CNJHK5006D        N/A   N/A       
+D04Z5F004PS       MO-Staging  315      10.160.162.148  Up 46m:16s         10.110.1.25  10.110.1.24  7c:57:3c:ca:05:82  CNJHJ0T07Y        N/A   N/A       
+D04Z5F012SB       MO-Staging  315      10.160.166.145  Up 46m:18s         10.110.1.25  10.110.1.24  7c:57:3c:c9:fa:a0  CNJHJ0T061        N/A   N/A       
+D05Z1F200PS-S508  MO-Staging  303H     10.160.162.61   Up 46m:13s         10.110.1.24  10.110.1.25  20:4c:03:a7:e4:8a  CNJJK2R6ZN        N/A   N/A       
+D05Z1F200SB-S507  MO-Staging  303H     10.160.161.136  Up 46m:14s         10.110.1.25  10.110.1.24  20:4c:03:a7:dd:2e  CNJJK2R7J0        N/A   N/A       
+D05Z1F202PS-S506  MO-Staging  303H     10.160.165.241  Up 46m:16s         10.110.1.25  10.110.1.24  20:4c:03:a7:f3:f6  CNJJK2R7F1        N/A   N/A       
+D05Z1F203SB-S505  MO-Staging  303H     10.160.165.70   Up 46m:17s         10.110.1.25  10.110.1.24  20:4c:03:a7:eb:aa  CNJJK2R7MJ        N/A   N/A       
+D05Z1F206M        MO-Staging  314      10.160.164.63   Up 7m:6s           10.110.1.24  10.110.1.25  e8:26:89:c1:19:ce  CNJPJ0R1M9        N/A   N/A       
+D05Z1F208PS-S504  MO-Staging  303H     10.160.161.64   Up 46m:17s         10.110.1.25  10.110.1.24  20:4c:03:a7:f9:6a  CNJJK2R6WY        N/A   N/A       
+D05Z1F208SB-S503  MO-Staging  303H     10.160.165.120  Up 46m:18s         10.110.1.24  10.110.1.25  20:4c:03:a7:da:4a  CNJJK2R7MB        N/A   N/A       
+D05Z1F210PS-S502  MO-Staging  303H     10.160.162.46   Up 46m:19s         10.110.1.25  10.110.1.24  20:4c:03:a7:ea:26  CNJJK2R7P1        N/A   N/A       
+D05Z1F211SB-S501  MO-Staging  303H     10.160.166.92   Up 46m:20s         10.110.1.25  10.110.1.24  20:4c:03:a8:03:82  CNJJK2R7KZ        N/A   N/A       
+D05Z1F214SB       MO-Staging  315      10.160.164.91   Up 46m:4s          10.110.1.24  10.110.1.25  7c:57:3c:c9:ef:e2  CNJHJ0T05T        N/A   N/A       
+D05Z1F215PS-C566  MO-Staging  303H     10.160.162.75   Up 46m:21s         10.110.1.25  10.110.1.24  20:4c:03:a7:f5:32  CNJJK2R7D8        N/A   N/A       
+D05Z1F215SB-C565  MO-Staging  303H     10.160.161.91   Up 46m:20s         10.110.1.24  10.110.1.25  20:4c:03:a7:e6:4a  CNJJK2R6YR        N/A   N/A       
+D05Z1F216M-C561   MO-Staging  303H     10.160.164.196  Up 46m:24s         10.110.1.25  10.110.1.24  20:4c:03:a7:e6:be  CNJJK2R7HC        N/A   N/A       
+D05Z1F216M-C564   MO-Staging  303H     10.160.162.1    Up 46m:23s         10.110.1.25  10.110.1.24  20:4c:03:a7:f4:52  CNJJK2R7D0        N/A   N/A       
+D05Z1F221PS-C558  MO-Staging  303H     10.160.162.76   Up 46m:25s         10.110.1.25  10.110.1.24  20:4c:03:a7:db:96  CNJJK2R7HD        N/A   N/A       
+D05Z1F221SB-C555  MO-Staging  303H     10.160.164.197  Up 46m:26s         10.110.1.24  10.110.1.25  20:4c:03:a7:ea:fe  CNJJK2R7BT        N/A   N/A       
+D05Z1F222M-C556   MO-Staging  303H     10.160.166.143  Up 46m:27s         10.110.1.24  10.110.1.25  20:4c:03:a7:e4:2a  CNJJK2R6ZH        N/A   N/A       
+D05Z1F226M-C551   MO-Staging  303H     10.160.165.151  Up 46m:27s         10.110.1.24  10.110.1.25  20:4c:03:a7:ee:06  CNJJK2R7HX        N/A   N/A       
+D05Z1F233M        MO-Staging  315      10.160.164.86   Up 46m:15s         10.110.1.24  10.110.1.25  7c:57:3c:c9:e7:50  CNJHJ0T04T        N/A   N/A       
+
+Flags: 1 = 802.1x authenticated AP use EAP-PEAP; 1+ = 802.1x use EST; 1- = 802.1x use factory cert; 2 = Using IKE version 2
+       B = Built-in AP; C = Cellular RAP; D = Dirty or no config
+       E = Regulatory Domain Mismatch; F = AP failed 802.1x authentication
+       G = No such group; I = Inactive; J = USB cert at AP; L = Unlicensed
+       M = Mesh node
+       N = Duplicate name; P = PPPoe AP; R = Remote AP; R- = Remote AP requires Auth;
+       S = Standby-mode AP; U = Unprovisioned; X = Maintenance Mode
+       Y = Mesh Recovery
+       c = CERT-based RAP; e = Custom EST cert; f = No Spectrum FFT support
+       i = Indoor; o = Outdoor; s = LACP striping; u = Custom-Cert RAP; z = Datazone AP
+       p = In deep-sleep status
+       4 = WiFi Uplink
+
+AP Database
+-----------
+Name              Group       AP Type  IP Address      Status      Flags  Switch IP    Standby IP   Wired MAC Address  Serial #    Port  FQLN  Outer IP  User
+----              -----       -------  ----------      ------      -----  ---------    ----------   -----------------  --------    ----  ----  --------  ----
+D05Z1F245PS       MO-Staging  315      10.160.164.100  Up 46m:15s         10.110.1.24  10.110.1.25  7c:57:3c:c9:e7:f2  CNJHJ0T060        N/A   N/A       
+D05Z2F150M        MO-Staging  344      10.160.165.26   Up 28m:56s         10.110.1.24  10.110.1.25  7c:57:3c:c1:50:62  CNJHK5006S        N/A   N/A       
+D05Z2F160PS-S528  MO-Staging  303H     10.160.162.16   Up 45m:56s         10.110.1.24  10.110.1.25  20:4c:03:a7:f7:de  CNJJK2R7QH        N/A   N/A       
+D05Z2F160SB-S529  MO-Staging  303H     10.160.161.112  Up 45m:57s         10.110.1.25  10.110.1.24  20:4c:03:a7:f1:9e  CNJJK2R7SL        N/A   N/A       
+D05Z2F163SB-S527  MO-Staging  303H     10.160.165.63   Up 45m:56s         10.110.1.24  10.110.1.25  20:4c:03:a8:07:56  CNJJK2R7PS        N/A   N/A       
+D05Z2F167SB-S525  MO-Staging  303H     10.160.162.28   Up 46m:0s          10.110.1.24  10.110.1.25  20:4c:03:a7:ea:fa  CNJJK2R7QT        N/A   N/A       
+D05Z2F168PS-S524  MO-Staging  303H     10.160.164.188  Up 46m:0s          10.110.1.25  10.110.1.24  20:4c:03:a7:e9:9e  CNJJK2R7Q5        N/A   N/A       
+D05Z2F171PS-S522  MO-Staging  303H     10.160.164.241  Up 46m:1s          10.110.1.25  10.110.1.24  20:4c:03:a7:d8:d6  CNJJK2R7S2        N/A   N/A       
+D05Z2F172SB-S523  MO-Staging  303H     10.160.161.121  Up 46m:1s          10.110.1.25  10.110.1.24  20:4c:03:a7:dc:b2  CNJJK2R7QV        N/A   N/A       
+D05Z2F175SB-S521  MO-Staging  303H     10.160.161.221  Up 46m:3s          10.110.1.24  10.110.1.25  20:4c:03:a8:05:32  CNJJK2R7Q4        N/A   N/A       
+D05Z2F179PS-S518  MO-Staging  303H     10.160.165.197  Up 46m:3s          10.110.1.25  10.110.1.24  20:4c:03:a7:f9:86  CNJJK2R7L4        N/A   N/A       
+D05Z2F179SB-S519  MO-Staging  303H     10.160.164.206  Up 46m:5s          10.110.1.25  10.110.1.24  20:4c:03:a7:f5:42  CNJJK2R7GZ        N/A   N/A       
+D05Z2F184PS-S516  MO-Staging  303H     10.160.164.239  Up 46m:7s          10.110.1.24  10.110.1.25  20:4c:03:a8:0b:a6  CNJJK2R7G9        N/A   N/A       
+D05Z2F184SB-S517  MO-Staging  303H     10.160.161.97   Up 46m:7s          10.110.1.24  10.110.1.25  20:4c:03:a7:ee:02  CNJJK2R7JR        N/A   N/A       
+D05Z2F185M        MO-Staging  314      10.160.164.165  Up 45m:53s         10.110.1.25  10.110.1.24  e8:26:89:c1:1b:60  CNJPJ0R1KT        N/A   N/A       
+D05Z2F187PS-S514  MO-Staging  303H     10.160.166.84   Up 46m:9s          10.110.1.25  10.110.1.24  20:4c:03:a8:02:4a  CNJJK2R70W        N/A   N/A       
+D05Z2F187SB-S515  MO-Staging  303H     10.160.166.132  Up 46m:9s          10.110.1.24  10.110.1.25  20:4c:03:a7:e8:be  CNJJK2R7JP        N/A   N/A       
+D05Z2F192PS-S512  MO-Staging  303H     10.160.165.7    Up 46m:11s         10.110.1.25  10.110.1.24  20:4c:03:a8:02:52  CNJJK2R7KG        N/A   N/A       
+D05Z2F192SB-S511  MO-Staging  303H     10.160.166.49   Up 46m:10s         10.110.1.25  10.110.1.24  20:4c:03:a7:fa:d2  CNJJK2R7QP        N/A   N/A       
+D05Z2F194PS-S510  MO-Staging  303H     10.160.164.221  Up 46m:12s         10.110.1.25  10.110.1.24  20:4c:03:a7:e8:82  CNJJK2R7GQ        N/A   N/A       
+D05Z2F195SB-S509  MO-Staging  303H     10.160.166.75   Up 46m:13s         10.110.1.24  10.110.1.25  20:4c:03:a7:e3:aa  CNJJK2R7L9        N/A   N/A       
+D05Z3F079M        MO-Staging  344      10.160.166.40   Up 28m:54s         10.110.1.24  10.110.1.25  7c:57:3c:c1:4e:e4  CNJHK500BZ        N/A   N/A       
+D05Z3F089PS       MO-Staging  365      10.160.164.94   Up 45m:31s         10.110.1.24  10.110.1.25  bc:9f:e4:c1:d3:86  CNJ8JSW502        N/A   N/A       
+D05Z3F093PS       MO-Staging  315      10.160.164.22   Up 45m:37s         10.110.1.24  10.110.1.25  7c:57:3c:c9:e3:f8  CNJHJ0T047        N/A   N/A       
+D05Z3F093SB       MO-Staging  315      10.160.164.39   Up 45m:35s         10.110.1.24  10.110.1.25  7c:57:3c:c9:f7:06  CNJHJ0T05V        N/A   N/A       
+D05Z3F101M        MO-Staging  344      10.160.165.37   Up 28m:52s         10.110.1.24  10.110.1.25  7c:57:3c:c1:4e:ca  CNJHK500CD        N/A   N/A       
+D05Z3F121SB       MO-Staging  365      10.160.165.208  Up 45m:19s         10.110.1.25  10.110.1.24  00:4e:35:c7:35:a4  CNH2JSW3W0        N/A   N/A       
+D05Z3F132M        MO-Staging  344      10.160.165.42   Up 28m:53s         10.110.1.24  10.110.1.25  7c:57:3c:c1:4c:f4  CNJHK50066        N/A   N/A       
+D05Z3F147SB       MO-Staging  315      10.160.164.36   Up 45m:40s         10.110.1.24  10.110.1.25  7c:57:3c:c9:e3:68  CNJHJ0T03Y        N/A   N/A       
+D05Z4F023PS       MO-Staging  344      10.160.165.35   Up 28m:48s         10.110.1.24  10.110.1.25  7c:57:3c:c1:4d:c0  CNJHK500BS        N/A   N/A       
+D05Z4F023SB       MO-Staging  344      10.160.161.48   Up 28m:47s         10.110.1.24  10.110.1.25  7c:57:3c:c1:4f:f4  CNJHK50065        N/A   N/A       
+D05Z4F039M        MO-Staging  344      10.160.165.23   Up 28m:49s         10.110.1.24  10.110.1.25  7c:57:3c:c1:4f:6c  CNJHK50069        N/A   N/A       
+
+Flags: 1 = 802.1x authenticated AP use EAP-PEAP; 1+ = 802.1x use EST; 1- = 802.1x use factory cert; 2 = Using IKE version 2
+       B = Built-in AP; C = Cellular RAP; D = Dirty or no config
+       E = Regulatory Domain Mismatch; F = AP failed 802.1x authentication
+       G = No such group; I = Inactive; J = USB cert at AP; L = Unlicensed
+       M = Mesh node
+       N = Duplicate name; P = PPPoe AP; R = Remote AP; R- = Remote AP requires Auth;
+       S = Standby-mode AP; U = Unprovisioned; X = Maintenance Mode
+       Y = Mesh Recovery
+       c = CERT-based RAP; e = Custom EST cert; f = No Spectrum FFT support
+       i = Indoor; o = Outdoor; s = LACP striping; u = Custom-Cert RAP; z = Datazone AP
+       p = In deep-sleep status
+       4 = WiFi Uplink
+
+AP Database
+-----------
+Name              Group       AP Type  IP Address      Status      Flags  Switch IP    Standby IP   Wired MAC Address  Serial #    Port  FQLN  Outer IP  User
+----              -----       -------  ----------      ------      -----  ---------    ----------   -----------------  --------    ----  ----  --------  ----
+D05Z4F039PS       MO-Staging  365      10.160.162.51   Up 45m:23s         10.110.1.24  10.110.1.25  bc:9f:e4:c1:ef:12  CNJ8JSW4VP        N/A   N/A       
+D05Z4F039SB       MO-Staging  365      10.160.161.145  Up 45m:24s         10.110.1.24  10.110.1.25  bc:9f:e4:c1:ee:18  CNJ8JSW503        N/A   N/A       
+D05Z4F047PS       MO-Staging  315      10.160.164.17   Up 45m:30s         10.110.1.24  10.110.1.25  7c:57:3c:c9:f5:32  CNJHJ0T05S        N/A   N/A       
+D05Z4F049SB       MO-Staging  315      10.160.164.40   Up 45m:30s         10.110.1.25  10.110.1.24  7c:57:3c:c9:ef:98  CNJHJ0T05Y        N/A   N/A       
+D05Z4F054M        MO-Staging  344      10.160.161.16   Up 29m:1s          10.110.1.24  10.110.1.25  7c:57:3c:c1:4e:76  CNJHK5006C        N/A   N/A       
+D05Z4F067M        MO-Staging  344      10.160.164.133  Up 28m:52s         10.110.1.25  10.110.1.24  7c:57:3c:c1:4f:18  CNJHK5006B        N/A   N/A       
+D05Z5F000M        MO-Staging  365      10.160.162.145  Up 45m:18s         10.110.1.24  10.110.1.25  bc:9f:e4:c1:e9:14  CNJ8JSW50F        N/A   N/A       
+D05Z5F008PS       MO-Staging  315      10.160.166.148  Up 45m:42s         10.110.1.24  10.110.1.25  7c:57:3c:ca:03:56  CNJHJ0T06N        N/A   N/A       
+D05Z5F008SB       MO-Staging  315      10.160.166.147  Up 45m:23s         10.110.1.25  10.110.1.24  7c:57:3c:c9:f8:2a  CNJHJ0T06L        N/A   N/A       
+D06Z1F200PS-S612  MO-Staging  303H     10.160.161.199  Up 45m:23s         10.110.1.25  10.110.1.24  20:4c:03:a8:0a:02  CNJJK2R7PW        N/A   N/A       
+D06Z1F200SB-S611  MO-Staging  303H     10.160.161.108  Up 45m:24s         10.110.1.25  10.110.1.24  20:4c:03:a7:fb:ee  CNJJK2R7QC        N/A   N/A       
+D06Z1F202PS-S610  MO-Staging  303H     10.160.165.234  Up 45m:24s         10.110.1.25  10.110.1.24  20:4c:03:a8:03:56  CNJJK2R7Q3        N/A   N/A       
+D06Z1F203SB-S609  MO-Staging  303H     10.160.164.255  Up 45m:26s         10.110.1.24  10.110.1.25  20:4c:03:a8:0c:26  CNJJK2R7HY        N/A   N/A       
+D06Z1F208PS-S608  MO-Staging  303H     10.160.166.26   Up 45m:26s         10.110.1.24  10.110.1.25  20:4c:03:a7:fb:5a  CNJJK2R7F6        N/A   N/A       
+D06Z1F210PS-S606  MO-Staging  303H     10.160.166.153  Up 45m:27s         10.110.1.25  10.110.1.24  20:4c:03:a8:04:22  CNJJK2R7NK        N/A   N/A       
+D06Z1F211SB-S605  MO-Staging  303H     10.160.166.60   Up 45m:28s         10.110.1.25  10.110.1.24  20:4c:03:a7:e1:ce  CNJJK2R7HF        N/A   N/A       
+D06Z1F213M        MO-Staging  314      10.160.164.79   Up 45m:15s         10.110.1.25  10.110.1.24  e8:26:89:c1:1a:30  CNJPJ0R175        N/A   N/A       
+D06Z1F215SB-S603  MO-Staging  303H     10.160.162.129  Up 45m:31s         10.110.1.24  10.110.1.25  20:4c:03:a7:e5:76  CNJJK2R7PT        N/A   N/A       
+D06Z1F216PS-S604  MO-Staging  303H     10.160.166.22   Up 45m:31s         10.110.1.24  10.110.1.25  20:4c:03:a7:e0:7a  CNJJK2R7NQ        N/A   N/A       
+D06Z1F218PS-S602  MO-Staging  303H     10.160.165.254  Up 45m:32s         10.110.1.24  10.110.1.25  20:4c:03:a7:fb:f6  CNJJK2R7G0        N/A   N/A       
+D06Z1F219SB-S601  MO-Staging  303H     10.160.164.220  Up 45m:30s         10.110.1.24  10.110.1.25  20:4c:03:a7:f3:be  CNJJK2R7CP        N/A   N/A       
+D06Z1F225SB       MO-Staging  315      10.160.164.160  Up 45m:20s         10.110.1.24  10.110.1.25  7c:57:3c:ca:06:9c  CNJHJ0T06H        N/A   N/A       
+D06Z1F229PS       MO-Staging  315      10.160.164.109  Up 45m:20s         10.110.1.25  10.110.1.24  7c:57:3c:c9:e0:ae  CNJHJ0T06Q        N/A   N/A       
+D06Z1F232SB       MO-Staging  315      10.160.164.156  Up 45m:21s         10.110.1.24  10.110.1.25  7c:57:3c:ca:0f:6a  CNJHJ0T06G        N/A   N/A       
+D06Z1F249M        MO-Staging  365      10.160.162.52   Up 45m:20s         10.110.1.24  10.110.1.25  bc:9f:e4:c1:e2:72  CNJ8JSW4ZJ        N/A   N/A       
+D06Z2F149SB       MO-Staging  315      10.160.164.130  Up 44m:50s         10.110.1.25  10.110.1.24  7c:57:3c:c9:f5:50  CNJHJ0T077        N/A   N/A       
+D06Z2F160PS-S632  MO-Staging  303H     10.160.164.212  Up 45m:6s          10.110.1.25  10.110.1.24  20:4c:03:a8:0b:f2  CNJJK2R79Y        N/A   N/A       
+D06Z2F160SB-S633  MO-Staging  303H     10.160.161.223  Up 45m:7s          10.110.1.24  10.110.1.25  20:4c:03:a7:f8:46  CNJJK2R78W        N/A   N/A       
+D06Z2F162PS-S630  MO-Staging  303H     10.160.165.174  Up 45m:8s          10.110.1.25  10.110.1.24  20:4c:03:a7:e3:7e  CNJJK2R7CD        N/A   N/A       
+D06Z2F162SB-S631  MO-Staging  303H     10.160.164.195  Up 45m:7s          10.110.1.25  10.110.1.24  20:4c:03:a7:e1:32  CNJJK2R7BZ        N/A   N/A       
+D06Z2F168PS-S628  MO-Staging  303H     10.160.162.32   Up 45m:10s         10.110.1.25  10.110.1.24  20:4c:03:a7:f6:6a  CNJJK2R75X        N/A   N/A       
+D06Z2F168SB-S629  MO-Staging  303H     10.160.161.215  Up 45m:10s         10.110.1.25  10.110.1.24  20:4c:03:a8:0c:16  CNJJK2R777        N/A   N/A       
+
+Flags: 1 = 802.1x authenticated AP use EAP-PEAP; 1+ = 802.1x use EST; 1- = 802.1x use factory cert; 2 = Using IKE version 2
+       B = Built-in AP; C = Cellular RAP; D = Dirty or no config
+       E = Regulatory Domain Mismatch; F = AP failed 802.1x authentication
+       G = No such group; I = Inactive; J = USB cert at AP; L = Unlicensed
+       M = Mesh node
+       N = Duplicate name; P = PPPoe AP; R = Remote AP; R- = Remote AP requires Auth;
+       S = Standby-mode AP; U = Unprovisioned; X = Maintenance Mode
+       Y = Mesh Recovery
+       c = CERT-based RAP; e = Custom EST cert; f = No Spectrum FFT support
+       i = Indoor; o = Outdoor; s = LACP striping; u = Custom-Cert RAP; z = Datazone AP
+       p = In deep-sleep status
+       4 = WiFi Uplink
+
+AP Database
+-----------
+Name              Group       AP Type  IP Address      Status      Flags  Switch IP    Standby IP   Wired MAC Address  Serial #    Port  FQLN  Outer IP  User
+----              -----       -------  ----------      ------      -----  ---------    ----------   -----------------  --------    ----  ----  --------  ----
+D06Z2F171PS-S626  MO-Staging  303H     10.160.164.222  Up 45m:11s         10.110.1.25  10.110.1.24  20:4c:03:a7:fc:52  CNJJK2R78K        N/A   N/A       
+D06Z2F171SB-S627  MO-Staging  303H     10.160.161.196  Up 45m:13s         10.110.1.25  10.110.1.24  20:4c:03:a7:f8:c2  CNJJK2R76Y        N/A   N/A       
+D06Z2F176PS-S624  MO-Staging  303H     10.160.161.195  Up 45m:12s         10.110.1.25  10.110.1.24  20:4c:03:a7:fc:d6  CNJJK2R79Z        N/A   N/A       
+D06Z2F176SB-S625  MO-Staging  303H     10.160.165.169  Up 45m:15s         10.110.1.24  10.110.1.25  20:4c:03:a8:0b:b2  CNJJK2R75D        N/A   N/A       
+D06Z2F178PS-S622  MO-Staging  303H     10.160.161.242  Up 45m:12s         10.110.1.25  10.110.1.24  20:4c:03:a7:e0:aa  CNJJK2R7MN        N/A   N/A       
+D06Z2F179SB-S623  MO-Staging  303H     10.160.161.82   Up 45m:16s         10.110.1.24  10.110.1.25  20:4c:03:a7:e3:e6  CNJJK2R7GF        N/A   N/A       
+D06Z2F184PS-S620  MO-Staging  303H     10.160.164.194  Up 45m:17s         10.110.1.24  10.110.1.25  20:4c:03:a7:f1:72  CNJJK2R6VD        N/A   N/A       
+D06Z2F184SB-S621  MO-Staging  303H     10.160.162.68   Up 45m:17s         10.110.1.25  10.110.1.24  20:4c:03:a8:03:5a  CNJJK2R7J3        N/A   N/A       
+D06Z2F186PS-S618  MO-Staging  303H     10.160.164.208  Up 45m:16s         10.110.1.24  10.110.1.25  20:4c:03:a8:0b:de  CNJJK2R6ZJ        N/A   N/A       
+D06Z2F187SB-S619  MO-Staging  303H     10.160.164.243  Up 45m:18s         10.110.1.25  10.110.1.24  20:4c:03:a7:e9:e2  CNJJK2R7LY        N/A   N/A       
+D06Z2F191SB-S617  MO-Staging  303H     10.160.162.64   Up 45m:20s         10.110.1.24  10.110.1.25  20:4c:03:a7:fc:9a  CNJJK2R7N9        N/A   N/A       
+D06Z2F192PS-S616  MO-Staging  303H     10.160.161.162  Up 45m:21s         10.110.1.25  10.110.1.24  20:4c:03:a7:dc:02  CNJJK2R7HB        N/A   N/A       
+D06Z2F194PS-S614  MO-Staging  303H     10.160.164.231  Up 45m:21s         10.110.1.25  10.110.1.24  20:4c:03:a8:04:62  CNJJK2R7J2        N/A   N/A       
+D06Z2F195SB-S615  MO-Staging  303H     10.160.161.78   Up 45m:23s         10.110.1.24  10.110.1.25  20:4c:03:a7:fa:96  CNJJK2R6WK        N/A   N/A       
+D06Z3F079M        MO-Staging  344      10.160.166.105  Up 28m:58s         10.110.1.25  10.110.1.24  7c:57:3c:c1:4d:c4  CNJHK50075        N/A   N/A       
+D06Z3F091SB-S663  MO-Staging  303H     10.160.164.237  Up 44m:39s         10.110.1.24  10.110.1.25  20:4c:03:a7:eb:02  CNJJK2R7K8        N/A   N/A       
+D06Z3F092PS-S662  MO-Staging  303H     10.160.161.243  Up 44m:39s         10.110.1.24  10.110.1.25  20:4c:03:a7:da:12  CNJJK2R7FW        N/A   N/A       
+D06Z3F095PS-S660  MO-Staging  303H     10.160.166.14   Up 44m:42s         10.110.1.25  10.110.1.24  20:4c:03:a7:e3:1e  CNJJK2R7JL        N/A   N/A       
+D06Z3F095SB-S661  MO-Staging  303H     10.160.164.204  Up 44m:42s         10.110.1.24  10.110.1.25  20:4c:03:a7:ea:52  CNJJK2R7PX        N/A   N/A       
+D06Z3F099PS-S658  MO-Staging  303H     10.160.164.225  Up 44m:43s         10.110.1.24  10.110.1.25  20:4c:03:a7:e6:ae  CNJJK2R7HK        N/A   N/A       
+D06Z3F099SB-S659  MO-Staging  303H     10.160.161.9    Up 44m:43s         10.110.1.25  10.110.1.24  20:4c:03:a7:dd:ce  CNJJK2R7LG        N/A   N/A       
+D06Z3F103PS-S656  MO-Staging  303H     10.160.164.218  Up 44m:44s         10.110.1.24  10.110.1.25  20:4c:03:a7:da:a6  CNJJK2R7HL        N/A   N/A       
+D06Z3F103SB-S657  MO-Staging  303H     10.160.165.217  Up 44m:46s         10.110.1.25  10.110.1.24  20:4c:03:a7:de:6a  CNJJK2R7CJ        N/A   N/A       
+D06Z3F107SB-S655  MO-Staging  303H     10.160.161.236  Up 44m:46s         10.110.1.25  10.110.1.24  20:4c:03:a7:e1:92  CNJJK2R6W6        N/A   N/A       
+D06Z3F108PS-S654  MO-Staging  303H     10.160.161.80   Up 44m:46s         10.110.1.24  10.110.1.25  20:4c:03:a7:db:6e  CNJJK2R7FT        N/A   N/A       
+D06Z3F110PS-S652  MO-Staging  303H     10.160.161.245  Up 44m:47s         10.110.1.25  10.110.1.24  20:4c:03:a7:f3:ae  CNJJK2R6ZY        N/A   N/A       
+D06Z3F110SB-S653  MO-Staging  303H     10.160.165.131  Up 44m:46s         10.110.1.24  10.110.1.25  20:4c:03:a7:f4:06  CNJJK2R7Q7        N/A   N/A       
+D06Z3F116PS-S650  MO-Staging  303H     10.160.161.232  Up 44m:49s         10.110.1.24  10.110.1.25  20:4c:03:a8:04:52  CNJJK2R7BQ        N/A   N/A       
+D06Z3F116SB-S651  MO-Staging  303H     10.160.164.217  Up 44m:49s         10.110.1.25  10.110.1.24  20:4c:03:a7:dc:2a  CNJJK2R7K5        N/A   N/A       
+D06Z3F119SB-S649  MO-Staging  303H     10.160.165.67   Up 44m:52s         10.110.1.25  10.110.1.24  20:4c:03:a7:f8:62  CNJJK2R7DP        N/A   N/A       
+D06Z3F123SB-S647  MO-Staging  303H     10.160.162.19   Up 44m:52s         10.110.1.24  10.110.1.25  20:4c:03:a7:fe:12  CNJJK2R6TR        N/A   N/A       
+D06Z3F124PS-S646  MO-Staging  303H     10.160.165.0    Up 44m:54s         10.110.1.25  10.110.1.24  20:4c:03:a7:df:7e  CNJJK2R7D6        N/A   N/A       
+
+Flags: 1 = 802.1x authenticated AP use EAP-PEAP; 1+ = 802.1x use EST; 1- = 802.1x use factory cert; 2 = Using IKE version 2
+       B = Built-in AP; C = Cellular RAP; D = Dirty or no config
+       E = Regulatory Domain Mismatch; F = AP failed 802.1x authentication
+       G = No such group; I = Inactive; J = USB cert at AP; L = Unlicensed
+       M = Mesh node
+       N = Duplicate name; P = PPPoe AP; R = Remote AP; R- = Remote AP requires Auth;
+       S = Standby-mode AP; U = Unprovisioned; X = Maintenance Mode
+       Y = Mesh Recovery
+       c = CERT-based RAP; e = Custom EST cert; f = No Spectrum FFT support
+       i = Indoor; o = Outdoor; s = LACP striping; u = Custom-Cert RAP; z = Datazone AP
+       p = In deep-sleep status
+       4 = WiFi Uplink
+
+AP Database
+-----------
+Name              Group       AP Type  IP Address      Status      Flags  Switch IP    Standby IP   Wired MAC Address  Serial #    Port  FQLN  Outer IP  User
+----              -----       -------  ----------      ------      -----  ---------    ----------   -----------------  --------    ----  ----  --------  ----
+D06Z3F125M        MO-Staging  314      10.160.164.105  Up 44m:40s         10.110.1.25  10.110.1.24  e8:26:89:c1:18:12  CNJPJ0R172        N/A   N/A       
+D06Z3F126PS-S644  MO-Staging  303H     10.160.161.65   Up 44m:54s         10.110.1.25  10.110.1.24  20:4c:03:a7:e8:ca  CNJJK2R7DJ        N/A   N/A       
+D06Z3F127SB-S645  MO-Staging  303H     10.160.166.99   Up 44m:56s         10.110.1.25  10.110.1.24  20:4c:03:a8:02:0e  CNJJK2R70C        N/A   N/A       
+D06Z3F131SB-S643  MO-Staging  303H     10.160.161.129  Up 44m:56s         10.110.1.25  10.110.1.24  20:4c:03:a7:e5:0a  CNJJK2R6YZ        N/A   N/A       
+D06Z3F132PS-S642  MO-Staging  303H     10.160.165.252  Up 44m:58s         10.110.1.25  10.110.1.24  20:4c:03:a8:02:6e  CNJJK2R79R        N/A   N/A       
+D06Z3F134PS-S640  MO-Staging  303H     10.160.165.182  Up 44m:58s         10.110.1.25  10.110.1.24  20:4c:03:a7:fd:f2  CNJJK2R7FQ        N/A   N/A       
+D06Z3F135SB-S641  MO-Staging  303H     10.160.161.204  Up 44m:58s         10.110.1.25  10.110.1.24  20:4c:03:a8:00:56  CNJJK2R796        N/A   N/A       
+D06Z3F140PS-S638  MO-Staging  303H     10.160.164.201  Up 45m:0s          10.110.1.24  10.110.1.25  20:4c:03:a7:fe:c2  CNJJK2R79N        N/A   N/A       
+D06Z3F140SB-S639  MO-Staging  303H     10.160.162.79   Up 45m:1s          10.110.1.24  10.110.1.25  20:4c:03:a8:07:e2  CNJJK2R6VK        N/A   N/A       
+D06Z3F142PS-S636  MO-Staging  303H     10.160.165.12   Up 45m:2s          10.110.1.25  10.110.1.24  20:4c:03:a7:eb:be  CNJJK2R78F        N/A   N/A       
+D06Z3F143SB-S637  MO-Staging  303H     10.160.165.127  Up 45m:3s          10.110.1.24  10.110.1.25  20:4c:03:a7:ff:da  CNJJK2R7CX        N/A   N/A       
+D06Z3F147SB-S635  MO-Staging  303H     10.160.162.27   Up 45m:4s          10.110.1.24  10.110.1.25  20:4c:03:a7:e5:36  CNJJK2R76H        N/A   N/A       
+D06Z3F148PS-S634  MO-Staging  303H     10.160.162.133  Up 45m:4s          10.110.1.24  10.110.1.25  20:4c:03:a8:0b:46  CNJJK2R77V        N/A   N/A       
+D06Z4F017M        MO-Staging  344      10.160.165.21   Up 28m:42s         10.110.1.25  10.110.1.24  7c:57:3c:c1:50:32  CNJHK5006L        N/A   N/A       
+D06Z4F025SB       MO-Staging  344      10.160.166.38   Up 28m:43s         10.110.1.25  10.110.1.24  7c:57:3c:c1:4f:84  CNJHK5007D        N/A   N/A       
+D06Z4F026PS       MO-Staging  344      10.160.166.115  Up 28m:54s         10.110.1.24  10.110.1.25  7c:57:3c:c1:4e:fc  CNJHK5006Z        N/A   N/A       
+D06Z4F028M        MO-Staging  344      10.160.162.110  Up 28m:54s         10.110.1.25  10.110.1.24  7c:57:3c:c1:4d:be  CNJHK5007J        N/A   N/A       
+D06Z4F042SB       MO-Staging  344      10.160.166.108  Up 28m:55s         10.110.1.25  10.110.1.24  7c:57:3c:c1:4e:1c  CNJHK5005H        N/A   N/A       
+D06Z4F043M        MO-Staging  344      10.160.164.118  Up 28m:45s         10.110.1.25  10.110.1.24  7c:57:3c:c1:4e:2c  CNJHK5005T        N/A   N/A       
+D06Z4F049PS       MO-Staging  303H     10.160.162.77   Up 44m:36s         10.110.1.25  10.110.1.24  20:4c:03:3b:16:64  CNGKK2R220        N/A   N/A       
+D06Z4F055SB       MO-Staging  344      10.160.164.131  Up 28m:47s         10.110.1.25  10.110.1.24  7c:57:3c:c1:4e:58  CNJHK50096        N/A   N/A       
+D06Z4F066M        MO-Staging  344      10.160.165.47   Up 28m:47s         10.110.1.25  10.110.1.24  7c:57:3c:c1:4f:06  CNJHK5006G        N/A   N/A       
+D06Z5F000PS       MO-Staging  365      10.160.166.51   Up 44m:11s         10.110.1.25  10.110.1.24  bc:9f:e4:c1:ee:44  CNJ8JSW4Y3        N/A   N/A       
+D06Z5F010PS       MO-Staging  344      10.160.164.121  Up 28m:51s         10.110.1.25  10.110.1.24  7c:57:3c:c1:4f:86  CNJHK5007L        N/A   N/A       
+D06Z5F010SB       MO-Staging  344      10.160.166.104  Up 28m:50s         10.110.1.25  10.110.1.24  7c:57:3c:c1:4f:98  CNJHK5006N        N/A   N/A       
+D07Z1F200PS-S716  MO-Staging  303H     10.160.162.31   Up 44m:13s         10.110.1.25  10.110.1.24  20:4c:03:a7:e7:02  CNJJK2R7B0        N/A   N/A       
+D07Z1F200SB-S717  MO-Staging  303H     10.160.161.6    Up 44m:13s         10.110.1.24  10.110.1.25  20:4c:03:a7:dd:f2  CNJJK2R7GL        N/A   N/A       
+D07Z1F201M        MO-Staging  314      10.160.164.41   Up 43m:59s         10.110.1.25  10.110.1.24  e8:26:89:c1:17:ce  CNJPJ0R15P        N/A   N/A       
+D07Z1F203SB-S715  MO-Staging  303H     10.160.161.181  Up 44m:15s         10.110.1.25  10.110.1.24  20:4c:03:a7:e5:b2  CNJJK2R7PN        N/A   N/A       
+D07Z1F207SB-S711  MO-Staging  303H     10.160.166.4    Up 44m:18s         10.110.1.24  10.110.1.25  20:4c:03:a7:fa:e6  CNJJK2R7NT        N/A   N/A       
+D07Z1F208PS-S712  MO-Staging  303H     10.160.164.213  Up 44m:19s         10.110.1.25  10.110.1.24  20:4c:03:a7:e4:62  CNJJK2R7BV        N/A   N/A       
+D07Z1F211PS-S710  MO-Staging  303H     10.160.162.6    Up 44m:18s         10.110.1.24  10.110.1.25  20:4c:03:8b:5f:0a  CNHYK2R33K        N/A   N/A       
+
+Flags: 1 = 802.1x authenticated AP use EAP-PEAP; 1+ = 802.1x use EST; 1- = 802.1x use factory cert; 2 = Using IKE version 2
+       B = Built-in AP; C = Cellular RAP; D = Dirty or no config
+       E = Regulatory Domain Mismatch; F = AP failed 802.1x authentication
+       G = No such group; I = Inactive; J = USB cert at AP; L = Unlicensed
+       M = Mesh node
+       N = Duplicate name; P = PPPoe AP; R = Remote AP; R- = Remote AP requires Auth;
+       S = Standby-mode AP; U = Unprovisioned; X = Maintenance Mode
+       Y = Mesh Recovery
+       c = CERT-based RAP; e = Custom EST cert; f = No Spectrum FFT support
+       i = Indoor; o = Outdoor; s = LACP striping; u = Custom-Cert RAP; z = Datazone AP
+       p = In deep-sleep status
+       4 = WiFi Uplink
+
+AP Database
+-----------
+Name              Group       AP Type  IP Address      Status      Flags  Switch IP    Standby IP   Wired MAC Address  Serial #    Port  FQLN  Outer IP  User
+----              -----       -------  ----------      ------      -----  ---------    ----------   -----------------  --------    ----  ----  --------  ----
+D07Z1F211SB-S709  MO-Staging  303H     10.160.165.1    Up 44m:20s         10.110.1.24  10.110.1.25  20:4c:03:a7:e3:76  CNJJK2R7C4        N/A   N/A       
+D07Z1F215SB-S707  MO-Staging  303H     10.160.166.23   Up 44m:19s         10.110.1.24  10.110.1.25  20:4c:03:a8:09:fa  CNJJK2R7FR        N/A   N/A       
+D07Z1F216PS-S708  MO-Staging  303H     10.160.166.137  Up 44m:23s         10.110.1.25  10.110.1.24  20:4c:03:a8:07:9a  CNJJK2R7FB        N/A   N/A       
+D07Z1F218PS-S706  MO-Staging  303H     10.160.161.255  Up 44m:22s         10.110.1.24  10.110.1.25  20:4c:03:a8:06:06  CNJJK2R7M5        N/A   N/A       
+D07Z1F219SB-S705  MO-Staging  303H     10.160.164.228  Up 44m:23s         10.110.1.25  10.110.1.24  20:4c:03:a7:f4:fa  CNJJK2R7P4        N/A   N/A       
+D07Z1F223SB-S703  MO-Staging  303H     10.160.164.187  Up 44m:24s         10.110.1.24  10.110.1.25  20:4c:03:a7:f4:8a  CNJJK2R7B9        N/A   N/A       
+D07Z1F224PS-S704  MO-Staging  303H     10.160.165.113  Up 44m:25s         10.110.1.24  10.110.1.25  20:4c:03:a7:f3:ca  CNJJK2R7BK        N/A   N/A       
+D07Z1F226M        MO-Staging  314      10.160.164.46   Up 44m:11s         10.110.1.24  10.110.1.25  e8:26:89:c1:19:da  CNJPJ0R15B        N/A   N/A       
+D07Z1F230SB-S701  MO-Staging  314      10.160.164.57   Up 44m:11s         10.110.1.24  10.110.1.25  e8:26:89:c1:19:98  CNJPJ0R1B9        N/A   N/A       
+D07Z1F231PS-S702  MO-Staging  314      10.160.164.60   Up 44m:12s         10.110.1.24  10.110.1.25  e8:26:89:c1:19:56  CNJPJ0R17P        N/A   N/A       
+D07Z1F234M        MO-Staging  315      10.160.164.88   Up 44m:13s         10.110.1.24  10.110.1.25  7c:57:3c:c9:ff:50  CNJHJ0T06V        N/A   N/A       
+D07Z2F149PS       MO-Staging  344      10.160.162.108  Up 28m:49s         10.110.1.25  10.110.1.24  7c:57:3c:c1:4f:b8  CNJHK5006V        N/A   N/A       
+D07Z2F149SB       MO-Staging  315      10.160.164.111  Up 43m:41s         10.110.1.25  10.110.1.24  7c:57:3c:ca:02:58  CNJHJ0T06X        N/A   N/A       
+D07Z2F160PS-S736  MO-Staging  303H     10.160.161.68   Up 43m:56s         10.110.1.24  10.110.1.25  20:4c:03:a8:04:ba  CNJJK2R7FG        N/A   N/A       
+D07Z2F160SB-S737  MO-Staging  303H     10.160.165.69   Up 43m:58s         10.110.1.25  10.110.1.24  20:4c:03:a7:ee:be  CNJJK2R7GP        N/A   N/A       
+D07Z2F162PS-S734  MO-Staging  303H     10.160.162.13   Up 43m:58s         10.110.1.25  10.110.1.24  20:4c:03:a7:ff:26  CNJJK2R7PP        N/A   N/A       
+D07Z2F163SB-S735  MO-Staging  303H     10.160.166.33   Up 43m:59s         10.110.1.25  10.110.1.24  20:4c:03:a7:fb:72  CNJJK2R6WJ        N/A   N/A       
+D07Z2F168PS-S732  MO-Staging  303H     10.160.164.219  Up 44m:1s          10.110.1.24  10.110.1.25  20:4c:03:a7:e8:ae  CNJJK2R76B        N/A   N/A       
+D07Z2F168SB-S733  MO-Staging  303H     10.160.160.5    Up 44m:1s          10.110.1.24  10.110.1.25  20:4c:03:a7:ea:0a  CNJJK2R76K        N/A   N/A       
+D07Z2F171PS-S730  MO-Staging  303H     10.160.166.67   Up 44m:2s          10.110.1.25  10.110.1.24  20:4c:03:a7:fa:f2  CNJJK2R787        N/A   N/A       
+D07Z2F171SB-S731  MO-Staging  303H     10.160.165.161  Up 44m:3s          10.110.1.24  10.110.1.25  20:4c:03:a7:fc:2e  CNJJK2R78N        N/A   N/A       
+D07Z2F176PS-S728  MO-Staging  303H     10.160.161.11   Up 44m:4s          10.110.1.24  10.110.1.25  20:4c:03:a7:e3:06  CNJJK2R756        N/A   N/A       
+D07Z2F176SB-S729  MO-Staging  303H     10.160.165.66   Up 44m:4s          10.110.1.24  10.110.1.25  20:4c:03:a7:ff:2e  CNJJK2R75S        N/A   N/A       
+D07Z2F179PS-S726  MO-Staging  303H     10.160.162.85   Up 44m:3s          10.110.1.25  10.110.1.24  20:4c:03:a7:e3:b2  CNJJK2R75L        N/A   N/A       
+D07Z2F179SB-S727  MO-Staging  303H     10.160.161.95   Up 44m:6s          10.110.1.24  10.110.1.25  20:4c:03:a7:ea:aa  CNJJK2R77C        N/A   N/A       
+D07Z2F184PS-S724  MO-Staging  303H     10.160.166.70   Up 44m:7s          10.110.1.25  10.110.1.24  20:4c:03:a8:0a:de  CNJJK2R77H        N/A   N/A       
+D07Z2F184SB-S725  MO-Staging  303H     10.160.162.90   Up 44m:6s          10.110.1.24  10.110.1.25  20:4c:03:a7:e5:4a  CNJJK2R6YM        N/A   N/A       
+D07Z2F186PS-S722  MO-Staging  303H     10.160.162.24   Up 44m:9s          10.110.1.24  10.110.1.25  20:4c:03:a7:e7:5a  CNJJK2R79J        N/A   N/A       
+D07Z2F188SB-S723  MO-Staging  303H     10.160.166.17   Up 44m:10s         10.110.1.24  10.110.1.25  20:4c:03:a7:e5:46  CNJJK2R7BR        N/A   N/A       
+D07Z2F191SB-S721  MO-Staging  303H     10.160.161.214  Up 44m:9s          10.110.1.25  10.110.1.24  20:4c:03:a8:0b:0e  CNJJK2R7DL        N/A   N/A       
+D07Z2F192PS-S720  MO-Staging  303H     10.160.161.103  Up 44m:11s         10.110.1.25  10.110.1.24  20:4c:03:a7:db:3e  CNJJK2R79X        N/A   N/A       
+D07Z2F194PS-S718  MO-Staging  303H     10.160.161.152  Up 44m:12s         10.110.1.25  10.110.1.24  20:4c:03:a8:06:52  CNJJK2R7PG        N/A   N/A       
+
+Flags: 1 = 802.1x authenticated AP use EAP-PEAP; 1+ = 802.1x use EST; 1- = 802.1x use factory cert; 2 = Using IKE version 2
+       B = Built-in AP; C = Cellular RAP; D = Dirty or no config
+       E = Regulatory Domain Mismatch; F = AP failed 802.1x authentication
+       G = No such group; I = Inactive; J = USB cert at AP; L = Unlicensed
+       M = Mesh node
+       N = Duplicate name; P = PPPoe AP; R = Remote AP; R- = Remote AP requires Auth;
+       S = Standby-mode AP; U = Unprovisioned; X = Maintenance Mode
+       Y = Mesh Recovery
+       c = CERT-based RAP; e = Custom EST cert; f = No Spectrum FFT support
+       i = Indoor; o = Outdoor; s = LACP striping; u = Custom-Cert RAP; z = Datazone AP
+       p = In deep-sleep status
+       4 = WiFi Uplink
+
+AP Database
+-----------
+Name              Group       AP Type  IP Address      Status      Flags  Switch IP    Standby IP   Wired MAC Address  Serial #    Port  FQLN  Outer IP  User
+----              -----       -------  ----------      ------      -----  ---------    ----------   -----------------  --------    ----  ----  --------  ----
+D07Z2F195SB-S719  MO-Staging  303H     10.160.161.165  Up 44m:13s         10.110.1.25  10.110.1.24  20:4c:03:a8:07:c2  CNJJK2R7GM        N/A   N/A       
+D07Z3F091SB-S767  MO-Staging  303H     10.160.162.21   Up 43m:28s         10.110.1.24  10.110.1.25  20:4c:03:a8:00:5a  CNJJK2R7RC        N/A   N/A       
+D07Z3F092PS-S766  MO-Staging  303H     10.160.161.81   Up 43m:30s         10.110.1.25  10.110.1.24  20:4c:03:a7:f0:3a  CNJJK2R7KW        N/A   N/A       
+D07Z3F094PS-S764  MO-Staging  303H     10.160.165.224  Up 43m:32s         10.110.1.24  10.110.1.25  20:4c:03:a7:e4:4a  CNJJK2R7H7        N/A   N/A       
+D07Z3F095SB-S765  MO-Staging  303H     10.160.165.225  Up 43m:32s         10.110.1.24  10.110.1.25  20:4c:03:a8:02:92  CNJJK2R7ST        N/A   N/A       
+D07Z3F096M        MO-Staging  314      10.160.164.112  Up 43m:18s         10.110.1.25  10.110.1.24  e8:26:89:c1:19:18  CNJPJ0R1M6        N/A   N/A       
+D07Z3F099PS-S762  MO-Staging  303H     10.160.161.73   Up 43m:33s         10.110.1.25  10.110.1.24  20:4c:03:a7:fa:c6  CNJJK2R7RL        N/A   N/A       
+D07Z3F099SB-S763  MO-Staging  303H     10.160.165.128  Up 43m:34s         10.110.1.25  10.110.1.24  20:4c:03:a7:d9:22  CNJJK2R71Q        N/A   N/A       
+D07Z3F102PS-S760  MO-Staging  303H     10.160.164.211  Up 43m:36s         10.110.1.25  10.110.1.24  20:4c:03:a7:f7:ba  CNJJK2R7TG        N/A   N/A       
+D07Z3F103SB-S761  MO-Staging  303H     10.160.162.82   Up 43m:36s         10.110.1.25  10.110.1.24  20:4c:03:a7:dd:ea  CNJJK2R7L2        N/A   N/A       
+D07Z3F107SB-S759  MO-Staging  303H     10.160.166.125  Up 43m:36s         10.110.1.25  10.110.1.24  20:4c:03:a7:fd:82  CNJJK2R7L0        N/A   N/A       
+D07Z3F108PS-S758  MO-Staging  303H     10.160.165.231  Up 43m:38s         10.110.1.24  10.110.1.25  20:4c:03:a8:07:2a  CNJJK2R7FV        N/A   N/A       
+D07Z3F110PS-S756  MO-Staging  303H     10.160.161.187  Up 43m:39s         10.110.1.25  10.110.1.24  20:4c:03:a7:e4:76  CNJJK2R7SR        N/A   N/A       
+D07Z3F110SB-S757  MO-Staging  303H     10.160.161.118  Up 43m:38s         10.110.1.25  10.110.1.24  20:4c:03:a7:e3:5a  CNJJK2R7SY        N/A   N/A       
+D07Z3F115SB-S755  MO-Staging  303H     10.160.162.7    Up 43m:29s         10.110.1.24  10.110.1.25  20:4c:03:a7:f4:ca  CNJJK2R6Z3        N/A   N/A       
+D07Z3F116PS-S754  MO-Staging  303H     10.160.161.71   Up 43m:40s         10.110.1.24  10.110.1.25  20:4c:03:a7:e4:56  CNJJK2R78R        N/A   N/A       
+D07Z3F118PS-S752  MO-Staging  303H     10.160.165.125  Up 43m:41s         10.110.1.25  10.110.1.24  20:4c:03:a7:f1:d2  CNJJK2R7Q1        N/A   N/A       
+D07Z3F119SB-S753  MO-Staging  303H     10.160.161.15   Up 43m:42s         10.110.1.25  10.110.1.24  20:4c:03:a7:e4:36  CNJJK2R7CQ        N/A   N/A       
+D07Z3F121M        MO-Staging  314      10.160.164.103  Up 43m:28s         10.110.1.24  10.110.1.25  e8:26:89:c1:1a:2a  CNJPJ0R1FH        N/A   N/A       
+D07Z3F124PS-S750  MO-Staging  303H     10.160.164.202  Up 43m:43s         10.110.1.24  10.110.1.25  20:4c:03:a7:fa:fe  CNJJK2R7PL        N/A   N/A       
+D07Z3F124SB-S751  MO-Staging  303H     10.160.162.86   Up 43m:44s         10.110.1.25  10.110.1.24  20:4c:03:a7:db:de  CNJJK2R7ML        N/A   N/A       
+D07Z3F126PS-S748  MO-Staging  303H     10.160.166.11   Up 43m:45s         10.110.1.25  10.110.1.24  20:4c:03:a7:f3:fa  CNJJK2R7P2        N/A   N/A       
+D07Z3F127SB-S749  MO-Staging  303H     10.160.166.8    Up 43m:45s         10.110.1.25  10.110.1.24  20:4c:03:a7:f6:3a  CNJJK2R7DF        N/A   N/A       
+D07Z3F132PS-S746  MO-Staging  303H     10.160.161.170  Up 43m:47s         10.110.1.25  10.110.1.24  20:4c:03:a7:db:06  CNJJK2R7LD        N/A   N/A       
+D07Z3F132SB-S747  MO-Staging  303H     10.160.166.73   Up 43m:50s         10.110.1.25  10.110.1.24  20:4c:03:a7:e2:42  CNJJK2R7PY        N/A   N/A       
+D07Z3F134PS-S744  MO-Staging  303H     10.160.161.13   Up 43m:49s         10.110.1.25  10.110.1.24  20:4c:03:a7:fe:ee  CNJJK2R7J8        N/A   N/A       
+D07Z3F135SB-S745  MO-Staging  303H     10.160.165.167  Up 43m:49s         10.110.1.25  10.110.1.24  20:4c:03:a7:e3:36  CNJJK2R7QJ        N/A   N/A       
+D07Z3F140PS-S742  MO-Staging  303H     10.160.165.247  Up 43m:51s         10.110.1.24  10.110.1.25  20:4c:03:a8:08:06  CNJJK2R7DH        N/A   N/A       
+D07Z3F140SB-S743  MO-Staging  303H     10.160.161.194  Up 43m:51s         10.110.1.25  10.110.1.24  20:4c:03:a8:09:02  CNJJK2R7DZ        N/A   N/A       
+D07Z3F142PS-S740  MO-Staging  303H     10.160.165.227  Up 43m:52s         10.110.1.25  10.110.1.24  20:4c:03:a8:06:de  CNJJK2R7FM        N/A   N/A       
+D07Z3F143SB-S741  MO-Staging  303H     10.160.162.3    Up 43m:53s         10.110.1.24  10.110.1.25  20:4c:03:a7:de:aa  CNJJK2R7BN        N/A   N/A       
+D07Z3F148SB-S739  MO-Staging  303H     10.160.166.100  Up 43m:52s         10.110.1.24  10.110.1.25  20:4c:03:a7:f9:72  CNJJK2R7JT        N/A   N/A       
+
+Flags: 1 = 802.1x authenticated AP use EAP-PEAP; 1+ = 802.1x use EST; 1- = 802.1x use factory cert; 2 = Using IKE version 2
+       B = Built-in AP; C = Cellular RAP; D = Dirty or no config
+       E = Regulatory Domain Mismatch; F = AP failed 802.1x authentication
+       G = No such group; I = Inactive; J = USB cert at AP; L = Unlicensed
+       M = Mesh node
+       N = Duplicate name; P = PPPoe AP; R = Remote AP; R- = Remote AP requires Auth;
+       S = Standby-mode AP; U = Unprovisioned; X = Maintenance Mode
+       Y = Mesh Recovery
+       c = CERT-based RAP; e = Custom EST cert; f = No Spectrum FFT support
+       i = Indoor; o = Outdoor; s = LACP striping; u = Custom-Cert RAP; z = Datazone AP
+       p = In deep-sleep status
+       4 = WiFi Uplink
+
+AP Database
+-----------
+Name              Group       AP Type  IP Address      Status      Flags  Switch IP    Standby IP   Wired MAC Address  Serial #    Port  FQLN  Outer IP  User
+----              -----       -------  ----------      ------      -----  ---------    ----------   -----------------  --------    ----  ----  --------  ----
+D07Z4F016PS       MO-Staging  344      10.160.164.119  Up 28m:44s         10.110.1.25  10.110.1.24  7c:57:3c:c1:50:2a  CNJHK5006J        N/A   N/A       
+D07Z4F034PS       MO-Staging  344      10.160.162.111  Up 28m:45s         10.110.1.24  10.110.1.25  7c:57:3c:c1:4e:3a  CNJHK50063        N/A   N/A       
+D07Z4F036M        MO-Staging  344      10.160.162.40   Up 28m:36s         10.110.1.24  10.110.1.25  7c:57:3c:c1:4e:8c  CNJHK50062        N/A   N/A       
+D07Z4F044SB       MO-Staging  344      10.160.165.29   Up 28m:36s         10.110.1.25  10.110.1.24  7c:57:3c:c1:4d:4a  CNJHK50072        N/A   N/A       
+D07Z4F047PS       MO-Staging  315      10.160.164.84   Up 43m:10s         10.110.1.24  10.110.1.25  7c:57:3c:ca:08:10  CNJHJ0T062        N/A   N/A       
+D07Z4F050M        MO-Staging  344      10.160.166.42   Up 28m:47s         10.110.1.24  10.110.1.25  7c:57:3c:c1:4f:94  CNJHK50067        N/A   N/A       
+D07Z4F052PS       MO-Staging  315      10.160.164.90   Up 43m:12s         10.110.1.24  10.110.1.25  7c:57:3c:c9:fa:6c  CNJHJ0T065        N/A   N/A       
+D07Z4F055SB       MO-Staging  315      10.160.164.97   Up 43m:12s         10.110.1.24  10.110.1.25  7c:57:3c:ca:0c:b2  CNJHJ0T06D        N/A   N/A       
+D07Z4F064M        MO-Staging  344      10.160.164.127  Up 28m:48s         10.110.1.25  10.110.1.24  7c:57:3c:c1:4d:de  CNJHK5006P        N/A   N/A       
+D07Z4F068SB       MO-Staging  344      10.160.165.49   Up 28m:49s         10.110.1.24  10.110.1.25  7c:57:3c:c1:4e:ec  CNJHK5005Y        N/A   N/A       
+D07Z5F013PS       MO-Staging  365      10.160.161.57   Up 43m:2s          10.110.1.25  10.110.1.24  bc:9f:e4:c1:e7:78  CNJ8JSW50S        N/A   N/A       
+D07Z5F013SB       MO-Staging  365      10.160.164.176  Up 43m:3s          10.110.1.25  10.110.1.24  bc:9f:e4:c1:ed:10  CNJ8JSW50P        N/A   N/A       
+D08Z1F199SB-S815  MO-Staging  303H     10.160.161.62   Up 43m:8s          10.110.1.25  10.110.1.24  20:4c:03:a7:ff:3e  CNJJK2R7P3        N/A   N/A       
+D08Z1F200PS-S814  MO-Staging  303H     10.160.165.185  Up 43m:9s          10.110.1.25  10.110.1.24  20:4c:03:a7:fd:9a  CNJJK2R7HN        N/A   N/A       
+D08Z1F202PS-S812  MO-Staging  303H     10.160.162.58   Up 43m:10s         10.110.1.25  10.110.1.24  20:4c:03:a8:02:5e  CNJJK2R6V6        N/A   N/A       
+D08Z1F203SB-S811  MO-Staging  303H     10.160.162.73   Up 43m:11s         10.110.1.25  10.110.1.24  20:4c:03:a7:f9:0a  CNJJK2R7R4        N/A   N/A       
+D08Z1F207PS-S810  MO-Staging  303H     10.160.162.117  Up 43m:11s         10.110.1.24  10.110.1.25  20:4c:03:a8:0b:a2  CNJJK2R7HH        N/A   N/A       
+D08Z1F207SB-S809  MO-Staging  303H     10.160.161.107  Up 43m:11s         10.110.1.24  10.110.1.25  20:4c:03:a8:06:fe  CNJJK2R7H9        N/A   N/A       
+D08Z1F210PS-S808  MO-Staging  303H     10.160.165.244  Up 43m:13s         10.110.1.24  10.110.1.25  20:4c:03:a7:e7:0e  CNJJK2R7S1        N/A   N/A       
+D08Z1F211SB-S807  MO-Staging  303H     10.160.165.168  Up 43m:14s         10.110.1.25  10.110.1.24  20:4c:03:a7:eb:42  CNJJK2R7Q6        N/A   N/A       
+D08Z1F215PS-S806  MO-Staging  303H     10.160.164.247  Up 43m:14s         10.110.1.24  10.110.1.25  20:4c:03:a7:df:16  CNJJK2R7QQ        N/A   N/A       
+D08Z1F215SB-S805  MO-Staging  303H     10.160.165.135  Up 43m:15s         10.110.1.24  10.110.1.25  20:4c:03:a7:d9:a6  CNJJK2R7N0        N/A   N/A       
+D08Z1F219SB-S803  MO-Staging  303H     10.160.162.12   Up 43m:16s         10.110.1.25  10.110.1.24  20:4c:03:a7:eb:66  CNJJK2R7R3        N/A   N/A       
+D08Z1F220PS-S804  MO-Staging  303H     10.160.165.60   Up 43m:17s         10.110.1.25  10.110.1.24  20:4c:03:a7:dd:82  CNJJK2R7SX        N/A   N/A       
+D08Z1F226PS-S802  MO-Staging  314      10.160.164.73   Up 43m:2s          10.110.1.24  10.110.1.25  e8:26:89:c1:17:ac  CNJPJ0R16Z        N/A   N/A       
+D08Z1F226SB-S801  MO-Staging  314      10.160.164.56   Up 43m:4s          10.110.1.25  10.110.1.24  e8:26:89:c1:18:04  CNJPJ0R19N        N/A   N/A       
+D08Z2F149M        MO-Staging  314      10.160.164.148  Up 42m:53s         10.110.1.24  10.110.1.25  e8:26:89:c1:1a:6a  CNJPJ0R15H        N/A   N/A       
+D08Z2F149SB       MO-Staging  315      10.160.164.151  Up 42m:36s         10.110.1.25  10.110.1.24  7c:57:3c:c9:ec:ca  CNJHJ0T07M        N/A   N/A       
+D08Z2F160SB-S835  MO-Staging  303H     10.160.161.202  Up 42m:52s         10.110.1.24  10.110.1.25  20:4c:03:a7:e1:e2  CNJJK2R767        N/A   N/A       
+D08Z2F163PS-S832  MO-Staging  303H     10.160.161.157  Up 42m:53s         10.110.1.24  10.110.1.25  20:4c:03:a7:f7:ee  CNJJK2R76F        N/A   N/A       
+D08Z2F163SB-S833  MO-Staging  303H     10.160.162.55   Up 42m:55s         10.110.1.25  10.110.1.24  20:4c:03:a7:e1:42  CNJJK2R780        N/A   N/A       
+D08Z2F167SB-S831  MO-Staging  303H     10.160.164.185  Up 42m:54s         10.110.1.25  10.110.1.24  20:4c:03:a7:d9:da  CNJJK2R76Z        N/A   N/A       
+
+Flags: 1 = 802.1x authenticated AP use EAP-PEAP; 1+ = 802.1x use EST; 1- = 802.1x use factory cert; 2 = Using IKE version 2
+       B = Built-in AP; C = Cellular RAP; D = Dirty or no config
+       E = Regulatory Domain Mismatch; F = AP failed 802.1x authentication
+       G = No such group; I = Inactive; J = USB cert at AP; L = Unlicensed
+       M = Mesh node
+       N = Duplicate name; P = PPPoe AP; R = Remote AP; R- = Remote AP requires Auth;
+       S = Standby-mode AP; U = Unprovisioned; X = Maintenance Mode
+       Y = Mesh Recovery
+       c = CERT-based RAP; e = Custom EST cert; f = No Spectrum FFT support
+       i = Indoor; o = Outdoor; s = LACP striping; u = Custom-Cert RAP; z = Datazone AP
+       p = In deep-sleep status
+       4 = WiFi Uplink
+
+AP Database
+-----------
+Name              Group       AP Type  IP Address      Status      Flags  Switch IP    Standby IP   Wired MAC Address  Serial #    Port  FQLN  Outer IP  User
+----              -----       -------  ----------      ------      -----  ---------    ----------   -----------------  --------    ----  ----  --------  ----
+D08Z2F168PS-S830  MO-Staging  303H     10.160.161.149  Up 42m:54s         10.110.1.25  10.110.1.24  20:4c:03:a7:e1:72  CNJJK2R6ZZ        N/A   N/A       
+D08Z2F171PS-S828  MO-Staging  303H     10.160.166.127  Up 42m:57s         10.110.1.25  10.110.1.24  20:4c:03:a7:f9:9a  CNJJK2R76M        N/A   N/A       
+D08Z2F171SB-S829  MO-Staging  303H     10.160.165.235  Up 42m:58s         10.110.1.25  10.110.1.24  20:4c:03:a7:e3:ba  CNJJK2R766        N/A   N/A       
+D08Z2F176PS-S826  MO-Staging  303H     10.160.165.114  Up 42m:59s         10.110.1.25  10.110.1.24  20:4c:03:a7:da:aa  CNJJK2R74T        N/A   N/A       
+D08Z2F176SB-S827  MO-Staging  303H     10.160.165.207  Up 42m:58s         10.110.1.25  10.110.1.24  20:4c:03:a8:06:26  CNJJK2R770        N/A   N/A       
+D08Z2F179PS-S824  MO-Staging  303H     10.160.161.88   Up 43m:0s          10.110.1.25  10.110.1.24  20:4c:03:a8:0b:32  CNJJK2R79B        N/A   N/A       
+D08Z2F179SB-S825  MO-Staging  303H     10.160.164.189  Up 43m:0s          10.110.1.24  10.110.1.25  20:4c:03:a7:dc:1e  CNJJK2R77J        N/A   N/A       
+D08Z2F183PS-S822  MO-Staging  303H     10.160.166.10   Up 43m:2s          10.110.1.24  10.110.1.25  20:4c:03:a7:ea:be  CNJJK2R76N        N/A   N/A       
+D08Z2F184SB-S823  MO-Staging  303H     10.160.165.110  Up 43m:2s          10.110.1.24  10.110.1.25  20:4c:03:a7:ff:2a  CNJJK2R775        N/A   N/A       
+D08Z2F187PS-S820  MO-Staging  303H     10.160.162.94   Up 43m:3s          10.110.1.24  10.110.1.25  20:4c:03:a7:e7:fa  CNJJK2R75K        N/A   N/A       
+D08Z2F187SB-S821  MO-Staging  303H     10.160.161.210  Up 43m:4s          10.110.1.25  10.110.1.24  20:4c:03:a7:fc:4e  CNJJK2R76W        N/A   N/A       
+D08Z2F191SB-S819  MO-Staging  303H     10.160.161.184  Up 43m:4s          10.110.1.25  10.110.1.24  20:4c:03:a8:04:0e  CNJJK2R7JX        N/A   N/A       
+D08Z2F192PS-S818  MO-Staging  303H     10.160.165.229  Up 43m:6s          10.110.1.25  10.110.1.24  20:4c:03:a7:f6:ba  CNJJK2R7R7        N/A   N/A       
+D08Z2F195PS-S816  MO-Staging  303H     10.160.161.164  Up 43m:5s          10.110.1.24  10.110.1.25  20:4c:03:a7:df:e6  CNJJK2R7CL        N/A   N/A       
+D08Z2F195SB-S817  MO-Staging  303H     10.160.162.56   Up 43m:7s          10.110.1.24  10.110.1.25  20:4c:03:a7:e8:9a  CNJJK2R7KD        N/A   N/A       
+D08Z3F079M        MO-Staging  344      10.160.165.24   Up 28m:32s         10.110.1.24  10.110.1.25  7c:57:3c:c1:4d:a6  CNJHK50060        N/A   N/A       
+D08Z3F091PS-S864  MO-Staging  303H     10.160.162.9    Up 42m:25s         10.110.1.25  10.110.1.24  20:4c:03:a7:fb:52  CNJJK2R7LM        N/A   N/A       
+D08Z3F092SB-S865  MO-Staging  303H     10.160.165.61   Up 42m:26s         10.110.1.24  10.110.1.25  20:4c:03:a7:f7:e6  CNJJK2R7CC        N/A   N/A       
+D08Z3F094PS-S862  MO-Staging  303H     10.160.164.192  Up 42m:26s         10.110.1.24  10.110.1.25  20:4c:03:a7:f2:f2  CNJJK2R7PV        N/A   N/A       
+D08Z3F095SB-S863  MO-Staging  303H     10.160.166.120  Up 42m:28s         10.110.1.24  10.110.1.25  20:4c:03:a8:0b:12  CNJJK2R7PK        N/A   N/A       
+D08Z3F099PS-S860  MO-Staging  303H     10.160.164.205  Up 42m:27s         10.110.1.24  10.110.1.25  20:4c:03:a7:e8:2a  CNJJK2R7KT        N/A   N/A       
+D08Z3F099SB-S861  MO-Staging  303H     10.160.165.124  Up 42m:29s         10.110.1.25  10.110.1.24  20:4c:03:a7:fe:0a  CNJJK2R7KM        N/A   N/A       
+D08Z3F103PS-S858  MO-Staging  303H     10.160.165.166  Up 42m:30s         10.110.1.25  10.110.1.24  20:4c:03:a7:ea:9e  CNJJK2R7QG        N/A   N/A       
+D08Z3F103SB-S859  MO-Staging  303H     10.160.165.190  Up 42m:31s         10.110.1.25  10.110.1.24  20:4c:03:a7:fb:42  CNJJK2R7PM        N/A   N/A       
+D08Z3F108PS-S856  MO-Staging  303H     10.160.161.137  Up 42m:31s         10.110.1.25  10.110.1.24  20:4c:03:a7:e8:12  CNJJK2R7NV        N/A   N/A       
+D08Z3F108SB-S857  MO-Staging  303H     10.160.162.96   Up 42m:32s         10.110.1.25  10.110.1.24  20:4c:03:a7:e8:d6  CNJJK2R7L6        N/A   N/A       
+D08Z3F110PS-S854  MO-Staging  303H     10.160.161.193  Up 42m:32s         10.110.1.24  10.110.1.25  20:4c:03:a8:05:ce  CNJJK2R7MM        N/A   N/A       
+D08Z3F110SB-S855  MO-Staging  303H     10.160.164.232  Up 42m:34s         10.110.1.24  10.110.1.25  20:4c:03:a7:f2:12  CNJJK2R7PF        N/A   N/A       
+D08Z3F115SB-S853  MO-Staging  303H     10.160.166.151  Up 42m:34s         10.110.1.24  10.110.1.25  20:4c:03:a8:00:a2  CNJJK2R7RP        N/A   N/A       
+D08Z3F116PS-S852  MO-Staging  303H     10.160.162.95   Up 42m:35s         10.110.1.24  10.110.1.25  20:4c:03:a8:07:8e  CNJJK2R7N7        N/A   N/A       
+D08Z3F119PS-S850  MO-Staging  303H     10.160.164.252  Up 42m:35s         10.110.1.25  10.110.1.24  20:4c:03:a8:04:be  CNJJK2R7QS        N/A   N/A       
+D08Z3F119SB-S851  MO-Staging  303H     10.160.165.211  Up 42m:37s         10.110.1.24  10.110.1.25  20:4c:03:a7:f1:5e  CNJJK2R7N8        N/A   N/A       
+
+Flags: 1 = 802.1x authenticated AP use EAP-PEAP; 1+ = 802.1x use EST; 1- = 802.1x use factory cert; 2 = Using IKE version 2
+       B = Built-in AP; C = Cellular RAP; D = Dirty or no config
+       E = Regulatory Domain Mismatch; F = AP failed 802.1x authentication
+       G = No such group; I = Inactive; J = USB cert at AP; L = Unlicensed
+       M = Mesh node
+       N = Duplicate name; P = PPPoe AP; R = Remote AP; R- = Remote AP requires Auth;
+       S = Standby-mode AP; U = Unprovisioned; X = Maintenance Mode
+       Y = Mesh Recovery
+       c = CERT-based RAP; e = Custom EST cert; f = No Spectrum FFT support
+       i = Indoor; o = Outdoor; s = LACP striping; u = Custom-Cert RAP; z = Datazone AP
+       p = In deep-sleep status
+       4 = WiFi Uplink
+
+AP Database
+-----------
+Name              Group       AP Type  IP Address      Status      Flags  Switch IP    Standby IP   Wired MAC Address  Serial #    Port  FQLN  Outer IP  User
+----              -----       -------  ----------      ------      -----  ---------    ----------   -----------------  --------    ----  ----  --------  ----
+D08Z3F123SB-S849  MO-Staging  303H     10.160.165.192  Up 42m:38s         10.110.1.24  10.110.1.25  20:4c:03:a7:e9:4e  CNJJK2R79K        N/A   N/A       
+D08Z3F124PS-S848  MO-Staging  303H     10.160.161.94   Up 42m:38s         10.110.1.24  10.110.1.25  20:4c:03:a8:06:3e  CNJJK2R7JQ        N/A   N/A       
+D08Z3F125M        MO-Staging  314      10.160.164.95   Up 42m:24s         10.110.1.24  10.110.1.25  e8:26:89:c1:19:54  CNJPJ0R1FK        N/A   N/A       
+D08Z3F126PS-S846  MO-Staging  303H     10.160.165.133  Up 42m:40s         10.110.1.25  10.110.1.24  20:4c:03:a7:f9:16  CNJJK2R7DQ        N/A   N/A       
+D08Z3F127SB-S847  MO-Staging  303H     10.160.165.96   Up 42m:41s         10.110.1.25  10.110.1.24  20:4c:03:a8:08:be  CNJJK2R7JS        N/A   N/A       
+D08Z3F131SB-S845  MO-Staging  303H     10.160.165.130  Up 42m:42s         10.110.1.25  10.110.1.24  20:4c:03:a7:ed:56  CNJJK2R7HP        N/A   N/A       
+D08Z3F132PS-S844  MO-Staging  303H     10.160.161.191  Up 42m:43s         10.110.1.25  10.110.1.24  20:4c:03:a7:e1:c6  CNJJK2R7JY        N/A   N/A       
+D08Z3F135PS-S842  MO-Staging  303H     10.160.164.203  Up 42m:44s         10.110.1.25  10.110.1.24  20:4c:03:a7:e3:c6  CNJJK2R7PZ        N/A   N/A       
+D08Z3F135SB-S843  MO-Staging  303H     10.160.164.226  Up 42m:44s         10.110.1.25  10.110.1.24  20:4c:03:a7:e2:16  CNJJK2R6TW        N/A   N/A       
+D08Z3F139SB-S841  MO-Staging  303H     10.160.165.183  Up 42m:45s         10.110.1.24  10.110.1.25  20:4c:03:a7:fa:16  CNJJK2R79M        N/A   N/A       
+D08Z3F140PS-S840  MO-Staging  303H     10.160.166.18   Up 42m:47s         10.110.1.24  10.110.1.25  20:4c:03:a7:e8:46  CNJJK2R797        N/A   N/A       
+D08Z3F143PS-S838  MO-Staging  303H     10.160.161.180  Up 42m:46s         10.110.1.25  10.110.1.24  20:4c:03:a7:e6:c2  CNJJK2R79D        N/A   N/A       
+D08Z3F143SB-S839  MO-Staging  303H     10.160.166.102  Up 42m:46s         10.110.1.25  10.110.1.24  20:4c:03:a7:e3:b6  CNJJK2R77L        N/A   N/A       
+D08Z3F148SB-S837  MO-Staging  303H     10.160.162.141  Up 42m:48s         10.110.1.25  10.110.1.24  20:4c:03:a7:e2:2e  CNJJK2R765        N/A   N/A       
+D08Z4F017M        MO-Staging  344      10.160.165.46   Up 28m:37s         10.110.1.25  10.110.1.24  7c:57:3c:c1:4c:cc  CNJHK5009M        N/A   N/A       
+D08Z4F022PS       MO-Staging  344      10.160.165.20   Up 28m:27s         10.110.1.25  10.110.1.24  7c:57:3c:c1:4d:02  CNJHK500CC        N/A   N/A       
+D08Z4F029M        MO-Staging  344      10.160.162.116  Up 28m:29s         10.110.1.25  10.110.1.24  7c:57:3c:c1:4e:f4  CNJHK50064        N/A   N/A       
+D08Z4F037M        MO-Staging  344      10.160.164.129  Up 28m:40s         10.110.1.24  10.110.1.25  7c:57:3c:c1:4c:c8  CNJHK50076        N/A   N/A       
+D08Z4F037PS       MO-Staging  365      10.160.161.55   Up 42m:1s          10.110.1.24  10.110.1.25  bc:9f:e4:c1:f3:d0  CNJ8JSW50D        N/A   N/A       
+D08Z4F037SB       MO-Staging  365      10.160.161.51   Up 41m:59s         10.110.1.24  10.110.1.25  bc:9f:e4:c1:de:8a  CNJ8JSW50V        N/A   N/A       
+D08Z4F043PS       MO-Staging  344      10.160.165.25   Up 28m:28s  UNG    10.110.1.24  0.0.0.0      7c:57:3c:c1:50:3e  CNJHK5005R        N/A   N/A       
+D08Z4F043PS       MO-Staging  315      10.160.164.172  Up 42m:7s          10.110.1.25  10.110.1.24  7c:57:3c:c9:f0:ae  CNJHJ0T06W        N/A   N/A       
+D08Z4F057SB       MO-Staging  344      10.160.164.123  Up 28m:40s         10.110.1.25  10.110.1.24  7c:57:3c:c1:4d:40  CNJHK5007R        N/A   N/A       
+D08Z4F065M        MO-Staging  344      10.160.165.45   Up 28m:42s         10.110.1.25  10.110.1.24  7c:57:3c:c1:4f:16  CNJHK5005V        N/A   N/A       
+D08Z5F013M        MO-Staging  365      10.160.165.59   Up 41m:55s         10.110.1.24  10.110.1.25  bc:9f:e4:c1:ef:4e  CNJ8JSW501        N/A   N/A       
+D09Z1F200SB-S911  MO-Staging  303H     10.160.165.146  Up 42m:5s          10.110.1.25  10.110.1.24  20:4c:03:a7:fa:02  CNJJK2R7H2        N/A   N/A       
+D09Z1F202PS-S910  MO-Staging  303H     10.160.161.212  Up 42m:3s          10.110.1.25  10.110.1.24  20:4c:03:a7:ee:3a  CNJJK2R7DK        N/A   N/A       
+D09Z1F203SB-S909  MO-Staging  303H     10.160.165.253  Up 42m:6s          10.110.1.25  10.110.1.24  20:4c:03:a8:0b:4e  CNJJK2R7J1        N/A   N/A       
+D09Z1F207SB-S907  MO-Staging  303H     10.160.166.48   Up 42m:8s          10.110.1.24  10.110.1.25  20:4c:03:a8:02:12  CNJJK2R7K7        N/A   N/A       
+D09Z1F208PS-S908  MO-Staging  303H     10.160.164.199  Up 42m:7s          10.110.1.25  10.110.1.24  20:4c:03:a7:f5:62  CNJJK2R7RJ        N/A   N/A       
+D09Z1F210PS-S906  MO-Staging  303H     10.160.165.147  Up 42m:7s          10.110.1.24  10.110.1.25  20:4c:03:a7:ef:be  CNJJK2R7KJ        N/A   N/A       
+D09Z1F211SB-S905  MO-Staging  303H     10.160.161.148  Up 42m:10s         10.110.1.24  10.110.1.25  20:4c:03:a7:f8:86  CNJJK2R7BD        N/A   N/A       
+
+Flags: 1 = 802.1x authenticated AP use EAP-PEAP; 1+ = 802.1x use EST; 1- = 802.1x use factory cert; 2 = Using IKE version 2
+       B = Built-in AP; C = Cellular RAP; D = Dirty or no config
+       E = Regulatory Domain Mismatch; F = AP failed 802.1x authentication
+       G = No such group; I = Inactive; J = USB cert at AP; L = Unlicensed
+       M = Mesh node
+       N = Duplicate name; P = PPPoe AP; R = Remote AP; R- = Remote AP requires Auth;
+       S = Standby-mode AP; U = Unprovisioned; X = Maintenance Mode
+       Y = Mesh Recovery
+       c = CERT-based RAP; e = Custom EST cert; f = No Spectrum FFT support
+       i = Indoor; o = Outdoor; s = LACP striping; u = Custom-Cert RAP; z = Datazone AP
+       p = In deep-sleep status
+       4 = WiFi Uplink
+
+AP Database
+-----------
+Name              Group       AP Type  IP Address      Status      Flags  Switch IP    Standby IP   Wired MAC Address  Serial #    Port  FQLN  Outer IP  User
+----              -----       -------  ----------      ------      -----  ---------    ----------   -----------------  --------    ----  ----  --------  ----
+D09Z1F216PS-S904  MO-Staging  303H     10.160.161.172  Up 42m:11s         10.110.1.24  10.110.1.25  20:4c:03:a8:0c:12  CNJJK2R7C8        N/A   N/A       
+D09Z1F216SB-S903  MO-Staging  303H     10.160.161.142  Up 42m:11s         10.110.1.24  10.110.1.25  20:4c:03:a7:fe:e2  CNJJK2R7KY        N/A   N/A       
+D09Z1F224PS-S902  MO-Staging  314      10.160.164.54   Up 41m:57s         10.110.1.25  10.110.1.24  e8:26:89:c1:17:fa  CNJPJ0R18Q        N/A   N/A       
+D09Z1F224SB-S901  MO-Staging  314      10.160.164.77   Up 41m:59s         10.110.1.25  10.110.1.24  e8:26:89:c1:18:68  CNJPJ0R1BN        N/A   N/A       
+D09Z2F149SB       MO-Staging  315      10.160.164.174  Up 41m:31s         10.110.1.25  10.110.1.24  7c:57:3c:c9:e4:46  CNJHJ0T05N        N/A   N/A       
+D09Z2F150M        MO-Staging  314      10.160.164.3    Up 41m:31s         10.110.1.24  10.110.1.25  e8:26:89:c1:1a:3c  CNJPJ0R1C5        N/A   N/A       
+D09Z2F161PS-S930  MO-Staging  314      10.160.164.184  Up 41m:33s         10.110.1.24  10.110.1.25  e8:26:89:c1:18:bc  CNJPJ0R17S        N/A   N/A       
+D09Z2F161SB-S931  MO-Staging  314      10.160.164.18   Up 41m:34s         10.110.1.24  10.110.1.25  e8:26:89:c1:18:78  CNJPJ0R1NC        N/A   N/A       
+D09Z2F168PS-S928  MO-Staging  303H     10.160.165.205  Up 41m:50s         10.110.1.25  10.110.1.24  20:4c:03:a7:e6:f6  CNJJK2R7DG        N/A   N/A       
+D09Z2F168SB-S929  MO-Staging  303H     10.160.165.138  Up 41m:51s         10.110.1.25  10.110.1.24  20:4c:03:a7:e7:0a  CNJJK2R7G2        N/A   N/A       
+D09Z2F171SB-S927  MO-Staging  303H     10.160.166.94   Up 41m:53s         10.110.1.25  10.110.1.24  20:4c:03:a8:0b:ae  CNJJK2R77W        N/A   N/A       
+D09Z2F176M        MO-Staging  314      10.160.164.155  Up 41m:39s         10.110.1.24  10.110.1.25  e8:26:89:c1:1a:c6  CNJPJ0R1DT        N/A   N/A       
+D09Z2F176PS-S924  MO-Staging  303H     10.160.165.150  Up 41m:53s         10.110.1.25  10.110.1.24  20:4c:03:a8:03:8e  CNJJK2R78H        N/A   N/A       
+D09Z2F176SB-S925  MO-Staging  303H     10.160.165.201  Up 41m:53s         10.110.1.24  10.110.1.25  20:4c:03:a7:ff:42  CNJJK2R76Q        N/A   N/A       
+D09Z2F178PS-S922  MO-Staging  303H     10.160.166.5    Up 41m:55s         10.110.1.24  10.110.1.25  20:4c:03:a8:00:6e  CNJJK2R774        N/A   N/A       
+D09Z2F179SB-S923  MO-Staging  303H     10.160.164.230  Up 41m:56s         10.110.1.24  10.110.1.25  20:4c:03:a7:f9:46  CNJJK2R75Y        N/A   N/A       
+D09Z2F184PS-S920  MO-Staging  303H     10.160.165.119  Up 41m:57s         10.110.1.24  10.110.1.25  20:4c:03:a8:01:e6  CNJJK2R79C        N/A   N/A       
+D09Z2F184SB-S921  MO-Staging  303H     10.160.166.88   Up 41m:57s         10.110.1.24  10.110.1.25  20:4c:03:a7:e5:5e  CNJJK2R79V        N/A   N/A       
+D09Z2F187PS-S918  MO-Staging  303H     10.160.166.138  Up 41m:58s         10.110.1.24  10.110.1.25  20:4c:03:a8:06:d2  CNJJK2R6TQ        N/A   N/A       
+D09Z2F188SB-S919  MO-Staging  303H     10.160.161.156  Up 42m:0s          10.110.1.25  10.110.1.24  20:4c:03:a7:ff:92  CNJJK2R6TV        N/A   N/A       
+D09Z2F192PS-S916  MO-Staging  303H     10.160.165.200  Up 42m:0s          10.110.1.24  10.110.1.25  20:4c:03:a7:e8:26  CNJJK2R7S9        N/A   N/A       
+D09Z2F192SB-S917  MO-Staging  303H     10.160.162.153  Up 42m:2s          10.110.1.24  10.110.1.25  20:4c:03:a8:09:96  CNJJK2R7NM        N/A   N/A       
+D09Z2F194PS-S914  MO-Staging  303H     10.160.164.238  Up 42m:1s          10.110.1.24  10.110.1.25  20:4c:03:a7:e3:fe  CNJJK2R6Y6        N/A   N/A       
+D09Z2F195SB-S915  MO-Staging  303H     10.160.161.105  Up 42m:3s          10.110.1.24  10.110.1.25  20:4c:03:a7:e5:c6  CNJJK2R7R5        N/A   N/A       
+D09Z3F079M        MO-Staging  344      10.160.161.22   Up 28m:37s         10.110.1.25  10.110.1.24  7c:57:3c:c1:4e:06  CNJHK500BT        N/A   N/A       
+D09Z3F090M        MO-Staging  314      10.160.164.81   Up 41m:16s         10.110.1.24  10.110.1.25  e8:26:89:c1:19:4a  CNJPJ0R195        N/A   N/A       
+D09Z3F091PS-S946  MO-Staging  303H     10.160.166.144  Up 41m:31s         10.110.1.24  10.110.1.25  20:4c:03:a8:0b:16  CNJJK2R7DY        N/A   N/A       
+D09Z3F091SB-S947  MO-Staging  303H     10.160.164.200  Up 41m:31s         10.110.1.25  10.110.1.24  20:4c:03:a7:ec:7e  CNJJK2R7D5        N/A   N/A       
+D09Z3F097PS-S944  MO-Staging  314      10.160.164.1    Up 41m:18s         10.110.1.24  10.110.1.25  e8:26:89:c1:19:a6  CNJPJ0R17D        N/A   N/A       
+D09Z3F097SB-S945  MO-Staging  314      10.160.164.153  Up 41m:33s         10.110.1.24  10.110.1.25  e8:26:89:c1:18:00  CNJPJ0R1BV        N/A   N/A       
+D09Z3F101PS       MO-Staging  314      10.160.164.108  Up 41m:19s         10.110.1.24  10.110.1.25  e8:26:89:c1:18:70  CNJPJ0R1FP        N/A   N/A       
+D09Z3F114SB-S943  MO-Staging  314      10.160.164.122  Up 41m:21s         10.110.1.25  10.110.1.24  e8:26:89:c1:19:2e  CNJPJ0R176        N/A   N/A       
+
+Flags: 1 = 802.1x authenticated AP use EAP-PEAP; 1+ = 802.1x use EST; 1- = 802.1x use factory cert; 2 = Using IKE version 2
+       B = Built-in AP; C = Cellular RAP; D = Dirty or no config
+       E = Regulatory Domain Mismatch; F = AP failed 802.1x authentication
+       G = No such group; I = Inactive; J = USB cert at AP; L = Unlicensed
+       M = Mesh node
+       N = Duplicate name; P = PPPoe AP; R = Remote AP; R- = Remote AP requires Auth;
+       S = Standby-mode AP; U = Unprovisioned; X = Maintenance Mode
+       Y = Mesh Recovery
+       c = CERT-based RAP; e = Custom EST cert; f = No Spectrum FFT support
+       i = Indoor; o = Outdoor; s = LACP striping; u = Custom-Cert RAP; z = Datazone AP
+       p = In deep-sleep status
+       4 = WiFi Uplink
+
+AP Database
+-----------
+Name               Group       AP Type  IP Address      Status      Flags  Switch IP    Standby IP   Wired MAC Address  Serial #    Port  FQLN  Outer IP  User
+----               -----       -------  ----------      ------      -----  ---------    ----------   -----------------  --------    ----  ----  --------  ----
+D09Z3F115PS-S942   MO-Staging  314      10.160.164.169  Up 41m:19s         10.110.1.25  10.110.1.24  e8:26:89:c1:1a:8c  CNJPJ0R1MF        N/A   N/A       
+D09Z3F118PS-S940   MO-Staging  303H     10.160.164.229  Up 41m:36s         10.110.1.24  10.110.1.25  20:4c:03:a8:01:9a  CNJJK2R6VW        N/A   N/A       
+D09Z3F118SB-S941   MO-Staging  303H     10.160.161.72   Up 41m:37s         10.110.1.24  10.110.1.25  20:4c:03:a7:ec:ba  CNJJK2R7D7        N/A   N/A       
+D09Z3F123SB-S939   MO-Staging  303H     10.160.165.6    Up 41m:38s         10.110.1.25  10.110.1.24  20:4c:03:a7:de:c6  CNJJK2R7CY        N/A   N/A       
+D09Z3F124PS-S938   MO-Staging  303H     10.160.166.136  Up 41m:37s         10.110.1.25  10.110.1.24  20:4c:03:a7:ff:fa  CNJJK2R7FS        N/A   N/A       
+D09Z3F124SB        MO-Staging  314      10.160.164.101  Up 41m:25s         10.110.1.24  10.110.1.25  e8:26:89:c1:18:0e  CNJPJ0R192        N/A   N/A       
+D09Z3F129PS-S936   MO-Staging  314      10.160.164.110  Up 41m:26s         10.110.1.25  10.110.1.24  e8:26:89:c1:18:66  CNJPJ0R16J        N/A   N/A       
+D09Z3F129SB-S937   MO-Staging  314      10.160.164.96   Up 41m:25s         10.110.1.24  10.110.1.25  e8:26:89:c1:18:14  CNJPJ0R16L        N/A   N/A       
+D09Z3F137PS-S934   MO-Staging  314      10.160.164.140  Up 41m:27s         10.110.1.25  10.110.1.24  e8:26:89:c1:19:16  CNJPJ0R17G        N/A   N/A       
+D09Z3F137SB-S935   MO-Staging  314      10.160.164.138  Up 41m:29s         10.110.1.25  10.110.1.24  e8:26:89:c1:1b:3e  CNJPJ0R171        N/A   N/A       
+D09Z3F140M         MO-Staging  314      10.160.164.164  Up 41m:28s         10.110.1.24  10.110.1.25  e8:26:89:c1:18:b4  CNJPJ0R16N        N/A   N/A       
+D09Z3F145PS-S932   MO-Staging  314      10.160.164.157  Up 41m:29s         10.110.1.24  10.110.1.25  e8:26:89:c1:1a:32  CNJPJ0R1NK        N/A   N/A       
+D09Z3F146SB-S933   MO-Staging  314      10.160.164.128  Up 41m:32s         10.110.1.24  10.110.1.25  e8:26:89:c1:1a:fc  CNJPJ0R1NG        N/A   N/A       
+D09Z4F020M         MO-Staging  365      10.160.165.41   Up 41m:3s          10.110.1.24  10.110.1.25  bc:9f:e4:c1:d9:a2  CNJ8JSW4ZV        N/A   N/A       
+D09Z4F027M         MO-Staging  344      10.160.164.125  Up 28m:23s         10.110.1.24  10.110.1.25  7c:57:3c:c1:50:6a  CNJHK5007N        N/A   N/A       
+D09Z4F035SB        MO-Staging  365      10.160.166.50   Up 41m:4s          10.110.1.24  10.110.1.25  bc:9f:e4:c1:f2:40  CNJ8JSW514        N/A   N/A       
+D09Z4F044M         MO-Staging  344      10.160.165.34   Up 28m:34s         10.110.1.24  10.110.1.25  7c:57:3c:c1:4f:cc  CNJHK5008T        N/A   N/A       
+D09Z4F048PS        MO-Staging  315      10.160.164.62   Up 41m:10s         10.110.1.25  10.110.1.24  7c:57:3c:ca:08:aa  CNJHJ0T07L        N/A   N/A       
+D09Z4F052PS        MO-Staging  315      10.160.164.149  Up 41m:10s         10.110.1.25  10.110.1.24  7c:57:3c:ca:0b:e6  CNJHJ0T030        N/A   N/A       
+D09Z4F057SB        MO-Staging  344      10.160.164.124  Up 28m:35s         10.110.1.25  10.110.1.24  7c:57:3c:c1:4f:ac  CNJHK5005G        N/A   N/A       
+D09Z4F062M         MO-Staging  344      10.160.166.39   Up 28m:24s         10.110.1.25  10.110.1.24  7c:57:3c:c1:4e:08  CNJHK500B9        N/A   N/A       
+D09Z4F070PS        MO-Staging  365      10.160.165.39   Up 41m:9s          10.110.1.24  10.110.1.25  bc:9f:e4:c1:d0:60  CNJ8JSW4ZH        N/A   N/A       
+D09Z4F074SB        MO-Staging  365      10.160.165.58   Up 41m:11s         10.110.1.24  10.110.1.25  bc:9f:e4:c1:d4:04  CNJ8JSW50T        N/A   N/A       
+D10Z1F202PS-S1002  MO-Staging  314      10.160.164.82   Up 40m:53s         10.110.1.24  10.110.1.25  e8:26:89:c1:1a:6e  CNJPJ0R1C7        N/A   N/A       
+D10Z1F202SB-S1001  MO-Staging  314      10.160.164.71   Up 40m:56s         10.110.1.25  10.110.1.24  e8:26:89:c1:1a:44  CNJPJ0R189        N/A   N/A       
+D10Z1F206SB        MO-Staging  314      10.160.164.52   Up 40m:54s         10.110.1.24  10.110.1.25  e8:26:89:c1:18:08  CNJPJ0R18C        N/A   N/A       
+D10Z1F207SB-C1053  MO-Staging  303H     10.160.161.177  Up 41m:11s         10.110.1.25  10.110.1.24  20:4c:03:a7:eb:7e  CNJJK2R78Y        N/A   N/A       
+D10Z1F209PS-C1054  MO-Staging  303H     10.160.161.117  Up 41m:11s         10.110.1.25  10.110.1.24  20:4c:03:a7:f7:62  CNJJK2R7DX        N/A   N/A       
+D10Z1F210M-C1055   MO-Staging  303H     10.160.164.233  Up 41m:14s         10.110.1.25  10.110.1.24  20:4c:03:a7:f2:3e  CNJJK2R7MT        N/A   N/A       
+D10Z1F211M-C1056   MO-Staging  303H     10.160.161.188  Up 41m:14s         10.110.1.25  10.110.1.24  20:4c:03:a8:06:5e  CNJJK2R7KC        N/A   N/A       
+D10Z1F211SB        MO-Staging  314      10.160.164.34   Up 41m:0s          10.110.1.25  10.110.1.24  e8:26:89:c1:18:1a  CNJPJ0R1CS        N/A   N/A       
+D10Z1F215PS        MO-Staging  314      10.160.164.64   Up 40m:59s         10.110.1.24  10.110.1.25  e8:26:89:c1:18:76  CNJPJ0R1FD        N/A   N/A       
+
+Flags: 1 = 802.1x authenticated AP use EAP-PEAP; 1+ = 802.1x use EST; 1- = 802.1x use factory cert; 2 = Using IKE version 2
+       B = Built-in AP; C = Cellular RAP; D = Dirty or no config
+       E = Regulatory Domain Mismatch; F = AP failed 802.1x authentication
+       G = No such group; I = Inactive; J = USB cert at AP; L = Unlicensed
+       M = Mesh node
+       N = Duplicate name; P = PPPoe AP; R = Remote AP; R- = Remote AP requires Auth;
+       S = Standby-mode AP; U = Unprovisioned; X = Maintenance Mode
+       Y = Mesh Recovery
+       c = CERT-based RAP; e = Custom EST cert; f = No Spectrum FFT support
+       i = Indoor; o = Outdoor; s = LACP striping; u = Custom-Cert RAP; z = Datazone AP
+       p = In deep-sleep status
+       4 = WiFi Uplink
+
+AP Database
+-----------
+Name               Group       AP Type  IP Address      Status      Flags  Switch IP    Standby IP   Wired MAC Address  Serial #    Port  FQLN  Outer IP  User
+----               -----       -------  ----------      ------      -----  ---------    ----------   -----------------  --------    ----  ----  --------  ----
+D10Z1F216SB-C1051  MO-Staging  314      10.160.164.178  Up 41m:1s          10.110.1.24  10.110.1.25  7c:57:3c:c8:5e:24  CNJ6J0R0VR        N/A   N/A       
+D10Z1F217PS-C1052  MO-Staging  314      10.160.164.51   Up 41m:3s          10.110.1.25  10.110.1.24  7c:57:3c:c8:56:86  CNJ6J0R0XF        N/A   N/A       
+D10Z1F219SB        MO-Staging  315      10.160.164.183  Up 41m:4s          10.110.1.25  10.110.1.24  7c:57:3c:c9:e1:5c  CNJHJ0T068        N/A   N/A       
+D10Z1F230PS        MO-Staging  314      10.160.164.48   Up 41m:4s          10.110.1.24  10.110.1.25  e8:26:89:c1:1a:76  CNJPJ0R1BY        N/A   N/A       
+D10Z1F230SB        MO-Staging  314      10.160.164.23   Up 41m:5s          10.110.1.24  10.110.1.25  e8:26:89:c1:1a:a4  CNJPJ0R1C2        N/A   N/A       
+D10Z2F149M         MO-Staging  344      10.160.166.114  Up 28m:32s         10.110.1.25  10.110.1.24  7c:57:3c:c1:4d:66  CNJHK5007H        N/A   N/A       
+D10Z2F149SB        MO-Staging  315      10.160.164.152  Up 40m:42s         10.110.1.24  10.110.1.25  7c:57:3c:c9:f8:8e  CNJHJ0T07T        N/A   N/A       
+D10Z2F163SB-S1011  MO-Staging  314      10.160.164.106  Up 40m:46s         10.110.1.25  10.110.1.24  7c:57:3c:c8:60:96  CNJ6J0R0GP        N/A   N/A       
+D10Z2F168PS-S1010  MO-Staging  314      10.160.164.20   Up 40m:47s         10.110.1.25  10.110.1.24  7c:57:3c:c8:5b:8a  CNJ6J0R0WG        N/A   N/A       
+D10Z2F168SB-S1009  MO-Staging  314      10.160.164.14   Up 40m:47s         10.110.1.24  10.110.1.25  7c:57:3c:c8:54:b2  CNJ6J0R0H5        N/A   N/A       
+D10Z2F173M         MO-Staging  314      10.160.164.93   Up 40m:47s         10.110.1.24  10.110.1.25  e8:26:89:c1:19:b8  CNJPJ0R1F1        N/A   N/A       
+D10Z2F178PS-S1008  MO-Staging  314      10.160.164.6    Up 40m:46s         10.110.1.24  10.110.1.25  7c:57:3c:c8:5d:e6  CNJ6J0R0Y4        N/A   N/A       
+D10Z2F178SB-S1007  MO-Staging  314      10.160.164.7    Up 40m:50s         10.110.1.25  10.110.1.24  7c:57:3c:c8:5b:dc  CNJ6J0R0H8        N/A   N/A       
+D10Z2F184PS-S1006  MO-Staging  314      10.160.162.151  Up 40m:51s         10.110.1.24  10.110.1.25  7c:57:3c:c8:60:98  CNJ6J0R0X8        N/A   N/A       
+D10Z2F184SB-S1005  MO-Staging  314      10.160.164.175  Up 40m:52s         10.110.1.25  10.110.1.24  7c:57:3c:c8:56:2c  CNJ6J0R0X9        N/A   N/A       
+D10Z2F194M         MO-Staging  314      10.160.164.159  Up 40m:54s         10.110.1.25  10.110.1.24  e8:26:89:c1:1a:ec  CNJPJ0R1BL        N/A   N/A       
+D10Z2F194PS-S1004  MO-Staging  314      10.160.164.19   Up 40m:52s         10.110.1.24  10.110.1.25  7c:57:3c:c8:5c:f8  CNJ6J0R0GX        N/A   N/A       
+D10Z2F194SB-S1003  MO-Staging  314      10.160.164.167  Up 40m:53s         10.110.1.25  10.110.1.24  7c:57:3c:c8:61:06  CNJ6J0R0X2        N/A   N/A       
+D10Z3F079M         MO-Staging  344      10.160.165.19   Up 28m:20s         10.110.1.25  10.110.1.24  7c:57:3c:c1:4d:86  CNJHK50092        N/A   N/A       
+D10Z3F100PS        MO-Staging  365      10.160.161.33   Up 40m:33s         10.110.1.24  10.110.1.25  bc:9f:e4:c1:ea:7c  CNJ8JSW4V6        N/A   N/A       
+D10Z3F100SB        MO-Staging  365      10.160.161.31   Up 40m:36s         10.110.1.25  10.110.1.24  bc:9f:e4:c1:e3:c4  CNJ8JSW511        N/A   N/A       
+D10Z3F138PS        MO-Staging  365      10.160.165.52   Up 40m:38s         10.110.1.24  10.110.1.25  bc:9f:e4:c1:df:c2  CNJ8JSW4XT        N/A   N/A       
+D10Z3F138SB        MO-Staging  365      10.160.162.43   Up 40m:38s         10.110.1.24  10.110.1.25  bc:9f:e4:c1:d0:92  CNJ8JSW4YR        N/A   N/A       
+D10Z3F147PS        MO-Staging  303H     10.160.165.228  Up 40m:57s         10.110.1.25  10.110.1.24  20:4c:03:3a:d9:d0  CNGKK2R31R        N/A   N/A       
+D10Z4F049SB        MO-Staging  315      10.160.164.173  Up 40m:36s         10.110.1.24  10.110.1.25  7c:57:3c:c9:dd:b2  CNJHJ0T056        N/A   N/A       
+D10Z4F068PS        MO-Staging  315      10.160.164.45   Up 40m:36s         10.110.1.24  10.110.1.25  7c:57:3c:c9:ed:c4  CNJHJ0T07C        N/A   N/A       
+D10Z5F031SB        MO-Staging  365      10.160.166.110  Up 40m:32s         10.110.1.25  10.110.1.24  bc:9f:e4:c1:d1:da  CNJ8JSW51G        N/A   N/A       
+D11Z1F202PS-S1104  MO-Staging  314      10.160.164.78   Up 40m:28s         10.110.1.24  10.110.1.25  7c:57:3c:c8:58:38  CNJ6J0R0RP        N/A   N/A       
+D11Z1F207SB-S1101  MO-Staging  314      10.160.164.55   Up 40m:28s         10.110.1.24  10.110.1.25  7c:57:3c:c8:5e:d0  CNJ6J0R0YQ        N/A   N/A       
+D11Z1F208PS-S1102  MO-Staging  314      10.160.164.44   Up 40m:31s         10.110.1.24  10.110.1.25  7c:57:3c:c8:5a:c6  CNJ6J0R0X4        N/A   N/A       
+D11Z1F215M         MO-Staging  314      10.160.164.53   Up 40m:31s         10.110.1.24  10.110.1.25  e8:26:89:c1:18:02  CNJPJ0R1D0        N/A   N/A       
+D11Z1F226PS        MO-Staging  344      10.160.161.36   Up 28m:30s         10.110.1.24  10.110.1.25  7c:57:3c:c1:4d:14  CNJHK500C9        N/A   N/A       
+
+Flags: 1 = 802.1x authenticated AP use EAP-PEAP; 1+ = 802.1x use EST; 1- = 802.1x use factory cert; 2 = Using IKE version 2
+       B = Built-in AP; C = Cellular RAP; D = Dirty or no config
+       E = Regulatory Domain Mismatch; F = AP failed 802.1x authentication
+       G = No such group; I = Inactive; J = USB cert at AP; L = Unlicensed
+       M = Mesh node
+       N = Duplicate name; P = PPPoe AP; R = Remote AP; R- = Remote AP requires Auth;
+       S = Standby-mode AP; U = Unprovisioned; X = Maintenance Mode
+       Y = Mesh Recovery
+       c = CERT-based RAP; e = Custom EST cert; f = No Spectrum FFT support
+       i = Indoor; o = Outdoor; s = LACP striping; u = Custom-Cert RAP; z = Datazone AP
+       p = In deep-sleep status
+       4 = WiFi Uplink
+
+AP Database
+-----------
+Name               Group       AP Type  IP Address      Status      Flags  Switch IP    Standby IP   Wired MAC Address  Serial #    Port  FQLN  Outer IP  User
+----               -----       -------  ----------      ------      -----  ---------    ----------   -----------------  --------    ----  ----  --------  ----
+D11Z1F226SB        MO-Staging  344      10.160.161.30   Up 28m:21s         10.110.1.25  10.110.1.24  7c:57:3c:c1:4f:5c  CNJHK50061        N/A   N/A       
+D11Z2F149M         MO-Staging  344      10.160.165.38   Up 29m:35s         10.110.1.24  10.110.1.25  7c:57:3c:c1:4e:c8  CNJHK5006W        N/A   N/A       
+D11Z2F149SB        MO-Staging  315      10.160.164.92   Up 40m:18s         10.110.1.25  10.110.1.24  7c:57:3c:c9:ed:50  CNJHJ0T003        N/A   N/A       
+D11Z2F162PS-S1114  MO-Staging  314      10.160.164.12   Up 40m:19s         10.110.1.24  10.110.1.25  7c:57:3c:c8:62:70  CNJ6J0R0G6        N/A   N/A       
+D11Z2F163SB-S1115  MO-Staging  314      10.160.164.180  Up 40m:20s         10.110.1.25  10.110.1.24  7c:57:3c:c8:5e:64  CNJ6J0R0WB        N/A   N/A       
+D11Z2F168SB-S1111  MO-Staging  314      10.160.164.134  Up 40m:21s         10.110.1.25  10.110.1.24  7c:57:3c:c8:5b:7a  CNJ6J0R0XK        N/A   N/A       
+D11Z2F169M         MO-Staging  314      10.160.164.27   Up 40m:23s         10.110.1.24  10.110.1.25  e8:26:89:c1:18:20  CNJPJ0R16H        N/A   N/A       
+D11Z2F169PS-S1112  MO-Staging  314      10.160.163.255  Up 40m:21s         10.110.1.25  10.110.1.24  7c:57:3c:c8:57:66  CNJ6J0R0H0        N/A   N/A       
+D11Z2F178PS-S1110  MO-Staging  314      10.160.164.181  Up 40m:24s         10.110.1.24  10.110.1.25  7c:57:3c:c8:5d:8c  CNJ6J0R0YH        N/A   N/A       
+D11Z2F178SB-S1109  MO-Staging  314      10.160.164.16   Up 40m:24s         10.110.1.25  10.110.1.24  7c:57:3c:c8:60:cc  CNJ6J0R0Y7        N/A   N/A       
+D11Z2F185PS-S1108  MO-Staging  314      10.160.164.9    Up 40m:25s         10.110.1.24  10.110.1.25  7c:57:3c:c8:5a:b4  CNJ6J0R0YW        N/A   N/A       
+D11Z2F189M         MO-Staging  314      10.160.164.115  Up 40m:25s         10.110.1.24  10.110.1.25  e8:26:89:c1:19:a8  CNJPJ0R1B5        N/A   N/A       
+D11Z2F193PS-S1106  MO-Staging  314      10.160.164.42   Up 40m:26s         10.110.1.24  10.110.1.25  7c:57:3c:c8:5b:98  CNJ6J0R0YM        N/A   N/A       
+D11Z3F143PS        MO-Staging  365      10.160.165.143  Up 40m:12s         10.110.1.24  10.110.1.25  bc:9f:e4:c1:f2:d8  CNJ8JSW4Z9        N/A   N/A       
+D11Z3F143SB        MO-Staging  365      10.160.165.53   Up 40m:13s         10.110.1.24  10.110.1.25  bc:9f:e4:c1:f0:78  CNJ8JSW4N7        N/A   N/A       
+D11Z4F046M         MO-Staging  365      10.160.161.56   Up 40m:11s         10.110.1.25  10.110.1.24  bc:9f:e4:c1:e7:da  CNJ8JSW515        N/A   N/A       
+D11Z4F074PS        MO-Staging  365      10.160.161.44   Up 40m:10s         10.110.1.24  10.110.1.25  bc:9f:e4:c1:dc:3a  CNJ8JSW4XY        N/A   N/A       
+D11Z4F074SB        MO-Staging  365      10.160.166.116  Up 40m:12s         10.110.1.24  10.110.1.25  bc:9f:e4:c1:e2:ca  CNJ8JSW4YS        N/A   N/A       
+D12Z1F213SB        MO-Staging  315      10.160.164.28   Up 40m:11s         10.110.1.24  10.110.1.25  7c:57:3c:c9:e0:c6  CNJHJ0T08C        N/A   N/A       
+D12Z1F217M         MO-Staging  365      10.160.161.54   Up 40m:10s         10.110.1.24  10.110.1.25  bc:9f:e4:c1:e9:e8  CNJ8JSW4ZY        N/A   N/A       
+D12Z2F173PS        MO-Staging  365      10.160.166.54   Up 40m:8s          10.110.1.24  10.110.1.25  bc:9f:e4:c1:e3:de  CNJ8JSW4ZP        N/A   N/A       
+D12Z2F173SB        MO-Staging  365      10.160.161.144  Up 40m:6s          10.110.1.24  10.110.1.25  bc:9f:e4:c1:e4:a6  CNJ8JSW4ZF        N/A   N/A       
+D12Z4F070M         MO-Staging  365      10.160.164.161  Up 40m:5s          10.110.1.24  10.110.1.25  bc:9f:e4:c1:f1:32  CNJ8JSW4YN        N/A   N/A       
+e8:26:89:c1:18:4a  default     314      10.160.164.26   Down        U      10.110.1.25  0.0.0.0      e8:26:89:c1:18:4a  CNJPJ0R1LD        N/A   N/A       
+e8:26:89:c1:1a:9c  default     314      10.160.160.105  Down        U      10.110.1.25  0.0.0.0      e8:26:89:c1:1a:9c  CNJPJ0R15F        N/A   N/A       
+
+Flags: 1 = 802.1x authenticated AP use EAP-PEAP; 1+ = 802.1x use EST; 1- = 802.1x use factory cert; 2 = Using IKE version 2
+       B = Built-in AP; C = Cellular RAP; D = Dirty or no config
+       E = Regulatory Domain Mismatch; F = AP failed 802.1x authentication
+       G = No such group; I = Inactive; J = USB cert at AP; L = Unlicensed
+       M = Mesh node
+       N = Duplicate name; P = PPPoe AP; R = Remote AP; R- = Remote AP requires Auth;
+       S = Standby-mode AP; U = Unprovisioned; X = Maintenance Mode
+       Y = Mesh Recovery
+       c = CERT-based RAP; e = Custom EST cert; f = No Spectrum FFT support
+       i = Indoor; o = Outdoor; s = LACP striping; u = Custom-Cert RAP; z = Datazone AP
+       p = In deep-sleep status
+       4 = WiFi Uplink
+
+Total APs:665
+(MO-MM-PRI) [mm] (config) #
