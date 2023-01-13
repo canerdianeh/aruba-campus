@@ -16,5 +16,13 @@ Opens an API connection to an AOS8 Mobility Conductor and retrieves a list of co
 ## api-framework.py
 The basic framework for opening an API connection to an Aruba AOS8 controller. Also retrieves a list of connected controllers. 
 
+## controller_data_to_xl.py
+Takes a terminal session dump containing one or more of:
+- show ap database [long]
+- show ap lldp neighbors
+- show ap ble-database [long]
+
+and places it in an Excel named table for further processing. Uses Pandas dataframes. 
+
 ## apflags.json
 JSON dict of AP flags and their human-readable descriptors
