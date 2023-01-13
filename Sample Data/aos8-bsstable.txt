@@ -1,0 +1,19 @@
+(host) [mynode] #show ap bss-table 
+
+fm (forward mode): T-Tunnel, S-Split, D-Decrypt Tunnel, B-Bridge (s-standard, p-persistent, b-backup, a-always), n-anyspot
+Aruba AP BSS Table
+------------------
+bss                ess          port  ip            phy    type  ch/EIRP/max-EIRP  cur-cl  ap name  in-t(s)  tot-t            mtu   acl-state  acl  fm
+---                ---          ----  --            ---    ----  ----------------  ------  -------  -------  -----            ---   ---------  ---  --
+9c:1c:12:fd:ec:e0  qa_testing   N/A   172.16.10.20  g-HT   ap    6/19/19           0       204      0        27d:21h:54m:23s  1578  -          58   T
+9c:1c:12:fd:ec:e1  qa_testing1  N/A   172.16.10.20  g-HT   ap    6/19/19           0       204      0        27d:21h:54m:23s  1578  -          58   Tn
+9c:1c:12:fd:ec:f0  qa_testing   N/A   172.16.10.20  a-VHT  ap    36/10/20          2       204      0        27d:21h:54m:23s  1578  -          58   T
+9c:1c:12:fd:ec:f1  qa_testing1  N/A   172.16.10.20  a-VHT  ap    36/10/20          0       204      0        27d:21h:54m:23s  1578  -          58   Tn 
+
+Channel followed by "*" indicates channel selected due to unsupported configured channel.
+"Spectrum" followed by "^" indicates Local Spectrum Override in effect. 
+
+Num APs:4
+Num Associations:2 
+
+Flags: K = 802.11K Enabled; W = 802.11W Enabled; 3 = WPA3 BSS; O = OWE Transition mode OWE BSS; o = OWE Transition mode Open BSS; M = WPA3-SAE mixed mode BSS; m = Agile Multiband BSS (forces 11k, 11w); c = MBO Cellular Data Capable BSS

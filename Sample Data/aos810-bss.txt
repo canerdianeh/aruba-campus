@@ -1,0 +1,22 @@
+(McNeill) #show ap bss-table details
+
+fm (forward mode): T-Tunnel, S-Split, D-Decrypt Tunnel, B-Bridge (s-standard, p-persistent, b-backup, a-always), n-anyspot
+
+cluster (cluster role): U-UAC, A-AAC, sU-Standby UAC, sA-Standby AAC
+
+Aruba AP BSS Table
+------------------
+bss                ess      port  ip             band/ht-mode/bandwidth  ch/EIRP/max-EIRP  type  cur-cl  ap name            in-t(s)  tot-t   mtu   acl-state  acl  fm  flags  cluster  active-clients  standby-clients  datazone
+---                ---      ----  --             ----------------------  ----------------  ----  ------  -------            -------  -----   ---   ---------  ---  --  -----  -------  --------------  ---------------  --------
+cc:d0:83:d4:f5:91  CP_Test  N/A   10.30.242.199  5GHz/HE/40MHz           36+/15.0/25.7     ap    0       GreenChile         0        8m:26s  1578  -          86   T   T      A        0               0                no
+38:17:c3:ba:be:70  CP_Test  N/A   10.30.242.192  5GHz/VHT/80MHz          40E/18.0/31.5     ap    0       TreeFiteen         0        6m:20s  1578  -          86   T   -      A        0               0                no
+f0:61:c0:da:f1:31  CP_Test  N/A   10.30.242.193  5GHz/HE/40MHz           44+/15.0/28.5     ap    0       f0:61:c0:c5:af:12  0        8m:21s  1578  -          86   T   T      A        0               0                no
+f4:2e:7f:7b:d0:91  CP_Test  N/A   10.30.242.194  5GHz/VHT/40MHz          153-/15.0/28.6    ap    0       20:4c:03:8c:0b:b6  0        4m:46s  1578  -          86   T   -      A        0               0                no
+
+Channel followed by "*" indicates channel selected due to unsupported configured channel.
+"Spectrum" followed by "^" indicates Local Spectrum Override in effect.
+
+Num APs:4
+Num Associations:0
+
+Flags:       a = Airslice policy; A = Airslice app monitoring; c = MBO Cellular Data Capable BSS; d = Deferred Delete Pending; D = VLAN Discovered; E = Enhanced-open BSS without transition mode; I = Imminent VAP Down; K = 802.11K Enabled; m = Agile Multiband (MBO) BSS; M = WPA3-SAE mixed mode BSS; o = Enhanced-open transition mode open BSS; O = Enhanced-open BSS with transition mode; r = 802.11r Enabled; t = Broadcast TWT Enabled; T = Individual TWT Enabled; W = 802.11W Enabled; x = MBSSID Tx BSS; 3 = WPA3 BSS;
