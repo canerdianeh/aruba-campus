@@ -101,8 +101,8 @@ bssflags={
 'W':'802.11W Enabled',
 'x':'MBSSID Tx BSS',
 '3':'WPA3 BSS'
-'z':'',
-'Z':''
+'z':'WPA3-AES-CCM128 BSS',
+'Z':'WPA3-AES-CCM128 BSS transtion'
 }
 
 bssfwd={
