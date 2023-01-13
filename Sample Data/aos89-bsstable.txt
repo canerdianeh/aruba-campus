@@ -1,0 +1,30 @@
+(host) [mynode] #show ap bss-table
+
+ 
+
+fm (forward mode): T-Tunnel, S-Split, D-Decrypt Tunnel, B-Bridge (s-standard, p-persistent, b-backup, a-always), n-anyspot
+
+cluster (cluster role): U-UAC, A-AAC, sU-Standby UAC, sA-Standby AAC
+
+Aruba AP BSS Table
+------------------
+bss                ess            port  ip            band/ht-mode/bandwidth  ch/EIRP/max-EIRP  type  cur-cl  ap name  in-t(s)  tot-t          
+---                ---            ----  --            ----------------------  ----------------  ----  ------  -------  -------  -----           
+84:d4:7e:e6:17:50  9@hhm-535-rtp  N/A   1.1.1.4       5GHz/VHT/80MHz          52E/18.0/23.0     ap    0       qc-225   0        8d:13h:30m:28s  
+cc:88:c7:41:64:60  8@hhm-635-psk  N/A   10.65.36.220  6GHz/HE/160MHz          37S/15.0/21.8     ap    0       hhm-635  0        8d:12h:44m:31s  
+
+mtu   acl-state  acl  fm  flags  cluster  datazone
+
+---   ---------  ---  --  -----  -------  --------
+
+1300  -          95   T   D               no
+
+1500  -          92   T   DTWx3           no
+
+
+
+Channel followed by "*" indicates channel selected due to unsupported configured channel.
+"Spectrum" followed by "^" indicates Local Spectrum Override in effect.
+
+Num APs:2
+Num Associations:0
