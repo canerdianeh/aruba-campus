@@ -100,20 +100,20 @@ bssflags={
 'T':'Individual TWT Enabled',
 'W':'802.11W Enabled',
 'x':'MBSSID Tx BSS',
-'3':'WPA3 BSS'
-'z':'WPA3-AES-CCM128 BSS',
-'Z':'WPA3-AES-CCM128 BSS transtion'
+'3':'WPA3 BSS',
+'z':'WPA3-AES-CCM128 BSS', 			# AOS 8.11 and later
+'Z':'WPA3-AES-CCM128 BSS transtion' # AOS 8.11 and later
 }
 
 bssfwd={
 'T':'Tunnel', 
-'S':'Split', 
-'D':'Decrypt Tunnel', 
+'S':'Split-Tunnel', 
+'D':'Decrypt-Tunnel', 
 'B':'Bridge',
-'Bs':'standard', 
-'Bp':'persistent', 
-'Bb':'backup', 
-'Ba':'always', 
+'Bs':'Standard Bridge', 
+'Bp':'persistent Bridge', 
+'Bb':'Backup Bridge', 
+'Ba':'Always Bridge', 
 'n':'anyspot'	
 }
 
@@ -199,10 +199,12 @@ with open(fileName) as input_raw:
 				linetype="header"
 				bssheaders=fields
 				datatype="bss"
-				if fields[4]=="phy":
-					bssver="8.0"			
+				if 'flags' not in fields:
+					bssver=6.5
+				elif fields[4]=="phy":
+					bssver=8.0			
 				elif fields[4]=="band/ht-mode/bandwidth":
-					bssver="8.9"
+					bssver=8.9
 
 			# The rest of these are to ignore visual elements with no data	
 			elif re.search(r'-{2,}',fields[0]):
@@ -306,38 +308,39 @@ with open(fileName) as input_raw:
 				#fldlen=len(fields)
 				
 				# turn it into a JSON dict
+				datarow['band']=''
+				datarow['phy']=''
+				datarow['chan width']=''
+
 				index=0
 				for f in bssheaders:
 					datarow[f]=fields[index]
 					index +=1
 
 				datarow['Uptime Seconds']=time_to_sec(datarow['tot-t'])
-				datarow['cluster']=bsscluster[datarow['cluster']]
-				datarow['Forwarding Mode']=bssfwd[datarow['fm']]
-				datarow.pop('fm')
 
 				chans=datarow['ch/EIRP/max-EIRP'].split('/')
 				datarow['channel']=chans[0]
 				datarow['EIRP']=chans[1]
 				datarow['Max EIRP']=chans[2]
 				datarow.pop('ch/EIRP/max-EIRP')
-				datarow['band']=''
-				datarow['phy']=''
-				datarow['chan width']=''
 
 				# Parse flags
-				if datarow['flags']=='-':
-					datarow['flags']=''
-				else:
-					for flag in bssflags.keys():
-						datarow[bssflags[flag]]=''
-						if datarow['flags']!=None:
-							if flag in datarow['flags']:
-								datarow[bssflags[flag]]=True
-					
-				if bssver == "8.0":
+				if bssver >= 8.0:
+					datarow['Cluster Role']=bsscluster[datarow['cluster']]
+					datarow.pop('cluster')
+				
+					if datarow['flags']=='-':
+						datarow['flags']=''
+					else:
+						for flag in bssflags.keys():
+							datarow[bssflags[flag]]=''
+							if datarow['flags']!=None:
+								if flag in datarow['flags']:
+									datarow[bssflags[flag]]=True
+				if bssver < 8.9:
 					bandphy=datarow['phy'].split('-')
-					bands{'a':'5GHz', 'g':'2.4GHz'}
+					bands={'a':'5GHz', 'g':'2.4GHz'}
 					datarow['band']=bands[bandphy[0]]
 
 					if len(bandphy)>1: 
@@ -345,7 +348,7 @@ with open(fileName) as input_raw:
 					else:
 						datarow['phy']=''
 
-				elif bssver == "8.9":
+				elif bssver >= 8.9:
 
 					bandphy=datarow['band/ht-mode/bandwidth'].split('/')
 					datarow.pop('band/ht-mode/bandwidth')
@@ -357,6 +360,12 @@ with open(fileName) as input_raw:
 
 
 				# Append dict to the BSS list
+				for fm in bssfwd.keys():
+					datarow[bssfwd[fm]]=''
+					if fm in datarow['fm']:
+						datarow[bssfwd[fm]]=True
+
+				#datarow.pop('fm')
 				bss.append(datarow)
 
 
@@ -439,10 +448,9 @@ if len(bss)>0 :
 	bsseirp=bssdf['EIRP']
 	bssmaxeirp=bssdf['Max EIRP']
 	bssuts=bssdf['Uptime Seconds']
-	bssac=bssdf['active-clients']
-	bsssc=bssdf['standby-clients']
-	
-	bssdf=bssdf.drop(columns=['band','phy','channel','chan width','EIRP','Max EIRP','Uptime Seconds','active-clients','standby-clients'])
+
+	bssdf=bssdf.drop(columns=['band','phy','channel','chan width','EIRP','Max EIRP','Uptime Seconds'])
+
 	bssdf.insert(loc=7,column='Band', value=bssband)
 	bssdf.insert(loc=8,column='PHY', value=bssphy)
 	bssdf.insert(loc=9,column='Channel', value=bssch)
@@ -450,8 +458,13 @@ if len(bss)>0 :
 	bssdf.insert(loc=11,column='EIRP', value=bsseirp)
 	bssdf.insert(loc=12,column='Max EIRP', value=bssmaxeirp)
 	bssdf.insert(loc=15,column='Uptime Seconds', value=bssuts)
-	bssdf.insert(loc=6,column='Standby Clients', value=bsssc)
-	bssdf.insert(loc=6,column='Active Clients', value=bssac)
+
+	if bssver >= 8.0:
+		bssac=bssdf['active-clients']
+		bsssc=bssdf['standby-clients']
+		bssdf=bssdf.drop(columns=['active-clients','standby-clients'])	
+		bssdf.insert(loc=6,column='Standby Clients', value=bsssc)
+		bssdf.insert(loc=6,column='Active Clients', value=bssac)
 
 	bssdf.rename(columns={'bss':'BSSID','ess':'ESSID','ip':'Device IP','ap name':'AP Name','in-t(s)':'Inactive Time','cluster':'Cluster Name','datazone':'Data Zone Name','cur-cl': 'Clients', 'acl':'ACL', 'acl-state':'ACL State','tot-t':'Uptime','mtu':'MTU'}, inplace=True)
 
