@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
 # ArubaOS 8 AP Database to CSV output via API call
 # (c) 2021 Ian Beyer, Aruba Networks <canerdian@hpe.com>

@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
 # Converts the following AOS CLI outputs from terminal capture to Excel Named Tables:
 # show ap database [long] (From Mobility Conductor or AOS 6/8 Mobility Controller)
@@ -229,7 +229,7 @@ with open(fileName) as input_raw:
 		if linetype == "data":
 
 			if datatype == "apdb":
-				if fields[4] == "Down": # If down, there will be an empty field where uptime should be
+				if fields[4] == "Down" or fields[4] == 'Denied': # If down, there will be an empty field where uptime should be
 					fields.insert(5,'') #Insert the empty uptime field
 				
 				# If field 6 is an IP address, there is an empty flag field that got missed in the split.
